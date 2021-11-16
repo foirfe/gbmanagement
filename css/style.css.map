@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "globals/_resets.scss",
+        "components/_header.scss",
+        "components/_footer.scss",
+        "pages/_page__index.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
