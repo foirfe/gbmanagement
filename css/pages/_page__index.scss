@@ -6,6 +6,7 @@
     margin-top: -45%;
     margin-bottom: 3%;
     padding: 1%;
+    padding-top: 10em;
   }
 
   #tekst_touch {
@@ -21,7 +22,7 @@
     padding: 2%;
     padding-left: 17%;
     padding-right: 17%;
-
+    text-decoration: none;
   }
 
   .atlet1 {
@@ -97,7 +98,6 @@
     #contact {
       padding-left: 15%;
       padding-right: 15%;
-      text-decoration: none;
     }
 
 
@@ -143,9 +143,14 @@
 
   @media only screen and (min-width: 930px) {
 
+    #get_in_touch{
+      padding-top: 20em;
+    }
+
     h3 {
       font-size: 2.6rem;
       text-decoration: underline;
+      display: none;
     }
 
     .brodtekst1 {
@@ -162,6 +167,21 @@
       font-size: 2.5rem;
       margin-right: 10%;
     }
+    .atlet1 {
+      border-top: none;
+      border-bottom: none;
+      display: flex;
+      flex-wrap: wrap;
+      width: 24%;
+    }
+
+    .atlet2 {
+      border-top: none;
+      border-bottom: none; 
+      display: flex;
+      flex-wrap: wrap;
+      width: 24%;
+    }
   }
 
   @media only screen and (min-width: 1000px) {
@@ -173,24 +193,15 @@
       display: none;
     }
 
-    .atlet1 {
-      border-top: none;
-      border-bottom: none;
+    .atlet1{
+      display: block;
     }
 
-    .atlet2 {
-      border-top: none;
-      border-bottom: none;
+    .atlet2{
+      display: block;
     }
-
-    .billede_atlet1{
-
-    }
-
-    .billede_atlet2{
-
-    }
-
-
+#atlet_flex{
+  display: flex;
+}
   }
 }
