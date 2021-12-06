@@ -2,7 +2,9 @@ header {
   //Burgermenu og knap
   .burgermenu {
     display: inline;
-    position: sticky;
+    position: fixed;
+    right: 0%;
+    top: 20%;
     padding: 10% 5% 10% 2%;
     -webkit-border-bottom-left-radius: 12px; /* Webkit så det kan understøttes på andre browsere */
     -moz-border-bottom-left-radius: 12px;
@@ -13,13 +15,14 @@ header {
     -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0 10px;
     -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-    float: right;
+    background-color: white;
   }
   .burgerikon {
     background: -webkit-linear-gradient(#0a0f3f, #1e8ba1);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 2em;
   }
   //Her er sidenavigationen der åbnes med javascript function
   .sidenav {
@@ -96,7 +99,10 @@ header {
     padding-left: 8px;
   }
   .gblogo {
-    width: 50%;
+    width: 20%;
+    position: absolute;
+    left: 2%;
+    top: 3%;
   }
 
   //Viewports til Header og Navbar
@@ -109,7 +115,7 @@ header {
   //Tablet
   @media screen and (min-width: 720px) {
     .burgermenu {
-      float: left;
+      right: 92%;
       -webkit-border-bottom-left-radius: 0px;
       -moz-border-bottom-left-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -123,8 +129,26 @@ header {
       -moz-border-bottom-right-radius: 12px;
       border-bottom-right-radius: 12px;
     }
+    .burgerikon {
+      font-size: 3em;
+      margin-left: 60%;
+    }
+    .gblogo {
+      width: 15%;
+    }
   }
   //PC
   @media screen and (min-width: 1080px) {
+    .burgerikon {
+      font-size: 2.5em;
+      margin-left: 80%;
+    }
+    .burgermenu {
+      padding: 5% 3% 5% 0%;
+      right: 96%;
+    }
+    .gblogo {
+      width: 10%;
+    }
   }
 }
