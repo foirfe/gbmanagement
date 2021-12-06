@@ -284,13 +284,198 @@ header .gblogo {
   }
 }
 
-#get_in_touch {
-  background-color: aqua;
-  border: 1px solid black;
-  font-size: 1.2rem;
-  margin-left: 75%;
-  margin-top: 50%;
+#page__index #get_in_touch {
+  font-size: 1.4rem;
+  margin-left: 64%;
+  margin-top: -45%;
+  margin-bottom: 3%;
   padding: 1%;
+}
+
+#page__index #tekst_touch {
+  margin-bottom: 5%;
+}
+
+#page__index #contact {
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 12px;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2%;
+  padding-left: 17%;
+  padding-right: 17%;
+}
+
+#page__index .atlet1 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#page__index .billede_atlet1 {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10em;
+}
+
+#page__index .tekst_atlet1 {
+  width: 40%;
+  padding-left: 4%;
+}
+
+#page__index .brodtekst1 {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#page__index h3 {
+  font-size: 1.3rem;
+}
+
+#page__index .atlet2 {
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#page__index .billede_atlet2 {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10em;
+  padding-right: 2%;
+}
+
+#page__index .tekst_atlet2 {
+  width: 40%;
+}
+
+#page__index .brodtekst2 {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+@media only screen and (min-width: 630px) {
+  #page__index #get_in_touch {
+    margin-bottom: 3%;
+    padding: 1%;
+  }
+  #page__index #tekst_touch {
+    margin-bottom: 5%;
+    margin-left: 8%;
+  }
+  #page__index #contact {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-decoration: none;
+  }
+  #page__index h3 {
+    font-size: 2.1rem;
+    text-decoration: underline;
+  }
+  #page__index .billede_atlet1 {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20em;
+  }
+  #page__index .atlet1 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #page__index .brodtekst1 {
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-right: 10%;
+  }
+  #page__index .billede_atlet2 {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20em;
+  }
+  #page__index .atlet2 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #page__index .brodtekst2 {
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  #page__index h3 {
+    font-size: 2.6rem;
+    text-decoration: underline;
+  }
+  #page__index .brodtekst1 {
+    font-size: 2.5rem;
+  }
+  #page__index .billede_atlet2 {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20em;
+  }
+  #page__index .brodtekst2 {
+    font-size: 2.5rem;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #page__index .brodtekst1 {
+    display: none;
+  }
+  #page__index .brodtekst2 {
+    display: none;
+  }
+  #page__index .atlet1 {
+    border-top: none;
+    border-bottom: none;
+  }
+  #page__index .atlet2 {
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 #page__athlete {
