@@ -1,0 +1,55 @@
+@media only screen and (min-width: 200px) {
+  #aboutme {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8%;
+    h1 {
+      padding-top: 20%;
+    }
+    img {
+      width: 40%;
+      object-fit: contain;
+    }
+    p {
+      width: 50%;
+      padding-top: 2.5%;
+    }
+    a {
+      padding: 4%;
+      background-color: blue;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  #aboutme-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8%;
+    padding-top: 4%;
+  }
+
+  #values {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 6%;
+    h1 {
+      padding-top: 5%;
+    }
+    p {
+      padding-top: 2%;
+    }
+  }
+
+  #contact {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8%;
+    h1 {
+      padding-top: 5%;
+    }
+    h2 {
+      padding-top: 4%;
+    }
+  }
+}
