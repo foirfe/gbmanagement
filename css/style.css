@@ -1,1 +1,250 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/* Eric Meyer's CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+}
+
+body a:hover {
+  cursor: url("../images/pointer.png"), auto;
+}
+
+video::-webkit-media-controls-panel:hover {
+  cursor: url("..images/pointer.png"), auto;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+header .burgermenu {
+  display: inline;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 10% 5% 10% 2%;
+  /* Webkit så det kan understøttes på andre browsere */
+  -moz-border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  /* Webkit så det kan understøttes på andre browsere */
+  -moz-border-top-left-radius: 12px;
+  border-top-left-radius: 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  float: right;
+}
+
+header .burgerikon {
+  background: -webkit-linear-gradient(#0a0f3f, #1e8ba1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .sidenav a:hover {
+  color: #f1f1f1;
+}
+
+header .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: -90%;
+  font-size: 3em;
+}
+
+@media screen and (max-height: 450px) {
+  header .sidenav {
+    padding-top: 15px;
+  }
+  header .sidenav a {
+    font-size: 18px;
+  }
+}
+
+header .sidenav a,
+header .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5em;
+  color: #fff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+header .sidenav a:hover,
+header .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+header .active-sidebar {
+  background-color: #0044ff;
+  color: white;
+}
+
+header .dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+header .gblogo {
+  width: 50%;
+}
+
+#get_in_touch {
+  background-color: aqua;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  margin-left: 75%;
+  margin-top: 50%;
+  padding: 1%;
+}
+/*# sourceMappingURL=style.css.map */
