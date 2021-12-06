@@ -1,11 +1,196 @@
 #page__index {
-}
 
-#get_in_touch {
-  background-color: aqua;
-  border: 1px solid black;
-  font-size: 1.2rem;
-  margin-left: 75%;
-  margin-top: 50%;
-  padding: 1%;
+  #get_in_touch {
+    font-size: 1.4rem;
+    margin-left: 64%;
+    margin-top: -45%;
+    margin-bottom: 3%;
+    padding: 1%;
+  }
+
+  #tekst_touch {
+    margin-bottom: 5%;
+  }
+
+  #contact {
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 12px;
+    color: white;
+    justify-content: center;
+    padding: 2%;
+    padding-left: 17%;
+    padding-right: 17%;
+
+  }
+
+  .atlet1 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    justify-content: space-between;
+  }
+
+  .billede_atlet1 {
+    height: auto;
+    display: flex;
+    width: 10em;
+  }
+
+  .tekst_atlet1 {
+    width: 40%;
+    padding-left: 4%;
+
+  }
+
+  .brodtekst1 {
+    font-size: 1.2rem;
+    display: flex;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .atlet2 {
+    border-bottom: 1px solid black;
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    justify-content: space-between;
+  }
+
+  .billede_atlet2 {
+    height: auto;
+    display: flex;
+    width: 10em;
+    padding-right: 2%;
+  }
+
+  .tekst_atlet2 {
+    width: 40%;
+  }
+
+  .brodtekst2 {
+    font-size: 1.2rem;
+    display: flex;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 630px) {
+    #get_in_touch {
+      margin-bottom: 3%;
+      padding: 1%;
+    }
+
+    #tekst_touch {
+      margin-bottom: 5%;
+      margin-left: 8%;
+
+    }
+
+    #contact {
+      padding-left: 15%;
+      padding-right: 15%;
+      text-decoration: none;
+    }
+
+
+    h3 {
+      font-size: 2.1rem;
+      text-decoration: underline;
+    }
+
+    .billede_atlet1 {
+      height: auto;
+      display: flex;
+      width: 20em;
+    }
+
+    .atlet1 {
+      justify-content: space-around;
+    }
+
+    .brodtekst1 {
+      font-size: 2rem;
+      display: flex;
+      width: 100%;
+      margin-right: 10%;
+    }
+
+    .billede_atlet2 {
+      height: auto;
+      display: flex;
+      width: 20em;
+    }
+
+    .atlet2 {
+      justify-content: space-around;
+    }
+
+    .brodtekst2 {
+      font-size: 2rem;
+      display: flex;
+      width: 100%;
+      margin-right: 10%;
+    }
+  }
+
+  @media only screen and (min-width: 930px) {
+
+    h3 {
+      font-size: 2.6rem;
+      text-decoration: underline;
+    }
+
+    .brodtekst1 {
+      font-size: 2.5rem;
+    }
+
+    .billede_atlet2 {
+      height: auto;
+      display: flex;
+      width: 20em;
+    }
+
+    .brodtekst2 {
+      font-size: 2.5rem;
+      margin-right: 10%;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .brodtekst1 {
+      display: none;
+    }
+
+    .brodtekst2 {
+      display: none;
+    }
+
+    .atlet1 {
+      border-top: none;
+      border-bottom: none;
+    }
+
+    .atlet2 {
+      border-top: none;
+      border-bottom: none;
+    }
+
+    .billede_atlet1{
+
+    }
+
+    .billede_atlet2{
+
+    }
+
+
+  }
 }
