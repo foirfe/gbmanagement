@@ -109,14 +109,6 @@ body {
   width: 100%;
 }
 
-body a:hover {
-  cursor: url("../images/pointer.png"), auto;
-}
-
-video::-webkit-media-controls-panel:hover {
-  cursor: url("..images/pointer.png"), auto;
-}
-
 ol,
 ul {
   list-style: none;
@@ -298,5 +290,18 @@ header .gblogo {
 #page__athlete {
   background: #1a6988;
   background: linear-gradient(77deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
+}
+
+#page__athlete #contactgb {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-decoration: none;
+  background: red;
+  font-size: 2em;
+  padding: 3%;
+  position: relative;
+  left: 40%;
+  margin-top: 20%;
+  border-radius: 12px;
 }
 /*# sourceMappingURL=style.css.map */
