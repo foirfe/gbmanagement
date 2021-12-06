@@ -144,12 +144,20 @@ header .burgermenu {
   background-color: white;
 }
 
+header .burgermenu:hover {
+  cursor: pointer;
+}
+
 header .burgerikon {
   background: -webkit-linear-gradient(#0a0f3f, #1e8ba1);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2em;
+}
+
+header .burgerikon:hover {
+  cursor: pointer;
 }
 
 header .sidenav {
@@ -159,7 +167,7 @@ header .sidenav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #0f2753;
   overflow-x: hidden;
   padding-top: 60px;
   -webkit-transition: 0.5s;
@@ -167,7 +175,6 @@ header .sidenav {
 }
 
 header .sidenav a {
-  padding: 8px 8px 8px 32px;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
   font-size: 1.5em;
@@ -199,7 +206,6 @@ header .sidenav .closebtn {
 
 header .sidenav a,
 header .dropdown-btn {
-  padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   font-size: 1.5em;
@@ -211,6 +217,7 @@ header .dropdown-btn {
   text-align: left;
   cursor: pointer;
   outline: none;
+  padding: 4%;
 }
 
 header .sidenav a:hover,
@@ -219,14 +226,13 @@ header .dropdown-btn:hover {
 }
 
 header .active-sidebar {
-  background-color: #0044ff;
+  background-color: #14486f;
   color: white;
 }
 
 header .dropdown-container {
   display: none;
-  background-color: #002383;
-  padding-left: 8px;
+  background-color: #1a6988;
 }
 
 header .gblogo {
@@ -292,16 +298,35 @@ header .gblogo {
   background: linear-gradient(77deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
 }
 
+#page__athlete #athleteheader {
+  background-image: url(/images/placeholderheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50%;
+}
+
 #page__athlete #contactgb {
   font-family: "Oswald", sans-serif;
   color: white;
   text-decoration: none;
-  background: red;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fc0211), to(#fd0036));
+  background-image: linear-gradient(to bottom, #fc0211, #fd0036);
   font-size: 2em;
   padding: 3%;
   position: relative;
-  left: 40%;
-  margin-top: 20%;
+  top: 30%;
   border-radius: 12px;
+}
+
+#page__athlete #contactgb:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fc0211), to(#fd0036));
+  background-image: linear-gradient(to top, #fc0211, #fd0036);
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
