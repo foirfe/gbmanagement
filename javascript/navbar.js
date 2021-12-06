@@ -1,14 +1,14 @@
 // Function der åbner nav baren, og tilknyttet til burgermenuen//
 function openNav() {
     document.getElementById("mySidenav").style.width = "70%";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.querySelector("main").style.marginLeft = "250px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }
   
   // Function der lukker navbaren med at skifte width til 0, tilknyttet til X-et //
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    document.querySelector("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
   }
 

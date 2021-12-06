@@ -1,4 +1,5 @@
 header {
+  //Burgermenu og knap
   .burgermenu {
     display: inline;
     position: sticky;
@@ -20,6 +21,7 @@ header {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  //Her er sidenavigationen der åbnes med javascript function
   .sidenav {
     height: 100%;
     width: 0;
@@ -37,7 +39,7 @@ header {
     padding: 8px 8px 8px 32px;
     font-family: "Oswald", sans-serif;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5em;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -67,7 +69,7 @@ header {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-family: "Oswald", sans-serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
     color: #fff;
     display: block;
     border: none;
@@ -90,20 +92,39 @@ header {
 
   .dropdown-container {
     display: none;
-    background-color: #262626;
+    background-color: rgb(0, 35, 131);
     padding-left: 8px;
   }
   .gblogo {
     width: 50%;
   }
 
-  //Viewports Header og Navbar
-  @media screen and (min-height: 320px) {
+  //Viewports til Header og Navbar
+  @media screen and (min-width: 320px) {
+    .sidenav a,
+    .dropdown-btn {
+      font-size: 2.5em;
+    }
   }
   //Tablet
-  @media screen and (min-height: 720px) {
+  @media screen and (min-width: 720px) {
+    .burgermenu {
+      float: left;
+      -webkit-border-bottom-left-radius: 0px;
+      -moz-border-bottom-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      -webkit-border-top-left-radius: 0px;
+      -moz-border-top-left-radius: 0px;
+      border-top-left-radius: 0px;
+      -webkit-border-top-right-radius: 12px;
+      -moz-border-top-right-radius: 12px;
+      border-top-right-radius: 12px;
+      -webkit-border-bottom-right-radius: 12px;
+      -moz-border-bottom-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
   }
   //PC
-  @media screen and (min-height: 1080px) {
+  @media screen and (min-width: 1080px) {
   }
 }

@@ -176,7 +176,7 @@ header .sidenav a {
   padding: 8px 8px 8px 32px;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5em;
   color: #fff;
   display: block;
   -webkit-transition: 0.3s;
@@ -208,7 +208,7 @@ header .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
-  font-size: 2.5em;
+  font-size: 1.5em;
   color: #fff;
   display: block;
   border: none;
@@ -231,12 +231,33 @@ header .active-sidebar {
 
 header .dropdown-container {
   display: none;
-  background-color: #262626;
+  background-color: #002383;
   padding-left: 8px;
 }
 
 header .gblogo {
   width: 50%;
+}
+
+@media screen and (min-width: 320px) {
+  header .sidenav a,
+  header .dropdown-btn {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  header .burgermenu {
+    float: left;
+    -moz-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-top-right-radius: 12px;
+    border-top-right-radius: 12px;
+    -moz-border-bottom-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
 }
 
 #get_in_touch {
