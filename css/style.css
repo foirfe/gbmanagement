@@ -109,14 +109,6 @@ body {
   width: 100%;
 }
 
-body a:hover {
-  cursor: url("../images/pointer.png"), auto;
-}
-
-video::-webkit-media-controls-panel:hover {
-  cursor: url("..images/pointer.png"), auto;
-}
-
 ol,
 ul {
   list-style: none;
@@ -137,8 +129,9 @@ q:after {
 
 header .burgermenu {
   display: inline;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  right: 0%;
+  top: 20%;
   padding: 10% 5% 10% 2%;
   /* Webkit så det kan understøttes på andre browsere */
   -moz-border-bottom-left-radius: 12px;
@@ -148,7 +141,11 @@ header .burgermenu {
   border-top-left-radius: 12px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0 10px;
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
-  float: right;
+  background-color: white;
+}
+
+header .burgermenu:hover {
+  cursor: pointer;
 }
 
 header .burgerikon {
@@ -156,6 +153,11 @@ header .burgerikon {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 2em;
+}
+
+header .burgerikon:hover {
+  cursor: pointer;
 }
 
 header .sidenav {
@@ -165,7 +167,7 @@ header .sidenav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #0f2753;
   overflow-x: hidden;
   padding-top: 60px;
   -webkit-transition: 0.5s;
@@ -173,10 +175,9 @@ header .sidenav {
 }
 
 header .sidenav a {
-  padding: 8px 8px 8px 32px;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5em;
   color: #fff;
   display: block;
   -webkit-transition: 0.3s;
@@ -205,10 +206,9 @@ header .sidenav .closebtn {
 
 header .sidenav a,
 header .dropdown-btn {
-  padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
-  font-size: 2.5em;
+  font-size: 1.5em;
   color: #fff;
   display: block;
   border: none;
@@ -217,6 +217,7 @@ header .dropdown-btn {
   text-align: left;
   cursor: pointer;
   outline: none;
+  padding: 4%;
 }
 
 header .sidenav a:hover,
@@ -225,18 +226,62 @@ header .dropdown-btn:hover {
 }
 
 header .active-sidebar {
-  background-color: #0044ff;
+  background-color: #14486f;
   color: white;
 }
 
 header .dropdown-container {
   display: none;
-  background-color: #262626;
-  padding-left: 8px;
+  background-color: #1a6988;
 }
 
 header .gblogo {
-  width: 50%;
+  width: 20%;
+  position: absolute;
+  left: 2%;
+  top: 3%;
+}
+
+@media screen and (min-width: 320px) {
+  header .sidenav a,
+  header .dropdown-btn {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  header .burgermenu {
+    right: 92%;
+    -moz-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-top-right-radius: 12px;
+    border-top-right-radius: 12px;
+    -moz-border-bottom-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  header .burgerikon {
+    font-size: 3em;
+    margin-left: 60%;
+  }
+  header .gblogo {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  header .burgerikon {
+    font-size: 2.5em;
+    margin-left: 80%;
+  }
+  header .burgermenu {
+    padding: 5% 3% 5% 0%;
+    right: 96%;
+  }
+  header .gblogo {
+    width: 10%;
+  }
 }
 
 #get_in_touch {
@@ -246,5 +291,42 @@ header .gblogo {
   margin-left: 75%;
   margin-top: 50%;
   padding: 1%;
+}
+
+#page__athlete {
+  background: #1a6988;
+  background: linear-gradient(77deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
+}
+
+#page__athlete #athleteheader {
+  background-image: url(/images/placeholderheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50%;
+}
+
+#page__athlete #contactgb {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fc0211), to(#fd0036));
+  background-image: linear-gradient(to bottom, #fc0211, #fd0036);
+  font-size: 2em;
+  padding: 3%;
+  position: relative;
+  top: 30%;
+  border-radius: 12px;
+}
+
+#page__athlete #contactgb:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fc0211), to(#fd0036));
+  background-image: linear-gradient(to top, #fc0211, #fd0036);
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

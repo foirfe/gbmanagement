@@ -1,2 +1,43 @@
 #page__athlete {
+  background: rgb(26, 105, 136);
+  background: linear-gradient(
+    77deg,
+    rgba(26, 105, 136, 1) 0%,
+    rgba(20, 72, 111, 1) 35%,
+    rgba(15, 39, 83, 1) 100%
+  );
+  #athleteheader {
+    background-image: url(/images/placeholderheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50%;
+  }
+  #contactgb {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(252, 2, 17, 1),
+      rgba(253, 0, 54, 1)
+    );
+    font-size: 2em;
+    padding: 3%;
+    position: relative;
+    top: 30%;
+    border-radius: 12px;
+    &:hover {
+      background-image: linear-gradient(
+        to top,
+        rgba(252, 2, 17, 1),
+        rgba(253, 0, 54, 1)
+      );
+    }
+  }
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
