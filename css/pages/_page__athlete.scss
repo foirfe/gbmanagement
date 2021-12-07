@@ -11,6 +11,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 50%;
+    position: relative;
   }
   #contactgb {
     font-family: "Oswald", sans-serif;
@@ -21,10 +22,11 @@
       rgba(252, 2, 17, 1),
       rgba(253, 0, 54, 1)
     );
-    font-size: 2em;
+    font-size: 1em;
     padding: 3%;
-    position: relative;
-    top: 30%;
+    position: absolute;
+    top: 80%;
+    left: 1%;
     border-radius: 12px;
     &:hover {
       background-image: linear-gradient(
@@ -32,12 +34,76 @@
         rgba(252, 2, 17, 1),
         rgba(253, 0, 54, 1)
       );
+      transform: scale(1.02);
+      transition: transform 0.5s;
     }
   }
-}
 
-.btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #selectedresults {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 2em;
+      text-align: center;
+      margin: 2% 0 2% 0;
+    }
+  }
+  .selectyear {
+    margin-left: 2%;
+    span {
+      margin-right: 2%;
+    }
+    p {
+      text-align: right;
+      margin-right: 10%;
+      margin-bottom: 5%;
+    }
+    h3 {
+      margin: 2% 0 4% 1%;
+      font-size: 1.15em;
+      span::after {
+        content: "";
+        display: inline-block;
+        width: 60%;
+        height: 2px;
+        background: #fff;
+        right: -3%;
+        margin-bottom: 1%;
+        top: 2%;
+        position: relative;
+      }
+    }
+  }
+  .select1st {
+    color: #e1c747;
+  }
+
+  .select2nd {
+    color: #c0c0c0;
+  }
+
+  .select3rd {
+    color: #cd7f32;
+  }
+
+  //Viewports Athlete
+  @media screen and (min-width: 320px) {
+  }
+
+  //Tablet
+  @media screen and (min-width: 720px) {
+    #contactgb {
+      left: 80%;
+    }
+  }
+  //PC
+  @media screen and (min-width: 1080px) {
+  }
 }
