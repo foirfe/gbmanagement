@@ -1,5 +1,5 @@
-@media only screen and (min-width: 200px) {
-  body {
+@media only screen and (min-width: 1px) {
+  #page__aboutgb {
     width: 94%;
     margin: 0 auto;
   }
@@ -10,14 +10,15 @@
     padding-bottom: 8%;
     h1 {
       padding-top: 20%;
-      padding-bottom: 2.5%;
+      padding-bottom: 5%;
     }
     img {
-      width: 41%;
+      width: 33%;
       object-fit: contain;
     }
     p {
       width: 53%;
+      margin-top: 4%;
     }
     a {
       padding-top: 4%;
@@ -33,7 +34,7 @@
 
   #aboutme-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 8%;
     align-items: center;
   }
@@ -73,5 +74,90 @@
     margin: 0 auto;
     margin-top: 2.5%;
     justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 260px) {
+  #aboutme {
+    p {
+      margin-top: 0%;
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  #aboutme {
+    img {
+      width: 25%;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  #aboutme {
+    img {
+      width: 22%;
+    }
+  }
+
+  #aboutme-section {
+    margin-top: 2%;
+  }
+
+  #some {
+    width: 66%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #aboutme {
+    h1 {
+      padding-top: 16%;
+    }
+  }
+
+  #some {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #aboutme {
+    a {
+      padding-top: 3.5%;
+      padding-bottom: 3.5%;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+  #some {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #aboutme {
+    a {
+      padding-top: 2.5%;
+      padding-bottom: 2.5%;
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #some {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #some {
+    width: 30%;
+    img {
+      width: 16%;
+    }
   }
 }
