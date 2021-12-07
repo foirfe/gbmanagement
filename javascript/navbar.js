@@ -6,7 +6,7 @@ function openNav() {
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }
 else {
-    document.getElementById("mySidenav").style.width = "70%";
+    document.getElementById("mySidenav").style.width = "100%";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }
 }
