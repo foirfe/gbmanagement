@@ -1,24 +1,23 @@
 #page__index {
   background: rgb(26, 105, 136);
-  background: linear-gradient(
-    77deg,
-    rgba(26, 105, 136, 1) 0%,
-    rgba(20, 72, 111, 1) 35%,
-    rgba(15, 39, 83, 1) 100%
-  );
+  background: linear-gradient(77deg,
+      rgba(26, 105, 136, 1) 0%,
+      rgba(20, 72, 111, 1) 35%,
+      rgba(15, 39, 83, 1) 100%);
 
   #get_in_touch {
     font-size: 1.4rem;
     margin-left: 64%;
-    margin-top: -45%;
+    margin-top: -50%;
     margin-bottom: 3%;
     padding: 1%;
-    padding-top: 10em;
+    padding-top: 9em;
   }
 
   #tekst_touch {
-    margin-bottom: 5%;
+    margin-bottom: 9%;
     color: white;
+    font-family: "Oswald", sans-serif;
   }
 
   #contact {
@@ -27,15 +26,17 @@
     border-radius: 12px;
     color: white;
     justify-content: center;
-    padding: 2%;
-    padding-left: 17%;
-    padding-right: 17%;
+    padding-left: 14%;
+    padding-right: 14%;
     text-decoration: none;
     transition: transform .2s;
+    font-family: "Oswald", sans-serif;
+
+    padding-bottom: 5%;
   }
 
   #contact:hover {
-    transform:scale(1.2);
+    transform: scale(1.2);
   }
 
   .atlet1 {
@@ -45,6 +46,7 @@
     padding-top: 4%;
     padding-bottom: 4%;
     padding-left: 2%;
+    padding-right: 16%;
     justify-content: space-between;
   }
 
@@ -60,16 +62,12 @@
 
   }
 
-  .brodtekst1 {
-    font-size: 1.2rem;
-    display: flex;
-    width: 100%;
-    color: white;
-  }
 
   h3 {
     font-size: 1.3rem;
     color: white;
+    font-family: 'Bebas Neue', cursive;
+    max-width: 70%;
   }
 
   .atlet2 {
@@ -77,7 +75,8 @@
     display: flex;
     padding-top: 4%;
     padding-bottom: 4%;
-    padding-left: 2%;
+    padding-left: 3%;
+    padding-right: 5%;
     justify-content: space-between;
   }
 
@@ -92,17 +91,63 @@
     width: 40%;
   }
 
+  .brodtekst1 {
+    font-size: 1.2rem;
+    display: flex;
+    width: 100%;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
   .brodtekst2 {
     font-size: 1.2rem;
     display: flex;
     width: 100%;
     color: white;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  @media only screen and (min-width: 455px) {
+    #get_in_touch {
+      margin-bottom: 3%;
+      padding: 1%;
+      padding-top: 60%;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    .atlet1 {
+      justify-content: space-evenly;
+      padding-right: 6%;
+    }
+
+    .atlet2 {
+      justify-content: space-evenly;
+    }
+
+    .brodtekst1 {
+      font-size: 1.3rem;
+      display: flex;
+      width: 100%;
+      margin-right: 10%;
+    }
+
+    .brodtekst2 {
+      font-size: 1.3rem;
+      display: flex;
+      width: 100%;
+      margin-right: 10%;
+    }
+
   }
 
   @media only screen and (min-width: 630px) {
     #get_in_touch {
       margin-bottom: 3%;
       padding: 1%;
+      padding-top: 55%;
     }
 
     #tekst_touch {
@@ -119,7 +164,7 @@
 
     h3 {
       font-size: 2.1rem;
-      text-decoration: underline;
+    
     }
 
     .billede_atlet1 {
@@ -130,6 +175,8 @@
 
     .atlet1 {
       justify-content: space-around;
+      padding-left: 0%;
+      padding-right: 7%;
     }
 
     .brodtekst1 {
@@ -147,6 +194,8 @@
 
     .atlet2 {
       justify-content: space-around;
+      padding-left: 0%;
+      padding-right: 0%;
     }
 
     .brodtekst2 {
@@ -170,7 +219,6 @@
 
     h3 {
       font-size: 2.6rem;
-      text-decoration: underline;
       display: none;
     }
 
@@ -180,13 +228,11 @@
     }
 
     .billede_atlet1 {
-      height: auto;
       display: flex;
       width: 16em;
     }
 
     .billede_atlet2 {
-      height: auto;
       display: flex;
       width: 16em;
       margin-top: -6.8%;
@@ -196,15 +242,17 @@
       font-size: 2.5rem;
       margin-right: 10%;
       display: none;
-      
+
     }
 
     .atlet1 {
       border-top: none;
       border-bottom: none;
       width: 22%;
-      padding-left: 1%;
       display: block;
+      justify-content:space-between;
+      padding-top: 6%;
+      padding-right: 0%;
     }
 
     .atlet2 {
@@ -212,7 +260,8 @@
       border-bottom: none;
       display: block;
       width: 22%;
-      padding-left: 1%;
+      padding-top: 6%;
+      justify-content:space-between;
     }
 
     #atlet_flex {
@@ -225,19 +274,17 @@
 
   @media only screen and (min-width: 1300px) {
     .billede_atlet1 {
-     
       width: 23.5em;
     }
 
     .billede_atlet2 {
-      
       width: 23.5em;
       margin-top: -5.5%;
     }
 
   }
 
-  @media only screen and (min-width: 1500px){
+  @media only screen and (min-width: 1500px) {
     .billede_atlet1 {
       width: 25.3em;
     }
