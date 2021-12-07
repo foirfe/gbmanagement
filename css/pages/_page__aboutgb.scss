@@ -1,32 +1,41 @@
 @media only screen and (min-width: 200px) {
+  body {
+    width: 94%;
+    margin: 0 auto;
+  }
+
   #aboutme {
     text-align: center;
     border-bottom: 1px solid #000;
     padding-bottom: 8%;
     h1 {
       padding-top: 20%;
+      padding-bottom: 2.5%;
     }
     img {
-      width: 40%;
+      width: 41%;
       object-fit: contain;
     }
     p {
-      width: 50%;
-      padding-top: 2.5%;
+      width: 53%;
     }
     a {
-      padding: 4%;
+      padding-top: 4%;
+      padding-bottom: 4%;
+      padding-left: 12%;
+      padding-right: 12%;
       background-color: blue;
       text-decoration: none;
       color: #fff;
+      border-radius: 12px;
     }
   }
 
   #aboutme-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 8%;
-    padding-top: 4%;
+    align-items: center;
   }
 
   #values {
@@ -35,9 +44,7 @@
     padding-bottom: 6%;
     h1 {
       padding-top: 5%;
-    }
-    p {
-      padding-top: 2%;
+      padding-bottom: 2.5%;
     }
   }
 
@@ -47,9 +54,24 @@
     padding-bottom: 8%;
     h1 {
       padding-top: 5%;
+      padding-bottom: 2.5%;
+    }
+    p {
+      line-height: 1.25em;
     }
     h2 {
-      padding-top: 4%;
+      padding-top: 6%;
     }
+    img {
+      width: 20%;
+    }
+  }
+
+  #some {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    justify-content: space-between;
   }
 }
