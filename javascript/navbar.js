@@ -18,6 +18,7 @@ else {
 
   //Med hjælp fra W3Schools, functionen der giver et dropdown menu til atleter, når der bliver trykket på atleter.
   var dropdown = document.getElementsByClassName("dropdown-btn");
+  var arrow = document.getElementById("navarrow")
 var i;
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
@@ -25,8 +26,11 @@ for (i = 0; i < dropdown.length; i++) {
     var dropdownContent = this.nextElementSibling;
     if (dropdownContent.style.display === "block") {
       dropdownContent.style.display = "none";
+      arrow.innerHTML = "▼";
     } else {
       dropdownContent.style.display = "block";
+      arrow.innerHTML = "▲";
+     
     }
   });
 }

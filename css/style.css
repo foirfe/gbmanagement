@@ -228,7 +228,8 @@ header .dropdown-btn {
 }
 
 header .dropdown-btn span {
-  font-size: 1em;
+  font-size: 0.5em;
+  vertical-align: super;
 }
 
 header .sidenav a {
@@ -310,17 +311,24 @@ header .gblogo {
   }
 }
 
+#page__index {
+  background: #1a6988;
+  background: linear-gradient(77deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
+}
+
 #page__index #get_in_touch {
   font-size: 1.4rem;
   margin-left: 64%;
-  margin-top: -45%;
+  margin-top: -50%;
   margin-bottom: 3%;
   padding: 1%;
-  padding-top: 10em;
+  padding-top: 9em;
 }
 
 #page__index #tekst_touch {
-  margin-bottom: 5%;
+  margin-bottom: 9%;
+  color: white;
+  font-family: "Oswald", sans-serif;
 }
 
 #page__index #contact {
@@ -331,10 +339,20 @@ header .gblogo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2%;
-  padding-left: 17%;
-  padding-right: 17%;
+  padding-left: 14%;
+  padding-right: 14%;
   text-decoration: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 5%;
+}
+
+#page__index #contact:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #page__index .atlet1 {
@@ -346,6 +364,7 @@ header .gblogo {
   padding-top: 4%;
   padding-bottom: 4%;
   padding-left: 2%;
+  padding-right: 16%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -364,16 +383,11 @@ header .gblogo {
   padding-left: 4%;
 }
 
-#page__index .brodtekst1 {
-  font-size: 1.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
 #page__index h3 {
   font-size: 1.3rem;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  max-width: 70%;
 }
 
 #page__index .atlet2 {
@@ -383,7 +397,8 @@ header .gblogo {
   display: flex;
   padding-top: 4%;
   padding-bottom: 4%;
-  padding-left: 2%;
+  padding-left: 3%;
+  padding-right: 5%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -402,18 +417,69 @@ header .gblogo {
   width: 40%;
 }
 
+#page__index .brodtekst1 {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+}
+
 #page__index .brodtekst2 {
   font-size: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+@media only screen and (min-width: 455px) {
+  #page__index #get_in_touch {
+    margin-bottom: 3%;
+    padding: 1%;
+    padding-top: 60%;
+  }
+  #page__index h3 {
+    font-size: 2rem;
+  }
+  #page__index .atlet1 {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-right: 6%;
+  }
+  #page__index .atlet2 {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #page__index .brodtekst1 {
+    font-size: 1.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-right: 10%;
+  }
+  #page__index .brodtekst2 {
+    font-size: 1.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-right: 10%;
+  }
 }
 
 @media only screen and (min-width: 630px) {
   #page__index #get_in_touch {
     margin-bottom: 3%;
     padding: 1%;
+    padding-top: 55%;
   }
   #page__index #tekst_touch {
     margin-bottom: 5%;
@@ -425,7 +491,6 @@ header .gblogo {
   }
   #page__index h3 {
     font-size: 2.1rem;
-    text-decoration: underline;
   }
   #page__index .billede_atlet1 {
     height: auto;
@@ -437,6 +502,8 @@ header .gblogo {
   #page__index .atlet1 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-left: 0%;
+    padding-right: 7%;
   }
   #page__index .brodtekst1 {
     font-size: 2rem;
@@ -456,6 +523,8 @@ header .gblogo {
   #page__index .atlet2 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-left: 0%;
+    padding-right: 0%;
   }
   #page__index .brodtekst2 {
     font-size: 2rem;
@@ -469,66 +538,87 @@ header .gblogo {
 
 @media only screen and (min-width: 930px) {
   #page__index #get_in_touch {
-    padding-top: 20em;
+    padding-top: 45em;
+    position: absolute;
+    width: 23%;
+    margin-right: 55%;
+    margin-left: 45%;
+    display: none;
   }
   #page__index h3 {
     font-size: 2.6rem;
-    text-decoration: underline;
     display: none;
   }
   #page__index .brodtekst1 {
     font-size: 2.5rem;
+    display: none;
   }
-  #page__index .billede_atlet2 {
-    height: auto;
+  #page__index .billede_atlet1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 20em;
+    width: 16em;
+  }
+  #page__index .billede_atlet2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16em;
+    margin-top: -6.8%;
   }
   #page__index .brodtekst2 {
     font-size: 2.5rem;
     margin-right: 10%;
+    display: none;
   }
   #page__index .atlet1 {
     border-top: none;
     border-bottom: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 24%;
+    width: 22%;
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 6%;
+    padding-right: 0%;
   }
   #page__index .atlet2 {
     border-top: none;
     border-bottom: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 24%;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  #page__index .brodtekst1 {
-    display: none;
-  }
-  #page__index .brodtekst2 {
-    display: none;
-  }
-  #page__index .atlet1 {
     display: block;
-  }
-  #page__index .atlet2 {
-    display: block;
+    width: 22%;
+    padding-top: 6%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   #page__index #atlet_flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    padding-top: 7%;
+    margin-left: 4%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #page__index .billede_atlet1 {
+    width: 23.5em;
+  }
+  #page__index .billede_atlet2 {
+    width: 23.5em;
+    margin-top: -5.5%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #page__index .billede_atlet1 {
+    width: 25.3em;
+  }
+  #page__index .billede_atlet2 {
+    width: 25.3em;
+    margin-top: -4.1%;
   }
 }
 
@@ -546,7 +636,6 @@ header .gblogo {
 }
 
 #page__athlete #athleteheader #someathlete {
-  margin-left: 2%;
   z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,6 +705,107 @@ header .gblogo {
   /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+
+#page__athlete .bioslides {
+  display: none;
+}
+
+#page__athlete .selectors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#page__athlete .prev,
+#page__athlete .next {
+  font-size: 2em;
+  cursor: pointer;
+  width: auto;
+  font-weight: bold;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #1a6988;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(15, 39, 83, 0.5);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#page__athlete .dot-container {
+  margin-top: 2%;
+  text-align: center;
+  padding: 2%;
+}
+
+#page__athlete .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+#page__athlete .activedot,
+#page__athlete .dot:hover {
+  background: #1a6988;
+  background: linear-gradient(77deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
+}
+
+#page__athlete #bio {
+  margin-top: 2%;
+}
+
+#page__athlete #bio .biocontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#page__athlete #bio .bio1 {
+  width: 32%;
+  background: white;
+  padding: 2% 4% 2% 10%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#page__athlete #bio .bio1 h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2em;
+}
+
+#page__athlete #bio .bio1 p {
+  font-family: "Rajdhani", sans-serif;
+}
+
+#page__athlete #bio .bio2 {
+  width: 50%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#page__athlete #bio img {
+  width: 100%;
 }
 
 #page__athlete #selectedresults {
@@ -688,20 +878,25 @@ header .gblogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #page__athlete #someengagement .somebox1 {
   background: white;
-  width: 50%;
-  padding-left: 5%;
-  padding-top: 2%;
+  width: 34%;
+  padding: 2% 3% 5% 5%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 #page__athlete #someengagement .somebox1 h3 {
   font-family: "Bebas Neue", cursive;
   color: #04142d;
   font-size: 2em;
-  text-align: center;
 }
 
 #page__athlete #someengagement .somebox1 p {
@@ -721,11 +916,36 @@ header .gblogo {
 #page__athlete #someengagement .somebox2 {
   background: #154d72;
   background: linear-gradient(43deg, #154d72 0%, #0b0f3e 100%);
-  width: 50%;
+  padding: 2% 5% 5% 3%;
+  width: 34%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#page__athlete #someengagement .someengagementicons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+#page__athlete #someengagement .someengagementicons span {
+  background: #e0e9ee;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e0e9ee), to(#a9ced6));
+  background: linear-gradient(0deg, #e0e9ee 0%, #a9ced6 100%);
+}
+
+#page__athlete #someengagement .someengagementicons a {
+  width: 15%;
 }
 
 #page__athlete #someengagement .someengagementicons img {
-  width: 10%;
+  width: 100%;
 }
 
 @media screen and (min-width: 720px) {
@@ -746,15 +966,16 @@ header .gblogo {
   }
   #aboutme h1 {
     padding-top: 20%;
-    padding-bottom: 2.5%;
+    padding-bottom: 5%;
   }
   #aboutme img {
-    width: 41%;
+    width: 33%;
     -o-object-fit: contain;
        object-fit: contain;
   }
   #aboutme p {
     width: 53%;
+    margin-top: 4%;
   }
   #aboutme a {
     padding-top: 4%;
@@ -770,9 +991,8 @@ header .gblogo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-bottom: 8%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -815,6 +1035,75 @@ header .gblogo {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 260px) {
+  #aboutme p {
+    margin-top: 0%;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  #aboutme img {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  #aboutme img {
+    width: 22%;
+  }
+  #aboutme-section {
+    margin-top: 2%;
+  }
+  #some {
+    width: 66%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #aboutme h1 {
+    padding-top: 16%;
+  }
+  #some {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #aboutme a {
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #some {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #aboutme a {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #some {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #some {
+    width: 30%;
+  }
+  #some img {
+    width: 16%;
   }
 }
 /*# sourceMappingURL=style.css.map */

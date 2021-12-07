@@ -28,7 +28,6 @@
           box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         }
       }
-      margin-left: 2%;
       z-index: -1;
       display: flex;
       flex-direction: column;
@@ -76,6 +75,85 @@
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+  }
+  .bioslides {
+    display: none;
+  }
+  .selectors {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .prev,
+  .next {
+    font-size: 2em;
+    cursor: pointer;
+    width: auto;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(26, 105, 136, 1);
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(15, 39, 83, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+  }
+  .dot-container {
+    margin-top: 2%;
+    text-align: center;
+    padding: 2%;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .activedot,
+  .dot:hover {
+    background: rgb(26, 105, 136);
+    background: linear-gradient(
+      77deg,
+      rgba(26, 105, 136, 1) 0%,
+      rgba(20, 72, 111, 1) 35%,
+      rgba(15, 39, 83, 1) 100%
+    );
+  }
+  #bio {
+    margin-top: 2%;
+    .biocontainer {
+      display: flex;
+      justify-content: center;
+    }
+    .bio1 {
+      width: 32%;
+      background: white;
+      padding: 2% 4% 2% 10%;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+      h2 {
+        font-family: "Bebas Neue", cursive;
+        font-size: 2em;
+      }
+      p {
+        font-family: "Rajdhani", sans-serif;
+      }
+    }
+    .bio2 {
+      width: 50%;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+    img {
+      width: 100%;
+    }
   }
 
   #selectedresults {
@@ -138,17 +216,19 @@
   #someengagement {
     .somebox {
       display: flex;
+      justify-content: center;
     }
     .somebox1 {
       background: white;
-      width: 50%;
-      padding-left: 5%;
-      padding-top: 2%;
+      width: 34%;
+      padding: 2% 3% 5% 5%;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
       h3 {
         font-family: "Bebas Neue", cursive;
         color: #04142d;
         font-size: 2em;
-        text-align: center;
       }
       p {
         font-family: "Rajdhani", sans-serif;
@@ -169,12 +249,30 @@
         rgba(21, 77, 114, 1) 0%,
         rgba(11, 15, 62, 1) 100%
       );
-      width: 50%;
+      padding: 2% 5% 5% 3%;
+      width: 34%;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     }
 
     .someengagementicons {
+      display: flex;
+      align-items: center;
+      margin-top: 5%;
+      span {
+        background: rgb(224, 233, 238);
+        background: linear-gradient(
+          0deg,
+          rgba(224, 233, 238, 1) 0%,
+          rgba(169, 206, 214, 1) 100%
+        );
+      }
+      a {
+        width: 15%;
+      }
       img {
-        width: 10%;
+        width: 100%;
       }
     }
   }

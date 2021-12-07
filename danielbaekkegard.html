@@ -27,7 +27,9 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
             >&times;</a
           >
-          <button class="dropdown-btn">ATHLETES<span>▼</span></button>
+          <button class="dropdown-btn">
+            <span id="navarrow">▼</span>ATHLETES
+          </button>
           <div class="dropdown-container">
             <a href="#">Anne Reischmann</a>
             <a href="danielbaekkegard.html">Daniel Bækkegård</a>
@@ -68,15 +70,62 @@
           </div>
           <a href="mailto:your@email.com" id="contactgb">CONTACT GB</a>
         </section>
+        <!-- BIO -->
         <section id="bio">
           <div class="biocontainer">
-            <h2>Bio</h2>
-            <p>
-              Daniel Bækkegård is a 25-year-old professional triathlete. 2019
-              was Daniel's first year as a professional triathlete. Despite his
-              young age and inexperience on the full distance, he managed to
-              take the sport by storm.
-            </p>
+            <div class="bio1">
+              <div class="bioslides">
+                <h2>Bio</h2>
+                <p>
+                  Daniel Bækkegård is a 25-year-old professional triathlete.
+                  2019 was Daniel's first year as a professional triathlete.
+                  Despite his young age and inexperience on the full distance,
+                  he managed to take the sport by storm.
+                </p>
+              </div>
+              <div class="bioslides">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  esse quo ab neque laboriosam rem tenetur corrupti nam sapiente
+                  voluptatem dolorem possimus, dicta alias delectus nulla,
+                  maiores facilis autem reiciendis.
+                </p>
+              </div>
+              <div class="bioslides">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                  harum autem minima. Excepturi a voluptas autem tenetur
+                  molestiae labore minima enim nemo quis sequi quidem eveniet
+                  corporis aperiam, ab at?
+                </p>
+              </div>
+              <div class="bioslides">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Laborum inventore saepe illo, neque reiciendis, quam omnis
+                  consectetur magnam exercitationem ipsam harum ratione dolorem
+                  nemo ut. Dolores reiciendis iste voluptate sint?
+                </p>
+              </div>
+              <div class="selectors">
+                <a class="prev" onclick="plusSlides(-1)">&#9664;</a>
+
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <a class="next" onclick="plusSlides(1)">&#9654;</a>
+              </div>
+            </div>
+
+            <div class="bio2">
+              <img
+                src="images/biopicdanielbaekkegaard.png"
+                alt="Daniel Bækkegård"
+              />
+            </div>
           </div>
         </section>
         <!--SELECTED RESULTS-->
@@ -162,5 +211,6 @@
       </article>
     </main>
     <script src="javascript/navbar.js"></script>
+    <script src="javascript/atlet.js"></script>
   </body>
 </html>
