@@ -1,91 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Rajdhani&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>GB Management</title>
+  </head>
 
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Rajdhani&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>GB Management</title>
-</head>
-
-<body>
-  <header>
-    <a href="index.html">
-      <img src="images/gblogo.png" alt="GB Management" class="gblogo" />
-    </a>
-    <nav>
-      <div onclick="openNav()" class="burgermenu">
-        <span class="burgerikon">&#9776;</span>
-      </div>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <button class="dropdown-btn">ATHLETES</button>
-        <div class="dropdown-container">
-          <a href="#">Anne Reischmann</a>
-          <a href="danielbaekkegard.html">Daniel Bækkegård</a>
-          <a href="#">Florian Angert</a>
-          <a href="#">Kristian Høgenhaug</a>
-
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="images/gblogo.png" alt="GB Management" class="gblogo" />
+      </a>
+      <nav>
+        <div onclick="openNav()" class="burgermenu">
+          <span class="burgerikon">&#9776;</span>
         </div>
-        <a href="aboutgb.html">ABOUT GB</a>
-        <a href="brandactivation.html">BRAND ACTIVATION</a>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <button class="dropdown-btn">ATHLETES</button>
+          <div class="dropdown-container">
+            <a href="#">Anne Reischmann</a>
+            <a href="danielbaekkegard.html">Daniel Bækkegård</a>
+            <a href="#">Florian Angert</a>
+            <a href="#">Kristian Høgenhaug</a>
+          </div>
+          <a href="aboutgb.html">ABOUT GB</a>
+          <a href="brandactivation.html">BRAND ACTIVATION</a>
+        </div>
+      </nav>
+    </header>
+    <main id="page__index">
+      <div id="get_in_touch">
+        <p id="tekst_touch">Get in touch</p>
+        <a href="aboutgb.html" id="contact">Contact</a>
       </div>
-    </nav>
-  </header>
-  <main id="page__index">
-    <div id="get_in_touch">
-      <p id="tekst_touch">Get in touch</p>
-      <a href="aboutgb.html" id="contact">Contact</a>
-    </div>
 
-    <div id="atlet_flex">
-    
+      <div id="atlet_flex">
+        <div class="atlet1">
+          <img
+            class="billede_atlet1"
+            src="images/atlet.jfif"
+            alt="billede af atlet"
+          />
+          <div class="tekst_atlet1">
+            <h3>Kristian Høgenhaug</h3>
+            <br />
+            <p class="brodtekst1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos,
+              architecto quidem dolor dolor sit amet consectetur, adipisicing
+              elit.
+            </p>
+          </div>
+        </div>
 
-    <div class="atlet1">
-      <img class="billede_atlet1" src="images/atlet.jfif" alt="billede af atlet">
-      <div class="tekst_atlet1">
-        <h3>Kristian Høgenhaug</h3><br>
-        <p class="brodtekst1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, architecto quidem dolor dolor
-          sit amet consectetur, adipisicing elit.</p>
+        <div class="atlet2">
+          <div class="tekst_atlet2">
+            <h3>Fllorian Angert</h3>
+            <br />
+            <p class="brodtekst2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos,
+              architecto quidem dolor dolor sit amet consectetur, adipisicing
+              elit.
+            </p>
+          </div>
+          <img
+            class="billede_atlet2"
+            src="images/atlet.jfif"
+            alt="billede af atlet"
+          />
+        </div>
+
+        <div class="atlet1">
+          <img
+            class="billede_atlet1"
+            src="images/atlet.jfif"
+            alt="billede af atlet"
+          />
+          <div class="tekst_atlet1">
+            <h3>Daniel Bækkegård</h3>
+            <br />
+            <p class="brodtekst1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos,
+              architecto quidem dolor dolor sit amet consectetur, adipisicing
+              elit.
+            </p>
+          </div>
+        </div>
+
+        <div class="atlet2">
+          <div class="tekst_atlet2">
+            <h3>Anne Reischmann</h3>
+            <br />
+            <p class="brodtekst2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos,
+              architecto quidem dolor dolor sit amet consectetur, adipisicing
+              elit.
+            </p>
+          </div>
+          <img
+            class="billede_atlet2"
+            src="images/atlet.jfif"
+            alt="billede af atlet"
+          />
+        </div>
       </div>
-    </div>
+    </main>
 
-    <div class="atlet2">
-      <div class="tekst_atlet2">
-        <h3>Fllorian Angert</h3><br>
-        <p class="brodtekst2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, architecto quidem dolor dolor
-          sit amet consectetur, adipisicing elit.</p>
-      </div><img class="billede_atlet2" src="images/atlet.jfif" alt="billede af atlet">
-    </div>
-
-    <div class="atlet1">
-      <img class="billede_atlet1" src="images/atlet.jfif" alt="billede af atlet">
-      <div class="tekst_atlet1">
-        <h3>Daniel Bækkegård</h3><br>
-        <p class="brodtekst1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, architecto quidem dolor dolor
-          sit amet consectetur, adipisicing elit.</p>
-      </div>
-    </div>
-
-    <div class="atlet2">
-      <div class="tekst_atlet2">
-        <h3>Anne Reischmann</h3><br>
-        <p class="brodtekst2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, architecto quidem dolor dolor
-          sit amet consectetur, adipisicing elit.</p>
-      </div><img class="billede_atlet2" src="images/atlet.jfif" alt="billede af atlet">
-    </div>
-  </div>
-
-
-  </main>
-
-  <script src="javascript/navbar.js"></script>
-</body>
-
+    <script src="javascript/navbar.js"></script>
+  </body>
 </html>

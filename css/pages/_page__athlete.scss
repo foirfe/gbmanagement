@@ -7,11 +7,44 @@
     rgba(15, 39, 83, 1) 100%
   );
   #athleteheader {
-    background-image: url(/images/placeholderheader.jpg);
+    background-image: url(../images/placeholderheader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 50%;
     position: relative;
+    #someathlete {
+      h3 {
+        display: inline;
+        font-family: "Oswald", sans-serif;
+        color: #04142d;
+        font-size: 1.25em;
+        span {
+          background: rgb(224, 233, 238);
+          background: linear-gradient(
+            0deg,
+            rgba(224, 233, 238, 1) 0%,
+            rgba(169, 206, 214, 1) 100%
+          );
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+      }
+      margin-left: 2%;
+      z-index: -1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      right: 25%;
+      top: 70%;
+      a {
+        width: 10%;
+        text-align: center;
+        margin: 1% 0 1% 0;
+      }
+      img {
+        width: 90%;
+        margin: 2% 0 2% 0;
+      }
+    }
   }
   #contactgb {
     font-family: "Oswald", sans-serif;
@@ -25,8 +58,8 @@
     font-size: 1em;
     padding: 3%;
     position: absolute;
-    top: 80%;
-    left: 1%;
+    top: 2%;
+    left: 76%;
     border-radius: 12px;
     &:hover {
       background-image: linear-gradient(
@@ -83,16 +116,68 @@
   }
   .select1st {
     color: #e1c747;
+    font-weight: bold;
+    font-size: 1.15em;
   }
 
   .select2nd {
     color: #c0c0c0;
+    font-weight: bold;
+    font-size: 1.15em;
   }
 
   .select3rd {
     color: #cd7f32;
+    font-weight: bold;
+    font-size: 1.15em;
   }
+  .selectother {
+    font-weight: bold;
+    font-size: 1.15em;
+  }
+  #someengagement {
+    .somebox {
+      display: flex;
+    }
+    .somebox1 {
+      background: white;
+      width: 50%;
+      padding-left: 5%;
+      padding-top: 2%;
+      h3 {
+        font-family: "Bebas Neue", cursive;
+        color: #04142d;
+        font-size: 2em;
+        text-align: center;
+      }
+      p {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 1.25em;
+        .somehighlight {
+          color: #04142d;
+          font-weight: bold;
+        }
+        .someunderline {
+          text-decoration: underline;
+        }
+      }
+    }
+    .somebox2 {
+      background: rgb(21, 77, 114);
+      background: linear-gradient(
+        43deg,
+        rgba(21, 77, 114, 1) 0%,
+        rgba(11, 15, 62, 1) 100%
+      );
+      width: 50%;
+    }
 
+    .someengagementicons {
+      img {
+        width: 10%;
+      }
+    }
+  }
   //Viewports Athlete
   @media screen and (min-width: 320px) {
   }
