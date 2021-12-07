@@ -62,7 +62,8 @@ header {
     position: absolute;
     right: 0.02%;
     top: 0;
-    font-size: 3em;
+    font-size: 4em;
+    margin-bottom: 10%;
   }
 
   @media screen and (max-height: 450px) {
@@ -90,10 +91,15 @@ header {
     padding: 0 4% 2% 0;
   }
   .dropdown-btn {
-    padding-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    span {
+      font-size: 1em;
+    }
   }
   .sidenav a {
-    width: 98%;
+    width: 96%;
+    margin-bottom: 3%;
   }
   .sidenav a:hover,
   .dropdown-btn:hover {
@@ -113,7 +119,7 @@ header {
     width: 20%;
     position: absolute;
     left: 2%;
-    top: 3%;
+    top: 1%;
     z-index: 1;
   }
 
