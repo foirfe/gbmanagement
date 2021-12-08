@@ -6,6 +6,7 @@
     rgba(20, 72, 111, 1) 35%,
     rgba(15, 39, 83, 1) 100%
   );
+  //ATHLETE HEADER
   #athleteheader {
     background-image: url(../images/placeholderheader.jpg);
     background-repeat: no-repeat;
@@ -29,9 +30,10 @@
         }
       }
       z-index: -1;
+      padding-left: 2%;
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 98%;
       right: 25%;
       top: 70%;
       a {
@@ -76,38 +78,34 @@
     color: #fff;
     text-decoration: none;
   }
+
+  //BIO SLIDES
   .bioslides {
     display: none;
   }
   .selectors {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
   }
   .prev,
   .next {
     font-size: 2em;
     cursor: pointer;
-    width: auto;
     font-weight: bold;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgba(26, 105, 136, 1);
-    color: transparent;
-    text-shadow: 2px 2px 3px rgba(15, 39, 83, 0.5);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+    color: rgba(15, 39, 83, 1);
   }
   .dot-container {
+    width: 73%;
     margin-top: 2%;
     text-align: center;
     padding: 2%;
   }
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 3px;
+    width: 3px;
     margin: 0 2px;
     background-color: #bbb;
     display: inline-block;
@@ -123,16 +121,20 @@
       rgba(15, 39, 83, 1) 100%
     );
   }
+  //BIO
   #bio {
-    margin-top: 2%;
+    margin-top: 12%;
     .biocontainer {
       display: flex;
       justify-content: center;
     }
     .bio1 {
-      width: 32%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 37%;
       background: white;
-      padding: 2% 4% 2% 10%;
+      padding: 2% 4% 2% 5%;
       border-top-left-radius: 12px;
       border-bottom-left-radius: 12px;
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -146,17 +148,21 @@
       }
     }
     .bio2 {
-      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      width: 40%;
       border-top-right-radius: 12px;
       border-bottom-right-radius: 12px;
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     }
     img {
+      position: relative;
       width: 100%;
     }
   }
-
+  //SELECTED RESULTS
   #selectedresults {
+    margin: 12% 0 0 0;
     color: white;
     font-family: "Oswald", sans-serif;
     h2 {
@@ -213,7 +219,10 @@
     font-weight: bold;
     font-size: 1.15em;
   }
+
+  //SOME ENGAGEMENT
   #someengagement {
+    margin: 12% 0 0 0;
     .somebox {
       display: flex;
       justify-content: center;
@@ -228,7 +237,7 @@
       h3 {
         font-family: "Bebas Neue", cursive;
         color: #04142d;
-        font-size: 2em;
+        font-size: 1.5em;
       }
       p {
         font-family: "Rajdhani", sans-serif;
@@ -249,25 +258,46 @@
         rgba(21, 77, 114, 1) 0%,
         rgba(11, 15, 62, 1) 100%
       );
-      padding: 2% 5% 5% 3%;
+      padding: 2% 5% 0% 3%;
       width: 34%;
       border-top-right-radius: 12px;
       border-bottom-right-radius: 12px;
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      color: white;
+      font-family: "Bebas Neue", cursive;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 1.75em;
+      .athletefollowers {
+        padding: 20% 0 0 0;
+        width: 75%;
+
+        .instagramlogo {
+          width: 40%;
+        }
+      }
+      .athleteengagementrate {
+        width: 75%;
+
+        .engagementrate {
+          width: 40%;
+        }
+      }
+      .somemobile {
+        display: flex;
+        align-items: flex-end;
+        img {
+          width: 100%;
+        }
+      }
     }
 
     .someengagementicons {
       display: flex;
       align-items: center;
+      justify-content: space-evenly;
       margin-top: 5%;
-      span {
-        background: rgb(224, 233, 238);
-        background: linear-gradient(
-          0deg,
-          rgba(224, 233, 238, 1) 0%,
-          rgba(169, 206, 214, 1) 100%
-        );
-      }
       a {
         width: 15%;
       }
@@ -276,6 +306,232 @@
       }
     }
   }
+
+  #partners {
+    background-color: white;
+    margin: 12% 0 0 0;
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 2em;
+      text-align: center;
+      padding: 3% 0% 3% 0;
+    }
+  }
+  #gallery {
+    margin: 12% 0 20% 0;
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 2em;
+      text-align: center;
+      margin: 2% 0 2% 0;
+      color: white;
+    }
+  }
+
+  $animationSpeed: 30s;
+
+  // Animation for slideren
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 14));
+    }
+  }
+
+  // Partner Slider
+  .slider {
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+    }
+
+    &::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+    }
+
+    .slide-track {
+      animation: scroll $animationSpeed linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+    }
+
+    .slide {
+      height: auto;
+      width: 100%;
+    }
+  }
+  //GALLERY CAROUSEL
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery-container {
+    align-items: center;
+    display: flex;
+    margin: 50% auto;
+    max-width: 1000px;
+    position: relative;
+  }
+
+  .gallery-item {
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 150px;
+    z-index: 0;
+  }
+
+  .gallery-item-1 {
+    left: 20%;
+    opacity: 0.4;
+    transform: translateX(-50%);
+  }
+
+  .gallery-item-2,
+  .gallery-item-4 {
+    height: auto;
+    opacity: 1;
+    width: 25%;
+    z-index: 1;
+  }
+
+  .gallery-item-2 {
+    left: 20%;
+    transform: translateX(-50%);
+  }
+
+  .gallery-item-3 {
+    height: auto;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    z-index: 2;
+  }
+
+  .gallery-item-4 {
+    left: 80%;
+    transform: translateX(-50%);
+  }
+
+  .gallery-item-5 {
+    left: 75%;
+    opacity: 0.4;
+    transform: translateX(-50%);
+  }
+
+  .gallery-controls {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10%;
+  }
+
+  .gallery-controls button {
+    background: rgb(26, 105, 136);
+    background: linear-gradient(
+      315deg,
+      rgba(26, 105, 136, 1) 0%,
+      rgba(20, 72, 111, 1) 35%,
+      rgba(15, 39, 83, 1) 100%
+    );
+    border: 0;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 2% 5% 2% 5%;
+    box-shadow: rgb(0, 0, 0/ 56%) 2px 4px 10px 1px;
+  }
+
+  .gallery-controls button:focus {
+    outline: none;
+  }
+
+  .gallery-controls-previous {
+    position: relative;
+  }
+
+  .gallery-controls-previous::before {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    left: -10px;
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 4px;
+  }
+
+  .gallery-controls-previous:hover::before {
+    left: -18px;
+  }
+
+  .gallery-controls-next {
+    position: relative;
+  }
+
+  .gallery-controls-next::before {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    padding: 2px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: right 0.15s ease-in-out;
+    width: 4px;
+  }
+
+  .gallery-controls-next:hover::before {
+    right: -18px;
+  }
+
+  .gallery-nav {
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .gallery-nav li {
+    background: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+  }
+
+  .gallery-nav li.gallery-item-selected {
+    background: #555;
+  }
+
   //Viewports Athlete
   @media screen and (min-width: 320px) {
   }

@@ -26,7 +26,7 @@ for (i = 0; i < dropdown.length; i++) {
     var dropdownContent = this.nextElementSibling;
     if (dropdownContent.style.display === "block") {
       dropdownContent.style.display = "none";
-      arrow.innerHTML = "▼";
+      arrow.innerHTML = "▼"; //Tilføjer en pil op og ned efter om boxen er åben eller lukket.
     } else {
       dropdownContent.style.display = "block";
       arrow.innerHTML = "▲";
