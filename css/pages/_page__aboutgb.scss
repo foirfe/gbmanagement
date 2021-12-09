@@ -136,9 +136,13 @@
 
 @media only screen and (min-width: 260px) {
   #aboutme {
+    padding-bottom: 9%;
     p {
       margin-top: 0%;
     }
+  }
+  #aboutme-section {
+    margin-bottom: 10%;
   }
 }
 
@@ -152,6 +156,13 @@
 
 @media only screen and (min-width: 400px) {
   #aboutme {
+      padding-bottom: 8%;
+      p {
+        margin-top: 0%;
+      }
+    #aboutme-section {
+      margin-bottom: 8%;
+    }
     img {
       width: 22%;
     }
@@ -199,6 +210,13 @@
 
 @media only screen and (min-width: 600px) {
   #aboutme {
+      padding-bottom: 6%;
+      p {
+        margin-top: 0%;
+      }
+    #aboutme-section {
+      margin-bottom: 6%;
+    }
     #email {
       padding-top: 1.8%;
       padding-bottom: 1.8%;
@@ -234,7 +252,17 @@
 }
 
 @media only screen and (min-width: 960px) {
+  #page__aboutgb {
+    p {
+    line-height: 1.2em;
+    }
+  }
+    
   #aboutme {
+    padding-bottom: 4%;
+    #aboutme-section {
+      margin-bottom: 5%;
+    }
     #email {
       padding-top: 1.4%;
       padding-bottom: 1.4%;
