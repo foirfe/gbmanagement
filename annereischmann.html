@@ -20,8 +20,10 @@
         <img src="images/gblogo.png" alt="GB Management" class="gblogo" />
       </a>
       <nav>
-        <div onclick="openNav()" class="burgermenu">
-          <span class="burgerikon">&#9776;</span>
+        <div onclick="openNav()" class="burgermenu" id="burgermenu">
+          <span class="burgerikon" onclick="openNav()" id="burgerikon"
+            >&#9776;</span
+          >
         </div>
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
@@ -45,6 +47,7 @@
       <article>
         <!-- ATHLETE HEADER-->
         <section id="athleteheader">
+          <h1 class="athleteheadertext">ANNE REISCHMANN</h1>
           <div id="someathlete">
             <a href="https://www.instagram.com/anne_reischmann"
               ><img
@@ -138,35 +141,42 @@
         <!--SELECTED RESULTS-->
         <section id="selectedresults">
           <h2>Selected Results</h2>
-          <div id="select2021" class="selectyear">
-            <h3><span>2021</span></h3>
-            <p>
-              <span class="select1st">1st</span>Ironman 70.3 Les Sables d'Olonne
-            </p>
-            <p><span class="select2nd">2nd</span>Ironman 70.3 Zell am See</p>
-            <p><span class="select3rd">3rd</span>Ironman 70.3 Rapperswil</p>
-            <p>
-              <span class="selectother">10th</span>Ironman 70.3 World
-              Championship St. George
-            </p>
-          </div>
-          <div id="select2020" class="selectyear">
-            <h3><span>2020</span></h3>
-            <p>
-              <span class="selectother">5th</span>Pushing Limits Race Ratingen
-            </p>
-          </div>
-          <div id="select2019" class="selectyear">
-            <h3><span>2019</span></h3>
-            <p>
-              <span class="select2nd">2nd</span>Ironman 70.3 Les Sables d'Olonne
-            </p>
-            <p><span class="selectother">4th</span>Ironman 70.3 Rapperswil</p>
-            <p><span class="selectother">4th</span>Ironman 70.3 Pays d'Aix</p>
-            <p>
-              <span class="selectother">20th</span>Ironman 70.3 World
-              Championship Nice
-            </p>
+          <div class="selectedresultsflex">
+            <div id="select2021" class="selectyear">
+              <h3><span>2021</span></h3>
+              <div class="selectedresultline"></div>
+              <p>
+                <span class="select1st">1st</span>Ironman 70.3 Les Sables
+                d'Olonne
+              </p>
+              <p><span class="select2nd">2nd</span>Ironman 70.3 Zell am See</p>
+              <p><span class="select3rd">3rd</span>Ironman 70.3 Rapperswil</p>
+              <p>
+                <span class="selectother">10th</span>Ironman 70.3 World
+                Championship St. George
+              </p>
+            </div>
+            <div id="select2020" class="selectyear">
+              <h3><span>2020</span></h3>
+              <div class="selectedresultline"></div>
+              <p>
+                <span class="selectother">5th</span>Pushing Limits Race Ratingen
+              </p>
+            </div>
+            <div id="select2019" class="selectyear">
+              <h3><span>2019</span></h3>
+              <div class="selectedresultline"></div>
+              <p>
+                <span class="select2nd">2nd</span>Ironman 70.3 Les Sables
+                d'Olonne
+              </p>
+              <p><span class="selectother">4th</span>Ironman 70.3 Rapperswil</p>
+              <p><span class="selectother">4th</span>Ironman 70.3 Pays d'Aix</p>
+              <p>
+                <span class="selectother">20th</span>Ironman 70.3 World
+                Championship Nice
+              </p>
+            </div>
           </div>
         </section>
         <!--SOCIAL MEDIA ENGAGEMENT-->
@@ -320,38 +330,40 @@
         <section id="gallery">
           <h2>Gallery</h2>
           <!-- Lightbox -->
-          <div class="row">
-            <div class="column">
-              <img
-                src="images/galleryplaceholder.jpeg"
-                onclick="openModal();currentLightboxSlide(1)"
-                class="hover-shadow"
-                alt="Daniel Bækkegård"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="images/biopicdanielbaekkegaard.png"
-                onclick="openModal();currentLightboxSlide(2)"
-                class="hover-shadow"
-                alt="Daniel Bækkegård"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="images/galleryplaceholder.jpeg"
-                onclick="openModal();currentLightboxSlide(3)"
-                class="hover-shadow"
-                alt="Daniel Bækkegård"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="images/galleryplaceholder.jpeg"
-                onclick="openModal();currentLightboxSlide(4)"
-                class="hover-shadow"
-                alt="Daniel Bækkegård"
-              />
+          <div class="gallery-container">
+            <div class="row">
+              <div class="column">
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  onclick="openModal();currentLightboxSlide(1)"
+                  class="hover-shadow"
+                  alt="Daniel Bækkegård"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="images/biopicdanielbaekkegaard.png"
+                  onclick="openModal();currentLightboxSlide(2)"
+                  class="hover-shadow"
+                  alt="Daniel Bækkegård"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  onclick="openModal();currentLightboxSlide(3)"
+                  class="hover-shadow"
+                  alt="Daniel Bækkegård"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  onclick="openModal();currentLightboxSlide(4)"
+                  class="hover-shadow"
+                  alt="Daniel Bækkegård"
+                />
+              </div>
             </div>
           </div>
           <!-- MODAL TIL LIGHTBOXES -->
