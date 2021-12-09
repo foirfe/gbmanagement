@@ -1017,7 +1017,14 @@ header .gblogo {
 }
 
 #page__athlete #gallery {
-  margin: 12% 0 20% 0;
+  margin: 12% 0 5% 0;
+  /* The Modal (background) */
+  /* Modal Content */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
+  /* Caption text */
 }
 
 #page__athlete #gallery h2 {
@@ -1026,6 +1033,139 @@ header .gblogo {
   text-align: center;
   margin: 2% 0 2% 0;
   color: white;
+}
+
+#page__athlete #gallery .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page__athlete #gallery .row .column {
+  width: 25%;
+}
+
+#page__athlete #gallery .row .column img {
+  margin: 0 2% 0 2%;
+  width: 96%;
+}
+
+#page__athlete #gallery .modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+#page__athlete #gallery .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+}
+
+#page__athlete #gallery .modal-content .thumbnails {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page__athlete #gallery .modal-content .column {
+  width: 100%;
+}
+
+#page__athlete #gallery .close {
+  font-family: "Oswald", sans-serif;
+  color: blue;
+  z-index: 6;
+  position: absolute;
+  top: -1%;
+  right: 3%;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#page__athlete #gallery .close:hover,
+#page__athlete #gallery .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#page__athlete #gallery .lightboxSlides {
+  display: none;
+}
+
+#page__athlete #gallery .prev,
+#page__athlete #gallery .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+#page__athlete #gallery .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#page__athlete #gallery .prev:hover,
+#page__athlete #gallery .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#page__athlete #gallery .numbertext {
+  color: #f2f2f2;
+  font-size: 1.15em;
+  padding: 4%;
+  position: absolute;
+  top: 0;
+}
+
+#page__athlete #gallery .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+#page__athlete #gallery img.lightboxdot {
+  opacity: 0.6;
+  width: 90%;
+}
+
+#page__athlete #gallery .active,
+#page__athlete #gallery .lightboxdot:hover {
+  opacity: 1;
+}
+
+#page__athlete #gallery img.hover-shadow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#page__athlete #gallery .hover-shadow:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @-webkit-keyframes scroll {
@@ -1090,179 +1230,6 @@ header .gblogo {
   width: 100%;
 }
 
-#page__athlete .gallery {
-  width: 100%;
-}
-
-#page__athlete .gallery-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 50% auto;
-  max-width: 1000px;
-  position: relative;
-}
-
-#page__athlete .gallery-item {
-  height: auto;
-  opacity: 0;
-  position: absolute;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  width: 150px;
-  z-index: 0;
-}
-
-#page__athlete .gallery-item-1 {
-  left: 20%;
-  opacity: 0.4;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-#page__athlete .gallery-item-2,
-#page__athlete .gallery-item-4 {
-  height: auto;
-  opacity: 1;
-  width: 25%;
-  z-index: 1;
-}
-
-#page__athlete .gallery-item-2 {
-  left: 20%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-#page__athlete .gallery-item-3 {
-  height: auto;
-  opacity: 1;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 75%;
-  z-index: 2;
-}
-
-#page__athlete .gallery-item-4 {
-  left: 80%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-#page__athlete .gallery-item-5 {
-  left: 75%;
-  opacity: 0.4;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-#page__athlete .gallery-controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-bottom: 10%;
-}
-
-#page__athlete .gallery-controls button {
-  background: #1a6988;
-  background: linear-gradient(315deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
-  border: 0;
-  border-radius: 12px;
-  color: white;
-  cursor: pointer;
-  font-size: 2em;
-  padding: 2% 5% 2% 5%;
-  -webkit-box-shadow: black 2px 4px 10px 1px;
-          box-shadow: black 2px 4px 10px 1px;
-}
-
-#page__athlete .gallery-controls button:focus {
-  outline: none;
-}
-
-#page__athlete .gallery-controls-previous {
-  position: relative;
-}
-
-#page__athlete .gallery-controls-previous::before {
-  border: solid #000;
-  border-width: 0 2px 2px 0;
-  content: "";
-  display: inline-block;
-  height: 4px;
-  left: -10px;
-  padding: 2px;
-  position: absolute;
-  top: 0;
-  -webkit-transform: rotate(135deg) translateY(-50%);
-          transform: rotate(135deg) translateY(-50%);
-  -webkit-transition: left 0.15s ease-in-out;
-  transition: left 0.15s ease-in-out;
-  width: 4px;
-}
-
-#page__athlete .gallery-controls-previous:hover::before {
-  left: -18px;
-}
-
-#page__athlete .gallery-controls-next {
-  position: relative;
-}
-
-#page__athlete .gallery-controls-next::before {
-  border: solid #000;
-  border-width: 0 2px 2px 0;
-  content: "";
-  display: inline-block;
-  height: 4px;
-  padding: 2px;
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  -webkit-transform: rotate(-45deg) translateY(-50%);
-          transform: rotate(-45deg) translateY(-50%);
-  -webkit-transition: right 0.15s ease-in-out;
-  transition: right 0.15s ease-in-out;
-  width: 4px;
-}
-
-#page__athlete .gallery-controls-next:hover::before {
-  right: -18px;
-}
-
-#page__athlete .gallery-nav {
-  bottom: -15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style: none;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-}
-
-#page__athlete .gallery-nav li {
-  background: #ccc;
-  border-radius: 50%;
-  height: 10px;
-  margin: 0 16px;
-  width: 10px;
-}
-
-#page__athlete .gallery-nav li.gallery-item-selected {
-  background: #555;
-}
-
 @media screen and (min-width: 720px) {
   #page__athlete #contactgb {
     left: 80%;
@@ -1271,17 +1238,38 @@ header .gblogo {
 
 @media only screen and (min-width: 200px) {
   #page__aboutgb {
-    margin: 0 auto;
-    width: 94%;
+    background: #1a6988;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1a6988), color-stop(35%, #14486f), to(#0f2753));
+    background: linear-gradient(180deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
+  }
+  #page__aboutgb h1,
+  #page__aboutgb h2,
+  #page__aboutgb h3,
+  #page__aboutgb p {
+    color: #fff;
+  }
+  #page__aboutgb h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 2em;
+  }
+  #page__aboutgb h3 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.6em;
+  }
+  #page__aboutgb p {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.25em;
   }
   #aboutme {
+    margin: 0 auto;
+    width: 94%;
     text-align: center;
     border-bottom: 1px solid #000;
-    padding-bottom: 8%;
+    padding-bottom: 6%;
   }
   #aboutme h1 {
     padding-top: 20%;
-    padding-bottom: 5%;
+    margin-bottom: 5%;
   }
   #aboutme img {
     width: 33%;
@@ -1291,16 +1279,30 @@ header .gblogo {
   #aboutme p {
     width: 53%;
     margin-top: 4%;
+    text-align: left;
   }
-  #aboutme a {
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 12%;
-    padding-right: 12%;
-    background-color: blue;
+  #aboutme #email {
+    font-family: "Oswald", sans-serif;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fc0211), to(#fd0036));
+    background-image: linear-gradient(to bottom, #fc0211, #fd0036);
     text-decoration: none;
     color: #fff;
     border-radius: 12px;
+    border-radius: 12px;
+  }
+  #aboutme #email:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fc0211), to(#fd0036));
+    background-image: linear-gradient(to top, #fc0211, #fd0036);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
   }
   #aboutme-section {
     display: -webkit-box;
@@ -1314,31 +1316,36 @@ header .gblogo {
             align-items: center;
   }
   #values {
+    margin: 0 auto;
+    width: 94%;
     text-align: center;
     border-bottom: 1px solid #000;
     padding-bottom: 6%;
   }
   #values h1 {
-    padding-top: 5%;
-    padding-bottom: 2.5%;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
   }
   #contact {
+    margin: 0 auto;
+    width: 94%;
     text-align: center;
-    border-bottom: 1px solid #000;
     padding-bottom: 8%;
   }
   #contact h1 {
     padding-top: 5%;
     padding-bottom: 2.5%;
   }
-  #contact p {
-    line-height: 1.25em;
-  }
   #contact h2 {
-    padding-top: 6%;
+    line-height: 1.15em;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.15em;
   }
-  #contact img {
-    width: 20%;
+  #contact h3 {
+    margin-top: 12%;
+  }
+  #contact #phone {
+    margin-bottom: 6%;
   }
   #some {
     display: -webkit-box;
@@ -1346,10 +1353,16 @@ header .gblogo {
     display: flex;
     width: 75%;
     margin: 0 auto;
-    margin-top: 2.5%;
+    margin-top: 1.6%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  #some img {
+    width: 100%;
+  }
+  #some a {
+    width: 18%;
   }
 }
 
@@ -1369,11 +1382,50 @@ header .gblogo {
   #aboutme img {
     width: 22%;
   }
+  #aboutme #email {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
   #aboutme-section {
     margin-top: 2%;
   }
+  #contact #phone {
+    margin-bottom: 3%;
+  }
+  #contact h3 {
+    margin-top: 6%;
+  }
   #some {
     width: 66%;
+  }
+  #some a {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #some {
+    width: 60%;
+  }
+  #some a {
+    width: 18%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #aboutme #email {
+    padding-top: 1.8%;
+    padding-bottom: 1.8%;
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+  }
+  #some {
+    width: 55%;
+  }
+  #some a {
+    width: 18%;
   }
 }
 
@@ -1386,38 +1438,94 @@ header .gblogo {
   }
 }
 
-@media only screen and (min-width: 960px) {
-  #aboutme a {
-    padding-top: 3.5%;
-    padding-bottom: 3.5%;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+@media only screen and (min-width: 850px) {
   #some {
-    width: 40%;
+    width: 42.5%;
   }
 }
 
-@media only screen and (min-width: 1100px) {
-  #aboutme a {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    padding-left: 8%;
-    padding-right: 8%;
+@media only screen and (min-width: 960px) {
+  #aboutme #email {
+    padding-top: 1.4%;
+    padding-bottom: 1.4%;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
   }
-}
-
-@media only screen and (min-width: 1280px) {
+  #contact #phone {
+    margin-bottom: 2%;
+  }
+  #contact h3 {
+    margin-top: 4.5%;
+  }
   #some {
     width: 35%;
   }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1100px) {
   #some {
     width: 30%;
   }
-  #some img {
+}
+
+@media only screen and (min-width: 1280px) {
+  #page__aboutgb h1 {
+    font-size: 4.25em;
+  }
+  #page__aboutgb h2 {
+    font-size: 2em;
+  }
+  #page__aboutgb h3 {
+    font-size: 3em;
+  }
+  #page__aboutgb p {
+    font-size: 1.8em;
+    line-height: 1.2em;
+  }
+  #email {
+    font-size: 1.25em;
+  }
+  #aboutme,
+  #values,
+  #contact {
+    margin: 0 auto;
+    width: 96%;
+  }
+  #aboutme h1 {
+    padding-top: 12%;
+    padding-bottom: 1%;
+    margin-bottom: 0%;
+  }
+  #aboutme-section {
+    margin-bottom: 5%;
+  }
+  #values p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #some {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #aboutme #email {
+    font-size: 1.6em;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  #contact #phone {
+    margin-bottom: 1.75%;
+  }
+  #contact h3 {
+    margin-top: 4%;
+  }
+  #some {
+    width: 25%;
+  }
+  #some a {
     width: 16%;
   }
 }
