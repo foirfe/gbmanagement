@@ -81,7 +81,7 @@
         opacity: 1;
     }
 
-    .opnaet {
+    h1 {
         font-size: 2em;
         font-family: 'Bebas Neue', cursive;
         color: #fff;
@@ -114,6 +114,16 @@
 
     }
 
+    .tekst_virksomhed {
+        color: #fff;
+        font-size: 1.2em;
+        width: 92%;
+        margin: 0 auto;
+        font-family: 'Rajdhani', sans-serif;
+        text-align: center;
+        padding-bottom: 9%;
+    }
+
     h2 {
         font-size: 2em;
         font-family: 'Bebas Neue', cursive;
@@ -131,7 +141,7 @@
         padding-top: 10%;
     }
 
-  
+
 
     #contact {
         font-size: 1.2em;
@@ -169,18 +179,10 @@
             width: 100%;
         }
 
-       
+
     }
 
-    .tekst_virksomhed {
-        color: #fff;
-        font-size: 1.2em;
-        width: 92%;
-        margin: 0 auto;
-        font-family: 'Rajdhani', sans-serif;
-        text-align: center;
-        padding-bottom: 9%;
-    }
+
 
     #virksomhed {
         width: 90%;
@@ -190,4 +192,258 @@
         text-align: center;
     }
 
+    @media only screen and (min-width: 510px) {
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        h3 {
+            font-size: 2.5em;
+        }
+
+        #some {
+            margin-top: 2%;
+        }
+
+        .container {
+            img {
+                margin: 0 20% 0 20%;
+                width: 60%;
+            }
+        }
+
+        .opnaet_tekst {
+            font-size: 1.4em;
+            width: 75%;
+        }
+
+        .tekst {
+            font-size: 1.4em;
+            width: 75%;
+        }
+
+        .tekst_virksomhed {
+            font-size: 1.4em;
+            width: 75%;
+        }
+
+        .numbertext {
+            font-size: 1.2em;
+            padding: 2% 12%;
+        }
+
+        #contact {
+            font-size: 1.4em;
+            padding-left: 12%;
+            padding-right: 12%;
+        }
+
+        .prev {
+            left: 10%;
+            font-size: 210%;
+        }
+
+        .next {
+            right: 10%;
+            font-size: 210%;
+        }
+
+        #some {
+            width: 60%;
+        }
+
+    }
+
+    @media only screen and (min-width: 625px) {
+        h1 {
+            font-size: 3.5em;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 3.5em;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+
+        .container {
+            img {
+                margin: 0 25% 0 25%;
+                width: 50%;
+            }
+        }
+
+        .opnaet_tekst {
+            font-size: 1.6em;
+            width: 75%;
+        }
+
+        .tekst {
+            font-size: 1.6em;
+            width: 75%;
+        }
+
+        .tekst_virksomhed {
+            font-size: 1.6em;
+            width: 75%;
+        }
+
+        .numbertext {
+            font-size: 1.5em;
+            padding: 2% 14%;
+        }
+
+        #contact {
+            font-size: 1.6em;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+
+        .next {
+            right: 13%;
+            font-size: 200%;
+        }
+
+        .prev {
+            left: 13%;
+            font-size: 200%;
+        }
+
+        #some {
+            width: 35%;
+        }
+
+    }
+
+    @media only screen and (min-width: 1060px) {
+        h1 {
+            padding-top: 10%;
+        }
+
+
+
+        .container {
+            img {
+                margin: 0 30% 0 35%;
+                width: 35%;
+            }
+        }
+
+        .prev,
+        .next {
+            font-size: 270%;
+        }
+
+        .opnaet_tekst {
+            font-size: 1.7em;
+            line-height: 1.2em;
+        }
+
+        .tekst {
+            font-size: 1.7em;
+            line-height: 1.2em;
+        }
+
+        .tekst_virksomhed {
+            font-size: 1.7em;
+            line-height: 1.2em;
+        }
+
+        .numbertext {
+            font-size: 1.5em;
+            padding: 2% 16%;
+        }
+
+        #contact {
+            font-size: 1.6em;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        #some {
+            width: 30%;
+        }
+
+
+    }
+
+    @media only screen and (min-width: 1380px) {
+        h1 {
+            padding-top: 9%;
+            padding-bottom: 1%;
+            margin-bottom: 0%;
+
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+
+        h3 {
+            padding-top: 3%;
+        
+        }
+
+
+        .container {
+            img {
+                margin: 0 35% 0 35%;
+                width: 25%;
+            }
+        }
+
+        .prev,
+        .next {
+            font-size: 300%;
+        }
+
+        .next {
+            right: 20%;
+        }
+
+        .prev {
+            left: 20%;
+        }
+
+        .numbertext {
+            font-size: 1.5em;
+            padding: 2% 17%;
+        }
+
+        .opnaet_tekst {
+            font-size: 2em;
+        }
+
+        .tekst {
+            font-size: 2em;
+        }
+
+        .tekst_virksomhed {
+            font-size: 2em;
+            padding-bottom: 4%;
+
+        }
+
+        #contact {
+            font-size: 2em;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        #some {
+            width: 30%;
+        }
+
+    }
 }
