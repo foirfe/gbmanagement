@@ -342,17 +342,18 @@ header .gblogo {
   padding-left: 14%;
   padding-right: 14%;
   text-decoration: none;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   font-family: "Oswald", sans-serif;
   padding-bottom: 5%;
 }
 
-#page__index #contact:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+#page__index .athleteheader {
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
 }
 
 #page__index .atlet1 {
@@ -386,7 +387,7 @@ header .gblogo {
 #page__index h3 {
   font-size: 1.3rem;
   color: white;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   max-width: 70%;
 }
 
@@ -424,7 +425,7 @@ header .gblogo {
   display: flex;
   width: 100%;
   color: white;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 
 #page__index .brodtekst2 {
@@ -434,7 +435,7 @@ header .gblogo {
   display: flex;
   width: 100%;
   color: white;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 
 @media only screen and (min-width: 455px) {
@@ -557,14 +558,14 @@ header .gblogo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 16em;
+    width: 100%;
   }
   #page__index .billede_atlet2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 16em;
-    margin-top: -6.8%;
+    width: 100%;
+    padding: 0;
   }
   #page__index .brodtekst2 {
     font-size: 2.5rem;
@@ -574,31 +575,36 @@ header .gblogo {
   #page__index .atlet1 {
     border-top: none;
     border-bottom: none;
-    width: 22%;
     display: block;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 6%;
-    padding-right: 0%;
+    padding: 0;
   }
   #page__index .atlet2 {
     border-top: none;
     border-bottom: none;
     display: block;
-    width: 22%;
-    padding-top: 6%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    padding: 0;
   }
   #page__index #atlet_flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding-top: 7%;
-    margin-left: 4%;
+    padding-top: 20%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #page__index .tekst_atlet1 {
+    display: none;
+  }
+  #page__index .tekst_atlet2 {
+    display: none;
+  }
+  #page__index #athlete1:hover .athleteheader {
+    display: block;
   }
 }
 
