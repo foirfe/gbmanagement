@@ -224,7 +224,6 @@ header .dropdown-btn {
 
 header .dropdown-btn {
   margin-top: 5%;
-  margin-bottom: 3%;
 }
 
 header .dropdown-btn span {
@@ -300,11 +299,6 @@ header .gblogo {
   header .sidenav .closebtn {
     padding: 0;
     right: -85%;
-  }
-  header .sidenav a,
-  header .dropdown-btn {
-    text-align: left;
-    padding: 4%;
   }
   header .gblogo {
     width: 10%;
@@ -639,6 +633,18 @@ header .gblogo {
   background-size: cover;
   padding-top: 50%;
   position: relative;
+  text-align: center;
+}
+
+#page__athlete #athleteheader h1 {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  padding: 1%;
+  margin: 0 auto;
+  font-size: 2em;
+  display: inline;
+  color: white;
+  background: rgba(0, 0, 0, 0.56);
 }
 
 #page__athlete #athleteheader #someathlete {
@@ -1027,9 +1033,6 @@ header .gblogo {
   /* The Modal (background) */
   /* Modal Content */
   /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* Number text (1/3 etc) */
-  /* Caption text */
 }
 
 #page__athlete #gallery h2 {
@@ -1244,6 +1247,28 @@ header .gblogo {
 @media screen and (min-width: 720px) {
   #page__athlete #contactgb {
     left: 80%;
+  }
+  #page__athlete #athleteheader {
+    padding: 20%;
+  }
+  #page__athlete #athleteheader #someathlete {
+    z-index: 3;
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    right: 5%;
+    top: 85%;
+  }
+  #page__athlete #athleteheader #someathlete a {
+    width: 5%;
   }
 }
 
@@ -1539,5 +1564,192 @@ header .gblogo {
   #some a {
     width: 16%;
   }
+}
+
+#page__brandactivation {
+  background: #1a6988;
+  background: linear-gradient(77deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
+  /* Position the image container (needed to position the left and right arrows) */
+  /* Add a pointer when hovering over the thumbnail images */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
+  /* Container for image text */
+}
+
+#page__brandactivation .container img {
+  margin: 0 15% 0 15%;
+  width: 70%;
+}
+
+#page__brandactivation .container {
+  position: relative;
+}
+
+#page__brandactivation .cursor {
+  cursor: pointer;
+}
+
+#page__brandactivation .prev,
+#page__brandactivation .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+#page__brandactivation .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#page__brandactivation .prev:hover,
+#page__brandactivation .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#page__brandactivation .numbertext {
+  color: #f2f2f2;
+  font-size: 1em;
+  padding: 2% 5%;
+  position: absolute;
+  top: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+#page__brandactivation .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+#page__brandactivation .active,
+#page__brandactivation .demo:hover {
+  opacity: 1;
+}
+
+#page__brandactivation .opnaet {
+  font-size: 2em;
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  padding-top: 23%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+#page__brandactivation .opnaet_tekst {
+  color: #fff;
+  font-size: 1.2em;
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 2%;
+  font-family: 'Rajdhani', sans-serif;
+  border-bottom: 1px solid;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+#page__brandactivation .tekst {
+  color: #fff;
+  font-size: 1.2em;
+  width: 92%;
+  margin: 0 auto;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  border-bottom: 1px solid;
+  padding-bottom: 5%;
+}
+
+#page__brandactivation h2 {
+  font-size: 2em;
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+#page__brandactivation h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.6em;
+  color: #fff;
+  text-align: center;
+  padding-top: 10%;
+}
+
+#page__brandactivation #contact {
+  font-size: 1.2em;
+  border-radius: 12px;
+  color: white;
+  padding-left: 14%;
+  padding-right: 14%;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  font-family: "Oswald", sans-serif;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fc0211), to(#fd0036));
+  background-image: linear-gradient(to bottom, #fc0211, #fd0036);
+}
+
+#page__brandactivation #contact:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fc0211), to(#fd0036));
+  background-image: linear-gradient(to top, #fc0211, #fd0036);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+#page__brandactivation #some {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 7%;
+}
+
+#page__brandactivation #some img {
+  width: 100%;
+}
+
+#page__brandactivation .tekst_virksomhed {
+  color: #fff;
+  font-size: 1.2em;
+  width: 92%;
+  margin: 0 auto;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  padding-bottom: 9%;
+}
+
+#page__brandactivation #virksomhed {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 8%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
