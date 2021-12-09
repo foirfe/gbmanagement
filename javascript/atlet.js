@@ -55,15 +55,15 @@ function showLightboxSlides(n) {
   var lightboxslides = document.getElementsByClassName("lightboxSlides");
   var lightboxdots = document.getElementsByClassName("lightboxdot");
   var captionText = document.getElementById("caption");
-  if (n > lightboxslides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = lightboxslides.length}
+  if (n > lightboxslides.length) {slideLightboxIndex = 1}
+  if (n < 1) {slideLightboxIndex = lightboxslides.length}
   for (i = 0; i < lightboxslides.length; i++) {
     lightboxslides[i].style.display = "none";
   }
   for (i = 0; i < lightboxdots.length; i++) {
     lightboxdots[i].className = lightboxdots[i].className.replace(" active", "");
   }
-  lightboxslides[slideIndex-1].style.display = "block";
-  lightboxdots[slideIndex-1].className += " active";
-  captionText.innerHTML = lightboxdots[slideIndex-1].alt;
+  lightboxslides[slideLightboxIndex-1].style.display = "block";
+  lightboxdots[slideLightboxIndex-1].className += " active";
+  captionText.innerHTML = lightboxdots[slideLightboxIndex-1].alt;
 }

@@ -15,7 +15,455 @@
     <title>Florian Angert ┃ GB Management</title>
   </head>
   <body>
-    <main id="page__athlete"></main>
+    <header>
+      <a href="index.html">
+        <img src="images/gblogo.png" alt="GB Management" class="gblogo" />
+      </a>
+      <nav>
+        <div onclick="openNav()" class="burgermenu" id="burgermenu">
+          <span class="burgerikon" onclick="openNav()" id="burgerikon"
+            >&#9776;</span
+          >
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <button class="dropdown-btn">
+            <span id="navarrow">▼</span>ATHLETES
+          </button>
+          <div class="dropdown-container">
+            <a href="annereischmann.html">Anne Reischmann</a>
+            <a href="danielbaekkegard.html">Daniel Bækkegård</a>
+            <a href="florianangert.html">Florian Angert</a>
+            <a href="kristianhoegenhaug.html">Kristian Høgenhaug</a>
+          </div>
+          <a href="aboutgb.html">ABOUT GB</a>
+          <a href="brandactivation.html">BRAND ACTIVATION</a>
+        </div>
+      </nav>
+    </header>
+    <main id="page__athlete">
+      <article>
+        <!-- ATHLETE HEADER-->
+        <section id="athleteheader">
+          <div id="someathlete">
+            <a href="https://www.instagram.com/florian_angert"
+              ><img
+                src="images/some-icons/instagram.png"
+                alt="Follow Florian on Instagram"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/facebook.png"
+                alt="Follow Florian on Facebook"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/youtube.png"
+                alt="Follow Florian on Youtube"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/linkedin.png"
+                alt="Follow Florian on LinkedIn"
+            /></a>
+          </div>
+          <a href="mailto:your@email.com" id="contactgb">CONTACT GB</a>
+        </section>
+        <!-- BIO -->
+        <section id="bio">
+          <div class="biocontainer">
+            <div class="bio1">
+              <div class="bioslides">
+                <h2>Bio</h2>
+                <p>
+                  Florian started as a swimmer at the age of 6 in a local
+                  swimming club. After a few years he was competing at a
+                  national level and eventually became a part of the German
+                  Junior National Team. Doing his time as a swimmer he won a
+                  total of 7 national titles at Youth and Junior levels.
+                </p>
+              </div>
+              <div class="bioslides">
+                <h2>Bio</h2>
+                <p>
+                  In 2012 he did his first triathlon which led to a passion and
+                  fascination with the sport. The year after Florian finished
+                  third at the Frankfurt City Triathlon (won by germantriathlete
+                  Sebastian Kienle). The result opened interest from ERDINGER
+                  Alkoholfrei who offered Floriana place on the Erdinger
+                  Perspektiv Team.
+                </p>
+              </div>
+              <div class="bioslides">
+                <h2>Bio</h2>
+                <p>
+                  In 2017, Florian turned professional and started working with
+                  international triathlon coach, Philipp Seipp. This partnership
+                  has led to some great achievements with several Ironman 70.3
+                  victories and the biggest result at Ironman Barcelone 2019
+                  with the fastest ever debut at an Ironman.
+                </p>
+              </div>
+              <div class="bioslides">
+                <h2>Bio</h2>
+                <p>
+                  With a time of 7 hours 45 minutes and five seconds, Florian
+                  secured the victory and a qualification for the Ironman World
+                  Championships 2021, Hawaii. Despite great results, Florian's
+                  biggest results are still ahead of him and the aim is set for
+                  victory on the biggest stage possible, the legendary Ironman
+                  World Championships Hawaii.
+                </p>
+              </div>
+              <div class="selectors">
+                <a class="prev" onclick="plusSlides(-1)">&#9664;</a>
+
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <a class="next" onclick="plusSlides(1)">&#9654;</a>
+              </div>
+            </div>
+
+            <div class="bio2">
+              <img
+                src="images/biopicdanielbaekkegaard.png"
+                alt="Florian Angert"
+              />
+            </div>
+          </div>
+        </section>
+        <!--SELECTED RESULTS-->
+        <section id="selectedresults">
+          <h2>Selected Results</h2>
+          <div id="select2021" class="selectyear">
+            <h3><span>2021</span></h3>
+            <p><span class="select1st">3rd</span>Challenge The Championship</p>
+            <p>
+              <span class="selectother">7th</span>Ironman North American
+              Championship Tulsa
+            </p>
+            <p>
+              <span class="selectother">7th</span>Ironman 70.3 North American
+              Championship St. George
+            </p>
+          </div>
+          <div id="select2020" class="selectyear">
+            <h3><span>2020</span></h3>
+            <p><span class="selectother">11th</span>PTO Championship Daytona</p>
+          </div>
+          <div id="select2019" class="selectyear">
+            <h3><span>2019</span></h3>
+            <p><span class="select1st">1st</span>Ironman Barcelona</p>
+            <p><span class="select1st">1st</span>Challenge Prague</p>
+            <p><span class="select2nd">2nd</span>Challenge Heilbronn</p>
+            <p>
+              <span class="selectother">11th</span>Ironman 70.3 World
+              Championship Nice
+            </p>
+          </div>
+          <div id="select2018" class="selectyear">
+            <h3><span>2018</span></h3>
+            <p><span class="select1st">1st</span>Ironman 70.3 Jonkoping</p>
+            <p><span class="select1st">1st</span>Ironman 70.3 Rügen</p>
+            <p>
+              <span class="select3rd">3rd</span>Challenge The Championship
+              Samorin
+            </p>
+          </div>
+        </section>
+        <!--SOCIAL MEDIA ENGAGEMENT-->
+        <section id="someengagement">
+          <div class="somebox">
+            <div class="somebox1">
+              <h3>Social Media Engagement</h3>
+              <p>
+                FLORIAN is continuously growing his fanbase on his social
+                platforms with a total of
+                <span class="somehighlight">13000 followers.</span> Since the
+                beginning of 2019 Florian has had a monthly growth rate of
+                <span class="somehighlight">4.5%,</span> despite the lack of
+                activity in the sport of triathlon during the pandemic. The goal
+                is set for
+                <span class="somehighlight">20K followers</span> within the next
+                six months.<br /><br />
+                His content is a mixture between in-action triathlon and
+                everyday life posts with focus onrepresenting his partners in
+                the best possible way.
+              </p>
+            </div>
+            <div class="somebox2">
+              <div class="athletefollowers">
+                <img
+                  class="instagramlogo"
+                  src="images/some-icons/instagram.png"
+                  alt="Instagram Logo"
+                />
+                11.2k Followers
+              </div>
+              <div class="athleteengagementrate">
+                <img
+                  class="engagementrate"
+                  src="images/engagementrate.png"
+                  alt="Engagement Rate"
+                />7.47% ENGAGEMENT RATE
+              </div>
+
+              <div class="somemobile">
+                <img
+                  src="images/somemobildaniel.png"
+                  alt="Florian Angert's Instagram"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="someengagementicons">
+            <a href="https://www.instagram.com/florian_angert"
+              ><img
+                src="images/some-icons/instagram.png"
+                alt="Follow Florian on Instagram"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/facebook.png"
+                alt="Follow Florian on Facebook"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/youtube.png"
+                alt="Follow Florian on Youtube"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/linkedin.png"
+                alt="Follow Florian on LinkedIn"
+            /></a>
+          </div>
+        </section>
+        <!-- PARTNERS -->
+        <section id="partners">
+          <h2>Partners</h2>
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="images/partners/brandit.png"
+                  height="100"
+                  width="250"
+                  alt="Brandit"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/canyon.png"
+                  height="100"
+                  width="250"
+                  alt="Canyon"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/ceramicspeed.jpg"
+                  height="100"
+                  width="250"
+                  alt="Ceramicspeed"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/dtswiss.jpg"
+                  height="100"
+                  width="250"
+                  alt="Dt Swiss"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/fusion.png"
+                  height="100"
+                  width="250"
+                  alt="Fusion"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/hep.png"
+                  height="100"
+                  width="250"
+                  alt="hep. "
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/pto.png"
+                  height="100"
+                  width="250"
+                  alt="PTO"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/redbull.png"
+                  height="100"
+                  width="250"
+                  alt="Red Bull"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/sport24.png"
+                  height="100"
+                  width="250"
+                  alt="Sport 24"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/tima.png"
+                  height="100"
+                  width="250"
+                  alt="tima"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery">
+          <h2>Gallery</h2>
+          <!-- Lightbox -->
+          <div class="row">
+            <div class="column">
+              <img
+                src="images/galleryplaceholder.jpeg"
+                onclick="openModal();currentLightboxSlide(1)"
+                class="hover-shadow"
+                alt="Florian Angert"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="images/biopicdanielbaekkegaard.png"
+                onclick="openModal();currentLightboxSlide(2)"
+                class="hover-shadow"
+                alt="Florian Angert"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="images/galleryplaceholder.jpeg"
+                onclick="openModal();currentLightboxSlide(3)"
+                class="hover-shadow"
+                alt="Florian Angert"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="images/galleryplaceholder.jpeg"
+                onclick="openModal();currentLightboxSlide(4)"
+                class="hover-shadow"
+                alt="Florian Angert"
+              />
+            </div>
+          </div>
+          <!-- MODAL TIL LIGHTBOXES -->
+          <div id="modal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="lightboxSlides">
+                <div class="numbertext">1 / 4</div>
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  style="width: 100%"
+                  alt="Florian Angert"
+                />
+              </div>
+
+              <div class="lightboxSlides">
+                <div class="numbertext">2 / 4</div>
+                <img
+                  src="images/biopicdanielbaekkegaard.png"
+                  style="width: 100%"
+                  alt="Florian Angert"
+                />
+              </div>
+
+              <div class="lightboxSlides">
+                <div class="numbertext">3 / 4</div>
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  style="width: 100%"
+                  alt="Florian Angert"
+                />
+              </div>
+
+              <div class="lightboxSlides">
+                <div class="numbertext">4 / 4</div>
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  style="width: 100%"
+                  alt="Florian Angert"
+                />
+              </div>
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusLightboxSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusLightboxSlides(1)">&#10095;</a>
+
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <!-- Thumbnails til Lightbox -->
+              <div class="thumbnails">
+                <div class="column">
+                  <img
+                    class="lightboxdot"
+                    src="images/galleryplaceholder.jpeg"
+                    onclick="currentLightboxSlide(1)"
+                    alt="Billede 1"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="lightboxdot"
+                    src="images/biopicdanielbaekkegaard.png"
+                    onclick="currentLightboxSlide(2)"
+                    alt="Billede 2"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="lightboxdot"
+                    src="images/galleryplaceholder.jpeg"
+                    onclick="currentLightboxSlide(3)"
+                    alt="Billede 3"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="lightboxdot"
+                    src="images/galleryplaceholder.jpeg"
+                    onclick="currentLightboxSlide(4)"
+                    alt="Billede 4"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
     <script src="javascript/navbar.js"></script>
+    <script src="javascript/atlet.js"></script>
   </body>
 </html>

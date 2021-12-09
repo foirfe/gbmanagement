@@ -1,9 +1,11 @@
 #page__index {
   background: rgb(26, 105, 136);
-  background: linear-gradient(77deg,
-      rgba(26, 105, 136, 1) 0%,
-      rgba(20, 72, 111, 1) 35%,
-      rgba(15, 39, 83, 1) 100%);
+  background: linear-gradient(
+    77deg,
+    rgba(26, 105, 136, 1) 0%,
+    rgba(20, 72, 111, 1) 35%,
+    rgba(15, 39, 83, 1) 100%
+  );
 
   #get_in_touch {
     font-size: 1.4rem;
@@ -29,16 +31,16 @@
     padding-left: 14%;
     padding-right: 14%;
     text-decoration: none;
-    transition: transform .2s;
+    transition: transform 0.2s;
     font-family: "Oswald", sans-serif;
-
     padding-bottom: 5%;
   }
 
-  #contact:hover {
-    transform: scale(1.2);
+  .athleteheader {
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    font-size: 2em;
   }
-
   .atlet1 {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -59,14 +61,12 @@
   .tekst_atlet1 {
     width: 40%;
     padding-left: 4%;
-
   }
-
 
   h3 {
     font-size: 1.3rem;
     color: white;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     max-width: 70%;
   }
 
@@ -96,7 +96,7 @@
     display: flex;
     width: 100%;
     color: white;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
   }
 
   .brodtekst2 {
@@ -104,7 +104,7 @@
     display: flex;
     width: 100%;
     color: white;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
   }
 
   @media only screen and (min-width: 455px) {
@@ -140,7 +140,6 @@
       width: 100%;
       margin-right: 10%;
     }
-
   }
 
   @media only screen and (min-width: 630px) {
@@ -153,7 +152,6 @@
     #tekst_touch {
       margin-bottom: 5%;
       margin-left: 8%;
-
     }
 
     #contact {
@@ -161,10 +159,8 @@
       padding-right: 15%;
     }
 
-
     h3 {
       font-size: 2.1rem;
-    
     }
 
     .billede_atlet1 {
@@ -207,7 +203,6 @@
   }
 
   @media only screen and (min-width: 930px) {
-
     #get_in_touch {
       padding-top: 45em;
       position: absolute;
@@ -229,46 +224,52 @@
 
     .billede_atlet1 {
       display: flex;
-      width: 16em;
+      width: 100%;
     }
 
     .billede_atlet2 {
       display: flex;
-      width: 16em;
-      margin-top: -6.8%;
+      width: 100%;
+      padding: 0;
     }
 
     .brodtekst2 {
       font-size: 2.5rem;
       margin-right: 10%;
       display: none;
-
     }
 
     .atlet1 {
       border-top: none;
       border-bottom: none;
-      width: 22%;
       display: block;
-      justify-content:space-between;
-      padding-top: 6%;
-      padding-right: 0%;
+      padding: 0;
     }
 
     .atlet2 {
       border-top: none;
       border-bottom: none;
       display: block;
-      width: 22%;
-      padding-top: 6%;
-      justify-content:space-between;
+      padding: 0;
     }
 
     #atlet_flex {
       display: flex;
       width: 100%;
-      padding-top: 7%;
-      margin-left: 4%;
+      padding-top: 20%;
+      justify-content: space-evenly;
+      align-items: flex-end;
+    }
+    .tekst_atlet1 {
+      display: none;
+    }
+    .tekst_atlet2 {
+      display: none;
+    }
+    #athlete1:hover {
+      .athleteheader {
+        display: block;
+      }
     }
   }
 
@@ -281,7 +282,6 @@
       width: 23.5em;
       margin-top: -5.5%;
     }
-
   }
 
   @media only screen and (min-width: 1500px) {
