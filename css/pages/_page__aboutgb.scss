@@ -20,6 +20,7 @@
     h3 {
       font-family: "Bebas Neue", cursive;
       font-size: 1.6em;
+      text-align: center;
     }
     p {
       font-family: "Rajdhani", sans-serif;
@@ -31,7 +32,7 @@
     margin: 0 auto;
     width: 94%;
     text-align: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     padding-bottom: 6%;
     h1 {
       padding-top: 20%;
@@ -48,6 +49,7 @@
     }
     #email {
       font-family: "Oswald", sans-serif;
+      font-size: 1.2em;
       padding-top: 3%;
       padding-bottom: 3%;
       padding-left: 10%;
@@ -60,7 +62,6 @@
       text-decoration: none;
       color: #fff;
       border-radius: 12px;
-      border-radius: 12px;
       &:hover {
         background-image: linear-gradient(
           to top,
@@ -70,6 +71,12 @@
         transform: scale(1.02);
         transition: transform 0.5s;
       }
+    }
+  }
+
+  #about-flex {
+    #nikolaj2 {
+      display: none;
     }
   }
 
@@ -84,7 +91,7 @@
     margin: 0 auto;
     width: 94%;
     text-align: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     padding-bottom: 6%;
     h1 {
       margin-top: 5%;
@@ -106,9 +113,6 @@
       font-family: "Oswald", sans-serif;
       font-size: 1.15em;
     }
-    h3 {
-      margin-top: 12%;
-    }
     #phone {
       margin-bottom: 6%;
     }
@@ -120,6 +124,7 @@
     margin: 0 auto;
     margin-top: 1.6%;
     justify-content: space-between;
+    padding-bottom: 6%;
     img {
       width: 100%;
     }
@@ -180,6 +185,10 @@
 }
 
 @media only screen and (min-width: 500px) {
+  #contact {
+    padding-bottom: 5%;
+  }
+
   #some {
     width: 60%;
     a {
@@ -235,6 +244,7 @@
   }
 
   #contact {
+    padding-bottom: 3.5%;
     #phone {
       margin-bottom: 2%;
     }
@@ -278,15 +288,13 @@
   #aboutme,
   #values,
   #contact {
-    margin: 0 auto;
-    width: 96%;
+    margin: 0;
+    width: 100%;
   }
 
   #aboutme {
     h1 {
-      padding-top: 12%;
-      padding-bottom: 1%;
-      margin-bottom: 0%;
+      padding: 5% 0 0 0;
     }
   }
 
@@ -295,14 +303,61 @@
   }
 
   #values {
+    margin: 5% 0 0 47.5%;
+    width: 42.5%;
+    padding-bottom: 2%;
     p {
-      width: 90%;
+      width: 95%;
+      text-align: center;
       margin: 0 auto;
     }
   }
 
+  #contact {
+    margin: 3% 0 0 10%;
+    width: 42.5%;
+    padding-bottom: 2%;
+    p {
+      text-align: center;
+    }
+  }
+
+  h3 {
+    margin-top: 5%;
+  }
+
   #some {
     width: 25%;
+    padding-bottom: 5%;
+  }
+
+  #aboutme {
+    width: 42.5%;
+    padding-bottom: 2.8%;
+    p {
+      width: 95%;
+      text-align: center;
+    }
+  }
+
+  #about-flex {
+    padding-top: 8%;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    #nikolaj1 {
+      display: none;
+    }
+    #nikolaj2 {
+      display: flex;
+      max-width: 18%;
+    }
+  }
+
+  .sections {
+    border-bottom: 1px solid #fff;
   }
 }
 
