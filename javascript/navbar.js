@@ -1,6 +1,6 @@
 // Function der åbner nav baren, og tilknyttet til burgermenuen// 
 function openNav() {
-  //Hvis skærm størrelsen er mindst 1080pxs bliver width på sidebaren 30% ellers 70%
+  //Hvis skærm størrelsen er mindst 1080pxs bliver width på sidebaren 30% ellers blvier den 100%
   if (window.matchMedia("(min-width: 1080px)").matches){
     document.getElementById("mySidenav").style.width = "30%";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";

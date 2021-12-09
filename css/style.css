@@ -1022,7 +1022,6 @@ header .gblogo {
   /* Modal Content */
   /* Next & previous buttons */
   /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
   /* Number text (1/3 etc) */
   /* Caption text */
 }
@@ -1048,6 +1047,7 @@ header .gblogo {
 #page__athlete #gallery .row .column img {
   margin: 0 2% 0 2%;
   width: 96%;
+  height: 60%;
 }
 
 #page__athlete #gallery .modal {
@@ -1059,19 +1059,18 @@ header .gblogo {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: #0f2753;
 }
 
 #page__athlete #gallery .modal-content {
   position: relative;
-  background-color: #fefefe;
-  margin: auto;
+  margin: 2% auto;
   padding: 0;
   width: 90%;
 }
 
 #page__athlete #gallery .modal-content .thumbnails {
-  background: black;
+  background-color: #0f2753;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1083,12 +1082,12 @@ header .gblogo {
 
 #page__athlete #gallery .close {
   font-family: "Oswald", sans-serif;
-  color: blue;
+  color: black;
   z-index: 6;
   position: absolute;
-  top: -1%;
+  top: -3%;
   right: 3%;
-  font-size: 3em;
+  font-size: 5em;
   font-weight: bold;
 }
 
@@ -1130,10 +1129,11 @@ header .gblogo {
 
 #page__athlete #gallery .prev:hover,
 #page__athlete #gallery .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(26, 105, 136, 0.8);
 }
 
 #page__athlete #gallery .numbertext {
+  font-family: "Oswald", sans-serif;
   color: #f2f2f2;
   font-size: 1.15em;
   padding: 4%;
@@ -1143,14 +1143,19 @@ header .gblogo {
 
 #page__athlete #gallery .caption-container {
   text-align: center;
-  background-color: black;
+  background-color: #0f2753;
   padding: 2px 16px;
   color: white;
+}
+
+#page__athlete #gallery .caption-container #caption {
+  font-family: "Oswald", sans-serif;
 }
 
 #page__athlete #gallery img.lightboxdot {
   opacity: 0.6;
   width: 90%;
+  height: 70%;
 }
 
 #page__athlete #gallery .active,
