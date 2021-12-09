@@ -47,6 +47,7 @@
       <article>
         <!-- ATHLETE HEADER-->
         <section id="athleteheader">
+          <h1 class="athleteheadertext">KRISTIAN HØGENHAUG</h1>
           <div id="someathlete">
             <a href="https://www.instagram.com/mr_Kristian"
               ><img
@@ -129,31 +130,36 @@
         <!--SELECTED RESULTS-->
         <section id="selectedresults">
           <h2>Selected Results</h2>
-          <div id="select2021" class="selectyear">
-            <h3><span>2021</span></h3>
-            <p>
-              <span class="select1st">1st</span>ITU World Championship Almere
-            </p>
-            <p>
-              <span class="select2nd">2nd</span>Ironman European Championship
-              Frankfurt
-            </p>
-            <p><span class="selectother">4th</span>Ironman Lanzarot</p>
-            <p><span class="selectother">4th</span>Ironman Mallorca</p>
-          </div>
-          <div id="select2020" class="selectyear">
-            <h3><span>2020</span></h3>
-            <p>No proper racing due to corona.</p>
-          </div>
-          <div id="select2019" class="selectyear">
-            <h3><span>2019</span></h3>
-            <p><span class="select1st">1st</span>Ironman Hamburg</p>
-            <p><span class="select1st">1st</span>ETU European Championship</p>
-            <p><span class="select2nd">2nd</span>Challenge Almere</p>
-            <p>
-              <span class="selectother">18th</span>Ironman World Championship
-              Hawaii
-            </p>
+          <div class="selectedresultsflex">
+            <div id="select2021" class="selectyear">
+              <h3><span>2021</span></h3>
+              <div class="selectedresultline"></div>
+              <p>
+                <span class="select1st">1st</span>ITU World Championship Almere
+              </p>
+              <p>
+                <span class="select2nd">2nd</span>Ironman European Championship
+                Frankfurt
+              </p>
+              <p><span class="selectother">4th</span>Ironman Lanzarot</p>
+              <p><span class="selectother">4th</span>Ironman Mallorca</p>
+            </div>
+            <div id="select2020" class="selectyear">
+              <h3><span>2020</span></h3>
+              <div class="selectedresultline"></div>
+              <p>No proper racing due to corona.</p>
+            </div>
+            <div id="select2019" class="selectyear">
+              <h3><span>2019</span></h3>
+              <div class="selectedresultline"></div>
+              <p><span class="select1st">1st</span>Ironman Hamburg</p>
+              <p><span class="select1st">1st</span>ETU European Championship</p>
+              <p><span class="select2nd">2nd</span>Challenge Almere</p>
+              <p>
+                <span class="selectother">18th</span>Ironman World Championship
+                Hawaii
+              </p>
+            </div>
           </div>
         </section>
         <!--SOCIAL MEDIA ENGAGEMENT-->
@@ -313,38 +319,40 @@
         <section id="gallery">
           <h2>Gallery</h2>
           <!-- Lightbox -->
-          <div class="row">
-            <div class="column">
-              <img
-                src="images/galleryplaceholder.jpeg"
-                onclick="openModal();currentLightboxSlide(1)"
-                class="hover-shadow"
-                alt="Kristian Høgenhaug"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="images/biopicdanielbaekkegaard.png"
-                onclick="openModal();currentLightboxSlide(2)"
-                class="hover-shadow"
-                alt="Kristian Høgenhaug"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="images/galleryplaceholder.jpeg"
-                onclick="openModal();currentLightboxSlide(3)"
-                class="hover-shadow"
-                alt="Kristian Høgenhaug"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="images/galleryplaceholder.jpeg"
-                onclick="openModal();currentLightboxSlide(4)"
-                class="hover-shadow"
-                alt="Kristian Høgenhaug"
-              />
+          <div class="gallery-container">
+            <div class="row">
+              <div class="column">
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  onclick="openModal();currentLightboxSlide(1)"
+                  class="hover-shadow"
+                  alt="Kristian Høgenhaug"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="images/biopicdanielbaekkegaard.png"
+                  onclick="openModal();currentLightboxSlide(2)"
+                  class="hover-shadow"
+                  alt="Kristian Høgenhaug"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  onclick="openModal();currentLightboxSlide(3)"
+                  class="hover-shadow"
+                  alt="Kristian Høgenhaug"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  onclick="openModal();currentLightboxSlide(4)"
+                  class="hover-shadow"
+                  alt="Kristian Høgenhaug"
+                />
+              </div>
             </div>
           </div>
           <!-- MODAL TIL LIGHTBOXES -->
