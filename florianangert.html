@@ -15,6 +15,32 @@
     <title>Florian Angert ┃ GB Management</title>
   </head>
   <body>
+    <header>
+      <a href="index.html">
+        <img src="images/gblogo.png" alt="GB Management" class="gblogo" />
+      </a>
+      <nav>
+        <div onclick="openNav()" class="burgermenu">
+          <span class="burgerikon">&#9776;</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <button class="dropdown-btn">
+            <span id="navarrow">▼</span>ATHLETES
+          </button>
+          <div class="dropdown-container">
+            <a href="annereischmann.html">Anne Reischmann</a>
+            <a href="danielbaekkegard.html">Daniel Bækkegård</a>
+            <a href="florianangert.html">Florian Angert</a>
+            <a href="kristianhoegenhaug.html">Kristian Høgenhaug</a>
+          </div>
+          <a href="aboutgb.html">ABOUT GB</a>
+          <a href="brandactivation.html">BRAND ACTIVATION</a>
+        </div>
+      </nav>
+    </header>
     <main id="page__athlete"></main>
     <script src="javascript/navbar.js"></script>
   </body>
