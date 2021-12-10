@@ -638,7 +638,7 @@ header .gblogo {
 }
 
 #page__athlete #athleteheader {
-  background-image: url(../images/danielbaekkegaardbanner.jpg);
+  background-image: url(../images/daniel/danielbaekkegaardbanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50%;
@@ -647,11 +647,14 @@ header .gblogo {
 }
 
 #page__athlete #athleteheader h1 {
+  position: absolute;
+  top: 50%;
+  right: 35%;
   font-family: "Bebas Neue", cursive;
   text-align: center;
   padding: 1%;
   margin: 0 auto;
-  font-size: 2em;
+  font-size: 3em;
   display: inline;
   color: white;
   background: rgba(0, 0, 0, 0.56);
@@ -683,8 +686,8 @@ header .gblogo {
   background: #e0e9ee;
   background: -webkit-gradient(linear, left bottom, left top, from(#e0e9ee), to(#a9ced6));
   background: linear-gradient(0deg, #e0e9ee 0%, #a9ced6 100%);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 10px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 10px 4px;
 }
 
 #page__athlete #athleteheader #someathlete a {
@@ -714,69 +717,6 @@ header .gblogo {
   background: url(../images/kristianhoegenhaugbanner.jpg);
   background-position-x: 40%;
   background-position-y: 30%;
-}
-
-#page__athlete #athleteheader {
-  background: url(../images/danielbaekkegaardbanner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 120%;
-  position: relative;
-  text-align: center;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
-
-#page__athlete #athleteheader h1 {
-  font-family: "Bebas Neue", cursive;
-  text-align: center;
-  padding: 1%;
-  margin: 0 auto;
-  font-size: 2em;
-  display: inline;
-  color: white;
-  background: rgba(0, 0, 0, 0.56);
-}
-
-#page__athlete #athleteheader #someathlete {
-  z-index: -1;
-  padding-left: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 98%;
-  right: 25%;
-  top: 70%;
-}
-
-#page__athlete #athleteheader #someathlete h3 {
-  display: inline;
-  font-family: "Oswald", sans-serif;
-  color: #04142d;
-  font-size: 1.25em;
-}
-
-#page__athlete #athleteheader #someathlete h3 span {
-  background: #e0e9ee;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e0e9ee), to(#a9ced6));
-  background: linear-gradient(0deg, #e0e9ee 0%, #a9ced6 100%);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
-
-#page__athlete #athleteheader #someathlete a {
-  width: 10%;
-  text-align: center;
-  margin: 1% 0 1% 0;
-}
-
-#page__athlete #athleteheader #someathlete img {
-  width: 90%;
-  margin: 2% 0 2% 0;
 }
 
 #page__athlete #contactgb {
@@ -920,6 +860,8 @@ header .gblogo {
 #page__athlete #bio img {
   position: relative;
   width: 100%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 #page__athlete #selectedresults {
@@ -1528,16 +1470,15 @@ header .gblogo {
   #page__athlete #bio .bio1 {
     width: 19%;
   }
-  #page__athlete #bio .bio1 h2 {
-    font-size: 4.25em;
-  }
   #page__athlete #bio .bio1 p {
-    font-size: 1.8em;
     line-height: 1.2em;
     margin-top: 5%;
   }
   #page__athlete #bio .bio2 {
     width: 28%;
+  }
+  #page__athlete #bio .bio2 h2 {
+    font-size: 4.25em;
   }
   #page__athlete #bio .dot-container {
     margin-top: 0;
@@ -1546,6 +1487,15 @@ header .gblogo {
     width: 20px;
     height: 20px;
   }
+}
+
+@media screen and (min-width: 1080px) and (min-width: 1400px) {
+  #page__athlete #bio .bio1 p {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 1080px) {
   #page__athlete #selectedresults h2 {
     font-size: 4.25em;
   }
@@ -1770,6 +1720,12 @@ header .gblogo {
     font-family: "Oswald", sans-serif;
     font-size: 1.15em;
   }
+  #contact a {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.15em;
+    text-decoration: underline;
+    color: #fff;
+  }
   #contact #phone {
     margin-bottom: 6%;
   }
@@ -1978,9 +1934,6 @@ header .gblogo {
     width: 42.5%;
     padding-bottom: 2%;
   }
-  #contact p {
-    text-align: center;
-  }
   h3 {
     margin-top: 5%;
   }
@@ -2032,7 +1985,7 @@ header .gblogo {
     padding-right: 3%;
   }
   #contact #phone {
-    margin-bottom: 1.75%;
+    margin-bottom: 3%;
   }
   #contact h3 {
     margin-top: 4%;
