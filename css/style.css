@@ -1212,7 +1212,7 @@ footer #some_iconer {
 }
 
 #page__athlete #gallery {
-  margin: 12% 0 5% 0;
+  margin: 12% 0 0 0;
 }
 
 #page__athlete #gallery h2 {
@@ -1556,7 +1556,7 @@ footer #some_iconer {
   }
   #page__athlete #gallery {
     margin-top: 6%;
-    margin-bottom: 2%;
+    padding-bottom: 2%;
   }
   #page__athlete #gallery h2 {
     font-size: 2.5em;
