@@ -132,7 +132,7 @@ header .burgermenu {
   position: fixed;
   right: 0%;
   top: 20%;
-  padding: 10% 5% 10% 2%;
+  padding: 10% 2% 10% 2%;
   /* Webkit så det kan understøttes på andre browsere */
   -moz-border-bottom-left-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -276,6 +276,7 @@ header .gblogo {
 
 @media screen and (min-width: 720px) {
   header .burgermenu {
+    padding: 10% 5% 10% 2%;
     right: 92%;
     -moz-border-bottom-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -313,6 +314,122 @@ header .gblogo {
   }
 }
 
+footer h4 {
+  padding-top: 5%;
+  padding-bottom: 4%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.7em;
+  font-family: 'Bebas Neue', cursive;
+}
+
+footer #footer_indhold {
+  background: #414a50;
+  background: linear-gradient(4deg, #414a50 0%, #00010d 100%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 10px 22px 10px 30px;
+          box-shadow: rgba(0, 0, 0, 0.56) 10px 22px 10px 30px;
+}
+
+footer #footer_kontakt {
+  color: #fff;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+}
+
+footer #footer_kontakt a {
+  color: #fff;
+}
+
+footer #footer_kontakt li {
+  margin-bottom: 5%;
+}
+
+footer #some_overskrift {
+  display: none;
+}
+
+footer #footer_some {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+footer .footer_some_iconer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 15%;
+  padding-bottom: 25%;
+}
+
+footer #some_iconer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (min-width: 625px) {
+  footer #footer_indhold {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer #footer_kontakt {
+    margin: 0 auto;
+  }
+  footer #footer_kontakt li {
+    margin-bottom: 10%;
+  }
+  footer #footer_some {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 25%;
+    margin-top: 3%;
+  }
+  footer #footer_some h4 {
+    display: block;
+    margin-top: 10%;
+  }
+  footer .footer_some_iconer {
+    padding-bottom: 5%;
+    padding-top: 0%;
+  }
+  footer h4 {
+    padding-bottom: 2%;
+    font-size: 2em;
+  }
+  footer #some_iconer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 625px) and (min-width: 900px) {
+  footer #footer_some {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer #footer_some h4 {
+    margin-top: 7%;
+  }
+  footer .footer_some_iconer {
+    width: 80%;
+  }
+  footer #some_iconer {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 #page__index {
   background: #1a6988;
   background: linear-gradient(77deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
@@ -320,11 +437,18 @@ header .gblogo {
 
 #page__index #get_in_touch {
   font-size: 1.4rem;
-  margin-left: 64%;
-  margin-top: -50%;
-  margin-bottom: 3%;
-  padding: 1%;
-  padding-top: 9em;
+  margin-left: 69%;
+  padding-top: 4%;
+  margin-bottom: 7.5%;
+}
+
+#page__index #indexheader {
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 2.5%;
+  padding-bottom: 0%;
 }
 
 #page__index #tekst_touch {
@@ -335,7 +459,6 @@ header .gblogo {
 
 #page__index #contact {
   background-color: red;
-  border: 1px solid black;
   border-radius: 12px;
   color: white;
   -webkit-box-pack: center;
@@ -359,19 +482,27 @@ header .gblogo {
   font-size: 2em;
 }
 
+#page__index #athlete3 {
+  border-bottom: 1px solid #fff;
+}
+
 #page__index .atlet1 {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 4%;
+  padding-top: 2.5%;
   padding-bottom: 4%;
-  padding-left: 2%;
-  padding-right: 16%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #page__index .billede_atlet1 {
@@ -384,28 +515,32 @@ header .gblogo {
 
 #page__index .tekst_atlet1 {
   width: 40%;
-  padding-left: 4%;
 }
 
 #page__index h3 {
   font-size: 1.3rem;
   color: white;
   font-family: "Bebas Neue", cursive;
-  max-width: 70%;
+  text-align: center;
+  margin-top: 5%;
 }
 
 #page__index .atlet2 {
-  border-bottom: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 4%;
+  padding-top: 2.5%;
   padding-bottom: 4%;
-  padding-left: 3%;
-  padding-right: 5%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #page__index .billede_atlet2 {
@@ -592,7 +727,7 @@ header .gblogo {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding-top: 20%;
+    padding-top: 5%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -606,6 +741,21 @@ header .gblogo {
   }
   #page__index .tekst_atlet2 {
     display: none;
+  }
+  #page__index .athleteheader {
+    top: 47.5%;
+  }
+  #page__index #header1 {
+    left: 3%;
+  }
+  #page__index #header2 {
+    left: 28.2%;
+  }
+  #page__index #header3 {
+    left: 55%;
+  }
+  #page__index #header4 {
+    left: 77.5%;
   }
   #page__index #athlete1:hover .athleteheader {
     display: block;
@@ -1731,7 +1881,7 @@ header .gblogo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 75%;
+    width: 66%;
     margin: 0 auto;
     margin-top: 1.6%;
     -webkit-box-pack: justify;
@@ -1743,7 +1893,7 @@ header .gblogo {
     width: 100%;
   }
   #some a {
-    width: 18%;
+    width: 22%;
   }
 }
 
@@ -1761,7 +1911,7 @@ header .gblogo {
 
 @media only screen and (min-width: 360px) {
   #aboutme img {
-    width: 25%;
+    width: 30%;
   }
 }
 
@@ -1797,19 +1947,19 @@ header .gblogo {
     width: 66%;
   }
   #some a {
-    width: 20%;
+    width: 24%;
   }
 }
 
 @media only screen and (min-width: 500px) {
   #contact {
-    padding-bottom: 5%;
+    padding-bottom: 7%;
   }
   #some {
     width: 60%;
   }
   #some a {
-    width: 18%;
+    width: 24%;
   }
 }
 
@@ -1833,7 +1983,7 @@ header .gblogo {
     width: 55%;
   }
   #some a {
-    width: 18%;
+    width: 24%;
   }
 }
 
@@ -1842,13 +1992,19 @@ header .gblogo {
     padding-top: 16%;
   }
   #some {
-    width: 50%;
+    width: 40%;
+  }
+  #some a {
+    width: 24%;
   }
 }
 
 @media only screen and (min-width: 850px) {
   #some {
-    width: 42.5%;
+    width: 35%;
+  }
+  #some a {
+    width: 22%;
   }
 }
 
@@ -1878,13 +2034,19 @@ header .gblogo {
     margin-top: 4.5%;
   }
   #some {
-    width: 35%;
+    width: 30%;
+  }
+  #some a {
+    width: 22%;
   }
 }
 
 @media only screen and (min-width: 1100px) {
   #some {
-    width: 30%;
+    width: 20%;
+  }
+  #some a {
+    width: 20%;
   }
 }
 
@@ -1932,12 +2094,18 @@ header .gblogo {
     width: 42.5%;
     padding-bottom: 2%;
   }
+  #contact p {
+    text-align: center;
+  }
   h3 {
     margin-top: 5%;
   }
   #some {
-    width: 25%;
+    width: 20%;
     padding-bottom: 5%;
+  }
+  #some a {
+    width: 20%;
   }
   #aboutme {
     width: 42.5%;
@@ -1992,7 +2160,7 @@ header .gblogo {
     width: 25%;
   }
   #some a {
-    width: 16%;
+    width: 18%;
   }
 }
 
@@ -2082,7 +2250,7 @@ header .gblogo {
 #page__brandactivation .opnaet_tekst {
   color: #fff;
   font-size: 1.2em;
-  width: 92%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 2%;
   font-family: 'Rajdhani', sans-serif;
@@ -2094,7 +2262,7 @@ header .gblogo {
 #page__brandactivation .tekst {
   color: #fff;
   font-size: 1.2em;
-  width: 92%;
+  width: 70%;
   margin: 0 auto;
   font-family: 'Rajdhani', sans-serif;
   text-align: center;
@@ -2105,7 +2273,7 @@ header .gblogo {
 #page__brandactivation .tekst_virksomhed {
   color: #fff;
   font-size: 1.2em;
-  width: 92%;
+  width: 70%;
   margin: 0 auto;
   font-family: 'Rajdhani', sans-serif;
   text-align: center;
@@ -2262,6 +2430,7 @@ header .gblogo {
   #page__brandactivation .tekst_virksomhed {
     font-size: 1.6em;
     width: 75%;
+    padding-bottom: 6%;
   }
   #page__brandactivation .numbertext {
     font-size: 1.5em;
@@ -2269,8 +2438,10 @@ header .gblogo {
   }
   #page__brandactivation #contact {
     font-size: 1.6em;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
   #page__brandactivation .next {
     right: 13%;
@@ -2288,6 +2459,13 @@ header .gblogo {
 @media only screen and (min-width: 1060px) {
   #page__brandactivation h1 {
     padding-top: 10%;
+  }
+  #page__brandactivation h2 {
+    padding-bottom: 2%;
+    padding-top: 6%;
+  }
+  #page__brandactivation h3 {
+    padding-top: 1%;
   }
   #page__brandactivation .container img {
     margin: 0 30% 0 35%;
@@ -2308,22 +2486,35 @@ header .gblogo {
   #page__brandactivation .tekst_virksomhed {
     font-size: 1.7em;
     line-height: 1.2em;
+    padding-bottom: 5%;
   }
   #page__brandactivation .numbertext {
     font-size: 1.5em;
-    padding: 2% 16%;
+    padding: 2% 25%;
   }
   #page__brandactivation #contact {
     font-size: 1.6em;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
   #page__brandactivation #some {
     width: 30%;
   }
 }
 
-@media only screen and (min-width: 1380px) {
+@media only screen and (min-width: 1280px) {
+  #page__brandactivation #contact {
+    margin: 0 0 0;
+  }
+  #page__brandactivation .numbertext {
+    font-size: 1.5em;
+    padding: 2% 16%;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
   #page__brandactivation h1 {
     padding-top: 9%;
     padding-bottom: 1%;
@@ -2333,7 +2524,7 @@ header .gblogo {
     font-size: 3em;
   }
   #page__brandactivation h3 {
-    padding-top: 3%;
+    padding-top: 0%;
   }
   #page__brandactivation .container img {
     margin: 0 35% 0 35%;
@@ -2351,7 +2542,7 @@ header .gblogo {
   }
   #page__brandactivation .numbertext {
     font-size: 1.5em;
-    padding: 2% 17%;
+    padding: 2% 27%;
   }
   #page__brandactivation .opnaet_tekst {
     font-size: 2em;
