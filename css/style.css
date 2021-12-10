@@ -1515,7 +1515,7 @@ footer #some_iconer {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    font-size: 1.25em;
+    font-size: 2em;
   }
   #page__athlete #someengagement .somebox2 .athletefollowers {
     padding-top: 0;
@@ -1530,6 +1530,7 @@ footer #some_iconer {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-bottom: 5%;
+    margin-right: 20%;
   }
   #page__athlete #someengagement .somebox2 .athleteengagementrate {
     display: -webkit-box;
