@@ -11,18 +11,15 @@
     background-image: url(../images/daniel/danielbaekkegaardbanner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 50%;
+    padding-top: 90%;
     position: relative;
     text-align: center;
     h1 {
-      position: absolute;
-      top: 50%;
-      right: 35%;
       font-family: "Bebas Neue", cursive;
       text-align: center;
       padding: 1%;
       margin: 0 auto;
-      font-size: 3em;
+      font-size: 2em;
       display: inline;
       color: white;
       background: rgba(0, 0, 0, 0.56);
@@ -63,19 +60,23 @@
   }
   //ATHLETE HEADERS
   #athleteheader.headeranne {
-    background: url(../images/annereischmannbanner.jpg);
+    background: url(../images/anne/annereischmannbanner.jpg);
     background-position: center;
     background-position-x: 45%;
     background-position-y: 40%;
   }
   #athleteheader.headerflorian {
-    background: url(../images/florianbanner.jpg);
-    background-position: center;
+    background: url(../images/florian/florianbanner.jpg);
+    background-position-x: 50%;
+    background-position-y: 74%;
   }
   #athleteheader.headerkristian {
-    background: url(../images/kristianhoegenhaugbanner.jpg);
-    background-position-x: 40%;
-    background-position-y: 30%;
+    background: url(../images/kristian/kristianhoegenhaugbanner.jpg);
+    background-position-x: 70%;
+    background-position-y: 50%;
+  }
+  #athleteheader.headerdaniel {
+    background-position-x: 65%;
   }
 
   #contactgb {
@@ -129,28 +130,21 @@
   }
   .dot-container {
     width: 73%;
-    margin-top: 2%;
     text-align: center;
     padding: 2%;
   }
   .dot {
     cursor: pointer;
-    height: 3px;
-    width: 3px;
     margin: 0 2px;
-    background-color: #bbb;
     display: inline-block;
     transition: background-color 0.6s ease;
+    font-family: "Oswald", sans-serif;
   }
   .activedot,
   .dot:hover {
-    background: rgb(26, 105, 136);
-    background: linear-gradient(
-      77deg,
-      rgba(26, 105, 136, 1) 0%,
-      rgba(20, 72, 111, 1) 35%,
-      rgba(15, 39, 83, 1) 100%
-    );
+    font-weight: bold;
+    color: rgba(15, 39, 83, 1);
+    font-size: 1.25em;
   }
   //BIO
   #bio {
@@ -180,7 +174,7 @@
     }
     .bio2 {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       width: 40%;
       border-top-right-radius: 12px;
       border-bottom-right-radius: 12px;
@@ -367,7 +361,6 @@
         img {
           margin: 0 2% 0 2%;
           width: 96%;
-          height: 60%;
         }
       }
     }
@@ -400,7 +393,7 @@
 
     .close {
       font-family: "Oswald", sans-serif;
-      color: black;
+      color: white;
       z-index: 6;
       position: absolute;
       top: -3%;
@@ -474,7 +467,6 @@
     img.lightboxdot {
       opacity: 0.6;
       width: 90%;
-      height: 70%;
     }
 
     .active,
@@ -727,6 +719,9 @@
       }
       @media screen and (min-width: 1400px) {
         .bio1 {
+          h2 {
+            font-size: 4.25em;
+          }
           p {
             font-size: 1.8em;
           }
@@ -827,11 +822,6 @@
       }
       .gallery-container {
         .row {
-          width: 25%;
-        }
-      }
-      .lightboxSlides {
-        img {
           width: 25%;
         }
       }
