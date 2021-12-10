@@ -9,11 +9,19 @@
 
   #get_in_touch {
     font-size: 1.4rem;
-    margin-left: 64%;
-    margin-top: -50%;
-    margin-bottom: 3%;
-    padding: 1%;
-    padding-top: 9em;
+    margin-left: 69%;
+    padding-top: 4%;
+    margin-bottom: 7.5%;
+  }
+
+  #indexheader {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding-top: 2.5%;
+    padding-bottom: 0%;
+
   }
 
   #tekst_touch {
@@ -24,7 +32,6 @@
 
   #contact {
     background-color: red;
-    border: 1px solid black;
     border-radius: 12px;
     color: white;
     justify-content: center;
@@ -42,15 +49,21 @@
     font-family: "Oswald", sans-serif;
     font-size: 2em;
   }
+
+  #athlete3 {
+    border-bottom: 1px solid #fff;
+  }
   .atlet1 {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
     display: flex;
-    padding-top: 4%;
+    padding-top: 2.5%;
     padding-bottom: 4%;
-    padding-left: 2%;
-    padding-right: 16%;
-    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .billede_atlet1 {
@@ -61,24 +74,26 @@
 
   .tekst_atlet1 {
     width: 40%;
-    padding-left: 4%;
   }
 
   h3 {
     font-size: 1.3rem;
     color: white;
     font-family: "Bebas Neue", cursive;
-    max-width: 70%;
+    text-align: center;
+    margin-top: 5%;
   }
 
   .atlet2 {
-    border-bottom: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    padding-top: 4%;
+    padding-top: 2.5%;
     padding-bottom: 4%;
-    padding-left: 3%;
-    padding-right: 5%;
-    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .billede_atlet2 {
@@ -257,7 +272,7 @@
     #atlet_flex {
       display: flex;
       width: 100%;
-      padding-top: 20%;
+      padding-top: 5%;
       justify-content: space-evenly;
       align-items: flex-end;
       height: 100%;
@@ -267,6 +282,21 @@
     }
     .tekst_atlet2 {
       display: none;
+    }
+    .athleteheader {
+      top: 47.5%;
+    }
+    #header1 {
+      left: 3%
+    }
+    #header2 {
+      left: 28.2%
+    }
+    #header3 {
+      left: 55%
+    }
+    #header4 {
+      left: 77.5%
     }
     #athlete1:hover {
       .athleteheader {
