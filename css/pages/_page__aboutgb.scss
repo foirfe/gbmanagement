@@ -1,27 +1,29 @@
 @media only screen and (min-width: 200px) {
   #page__aboutgb {
     background: rgb(26, 105, 136);
-    background: linear-gradient(
-      180deg,
-      rgba(26, 105, 136, 1) 0%,
-      rgba(20, 72, 111, 1) 35%,
-      rgba(15, 39, 83, 1) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(26, 105, 136, 1) 0%,
+        rgba(20, 72, 111, 1) 35%,
+        rgba(15, 39, 83, 1) 100%);
+
     h1,
     h2,
     h3,
     p {
       color: #fff;
     }
+
     h1 {
       font-family: "Bebas Neue", cursive;
       font-size: 2em;
     }
+
     h3 {
       font-family: "Bebas Neue", cursive;
       font-size: 1.6em;
       text-align: center;
     }
+
     p {
       font-family: "Rajdhani", sans-serif;
       font-size: 1.25em;
@@ -34,19 +36,23 @@
     text-align: center;
     border-bottom: 1px solid #fff;
     padding-bottom: 6%;
+
     h1 {
       padding-top: 20%;
       margin-bottom: 5%;
     }
+
     img {
       width: 33%;
       object-fit: contain;
     }
+
     p {
       width: 53%;
       margin-top: 4%;
       text-align: left;
     }
+
     #email {
       font-family: "Oswald", sans-serif;
       font-size: 1.2em;
@@ -54,20 +60,17 @@
       padding-bottom: 3%;
       padding-left: 10%;
       padding-right: 10%;
-      background-image: linear-gradient(
-        to bottom,
-        rgba(252, 2, 17, 1),
-        rgba(253, 0, 54, 1)
-      );
+      background-image: linear-gradient(to bottom,
+          rgba(252, 2, 17, 1),
+          rgba(253, 0, 54, 1));
       text-decoration: none;
       color: #fff;
       border-radius: 12px;
+
       &:hover {
-        background-image: linear-gradient(
-          to top,
-          rgba(252, 2, 17, 1),
-          rgba(253, 0, 54, 1)
-        );
+        background-image: linear-gradient(to top,
+            rgba(252, 2, 17, 1),
+            rgba(253, 0, 54, 1));
         transform: scale(1.02);
         transition: transform 0.5s;
       }
@@ -93,6 +96,7 @@
     text-align: center;
     border-bottom: 1px solid #fff;
     padding-bottom: 6%;
+
     h1 {
       margin-top: 5%;
       margin-bottom: 2.5%;
@@ -104,21 +108,27 @@
     width: 94%;
     text-align: center;
     padding-bottom: 8%;
+
     h1 {
       padding-top: 5%;
       padding-bottom: 2.5%;
     }
+
     h2 {
       line-height: 1.15em;
       font-family: "Oswald", sans-serif;
       font-size: 1.15em;
     }
+
+
+
     a {
       font-family: "Oswald", sans-serif;
       font-size: 1.15em;
       text-decoration: underline;
       color: #fff;
     }
+
     #phone {
       margin-bottom: 6%;
     }
@@ -126,16 +136,18 @@
 
   #some {
     display: flex;
-    width: 75%;
+    width: 66%;
     margin: 0 auto;
     margin-top: 1.6%;
     justify-content: space-between;
     padding-bottom: 6%;
+
     img {
       width: 100%;
     }
+
     a {
-      width: 18%;
+      width: 22%;
     }
   }
 }
@@ -143,10 +155,12 @@
 @media only screen and (min-width: 260px) {
   #aboutme {
     padding-bottom: 9%;
+
     p {
       margin-top: 0%;
     }
   }
+
   #aboutme-section {
     margin-bottom: 10%;
   }
@@ -155,7 +169,7 @@
 @media only screen and (min-width: 360px) {
   #aboutme {
     img {
-      width: 25%;
+      width: 30%;
     }
   }
 }
@@ -163,15 +177,21 @@
 @media only screen and (min-width: 400px) {
   #aboutme {
     padding-bottom: 8%;
+
+
     p {
       margin-top: 0%;
     }
+
+
     #aboutme-section {
       margin-bottom: 8%;
     }
+
     img {
       width: 22%;
     }
+
     #email {
       padding-top: 2.5%;
       padding-bottom: 2.5%;
@@ -188,28 +208,34 @@
     #phone {
       margin-bottom: 3%;
     }
+
     h3 {
       margin-top: 6%;
     }
   }
 
   #some {
+
     width: 66%;
+
     a {
-      width: 20%;
+      width: 24%;
     }
   }
 }
 
 @media only screen and (min-width: 500px) {
   #contact {
-    padding-bottom: 5%;
+    padding-bottom: 7%;
   }
 
   #some {
+
     width: 60%;
+
+
     a {
-      width: 18%;
+      width: 24%;
     }
   }
 }
@@ -217,12 +243,17 @@
 @media only screen and (min-width: 600px) {
   #aboutme {
     padding-bottom: 6%;
+
+
     p {
       margin-top: 0%;
     }
+
+
     #aboutme-section {
       margin-bottom: 6%;
     }
+
     #email {
       padding-top: 1.8%;
       padding-bottom: 1.8%;
@@ -232,9 +263,12 @@
   }
 
   #some {
+
     width: 55%;
+
+
     a {
-      width: 18%;
+      width: 24%;
     }
   }
 }
@@ -247,13 +281,19 @@
   }
 
   #some {
-    width: 50%;
+    width: 40%;
+    a {
+      width: 24%;
+    }
   }
 }
 
 @media only screen and (min-width: 850px) {
   #some {
-    width: 42.5%;
+    width: 35%;
+    a {
+      width: 22%;
+    }
   }
 }
 
@@ -266,9 +306,11 @@
 
   #aboutme {
     padding-bottom: 4%;
+
     #aboutme-section {
       margin-bottom: 5%;
     }
+
     #email {
       padding-top: 1.4%;
       padding-bottom: 1.4%;
@@ -279,22 +321,30 @@
 
   #contact {
     padding-bottom: 3.5%;
+
     #phone {
       margin-bottom: 2%;
     }
+
     h3 {
       margin-top: 4.5%;
     }
   }
 
   #some {
-    width: 35%;
+    width: 30%;
+    a {
+      width: 22%;
+    }
   }
 }
 
 @media only screen and (min-width: 1100px) {
   #some {
-    width: 30%;
+    width: 20%;
+    a {
+      width: 20%;
+    }
   }
 }
 
@@ -303,12 +353,15 @@
     h1 {
       font-size: 4.25em;
     }
+
     h2 {
       font-size: 2em;
     }
+
     h3 {
       font-size: 3em;
     }
+
     p {
       font-size: 1.8em;
       line-height: 1.2em;
@@ -340,6 +393,7 @@
     margin: 5% 0 0 47.5%;
     width: 42.5%;
     padding-bottom: 2%;
+
     p {
       width: 95%;
       text-align: center;
@@ -351,6 +405,11 @@
     margin: 3% 0 0 10%;
     width: 42.5%;
     padding-bottom: 2%;
+
+
+    p {
+      text-align: center;
+    }
   }
 
   h3 {
@@ -358,13 +417,17 @@
   }
 
   #some {
-    width: 25%;
+    width: 20%;
     padding-bottom: 5%;
+    a {
+      width: 20%;
+    }
   }
 
   #aboutme {
     width: 42.5%;
     padding-bottom: 2.8%;
+
     p {
       width: 95%;
       text-align: center;
@@ -378,9 +441,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
     #nikolaj1 {
       display: none;
     }
+
     #nikolaj2 {
       display: flex;
       max-width: 18%;
@@ -407,15 +472,19 @@
     #phone {
       margin-bottom: 3%;
     }
+
     h3 {
       margin-top: 4%;
     }
   }
 
   #some {
+
     width: 25%;
+
+
     a {
-      width: 16%;
+      width: 18%;
     }
   }
 }
