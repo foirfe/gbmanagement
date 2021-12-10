@@ -15,7 +15,439 @@
     <title>Anne Reischmann ┃ GB Management</title>
   </head>
   <body>
-    <main id="page__athlete"></main>
+    <header>
+      <a href="index.html">
+        <img src="images/gblogo.png" alt="GB Management" class="gblogo" />
+      </a>
+      <nav>
+        <div onclick="openNav()" class="burgermenu" id="burgermenu">
+          <span class="burgerikon" onclick="openNav()" id="burgerikon"
+            >&#9776;</span
+          >
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <button class="dropdown-btn">
+            <span id="navarrow">▼</span>ATHLETES
+          </button>
+          <div class="dropdown-container">
+            <a href="annereischmann.html">Anne Reischmann</a>
+            <a href="danielbaekkegard.html">Daniel Bækkegård</a>
+            <a href="florianangert.html">Florian Angert</a>
+            <a href="kristianhoegenhaug.html">Kristian Høgenhaug</a>
+          </div>
+          <a href="aboutgb.html">ABOUT GB</a>
+          <a href="brandactivation.html">BRAND ACTIVATION</a>
+        </div>
+      </nav>
+    </header>
+    <main id="page__athlete">
+      <article>
+        <!-- ATHLETE HEADER-->
+        <section id="athleteheader">
+          <div id="someathlete">
+            <a href="https://www.instagram.com/anne_reischmann"
+              ><img
+                src="images/some-icons/instagram.png"
+                alt="Follow Anne on Instagram"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/facebook.png"
+                alt="Follow Anne on Facebook"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/youtube.png"
+                alt="Follow Anne on Youtube"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/linkedin.png"
+                alt="Follow Anne on LinkedIn"
+            /></a>
+          </div>
+          <a href="mailto:your@email.com" id="contactgb">CONTACT GB</a>
+        </section>
+        <!-- BIO -->
+        <section id="bio">
+          <div class="biocontainer">
+            <div class="bio1">
+              <div class="bioslides">
+                <h2>Bio</h2>
+                <p>
+                  Anna Reischmann - Age 29 - is a competitor by heart. At year
+                  12 she found out that she was running faster than the majority
+                  of girls her age and decided to join the local running
+                  team.<br />
+                  She was by far the youngest on the team and had daily training
+                  with runners competing at European, World and Olympic level.
+                  This was a great motivating factor. Anne had 14 years of
+                  competitive running with three podium finishes at National
+                  Championships.
+                </p>
+              </div>
+              <div class="bioslides">
+                <h2>Bio</h2>
+                <p>
+                  In 2016 Anne was left with a knee injury. At this time she
+                  started swimming and biking to stay fit. A spark of passion
+                  quickly appeared and Anne was all in for triathlon.
+                </p>
+              </div>
+              <div class="bioslides">
+                <h2>Bio</h2>
+                <p>
+                  In the end of 2018 Anne decided to go all in on a professional
+                  triathlon career. Without any sponsors it was a big decision
+                  but it has all been worth it. She rapidly improved her swim
+                  and bike skills and in 2019 she had her first international
+                  podium finish.
+                </p>
+              </div>
+              <div class="bioslides">
+                <h2>Bio</h2>
+                <p>
+                  2021 was Anne's best season so far. She achieved her first
+                  Ironman 70.3 victory and finished top 10 at the 70.3 World
+                  Championship. Despite having great results this year there is
+                  no doubt that the biggest results are still ahead of her.
+                </p>
+              </div>
+              <div class="selectors">
+                <a class="prev" onclick="plusSlides(-1)">&#9664;</a>
+
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <a class="next" onclick="plusSlides(1)">&#9654;</a>
+              </div>
+            </div>
+
+            <div class="bio2">
+              <img
+                src="images/biopicdanielbaekkegaard.png"
+                alt="Anne Reischmann"
+              />
+            </div>
+          </div>
+        </section>
+        <!--SELECTED RESULTS-->
+        <section id="selectedresults">
+          <h2>Selected Results</h2>
+          <div id="select2021" class="selectyear">
+            <h3><span>2021</span></h3>
+            <p>
+              <span class="select1st">1st</span>Ironman 70.3 Les Sables d'Olonne
+            </p>
+            <p><span class="select2nd">2nd</span>Ironman 70.3 Zell am See</p>
+            <p><span class="select3rd">3rd</span>Ironman 70.3 Rapperswil</p>
+            <p>
+              <span class="selectother">10th</span>Ironman 70.3 World
+              Championship St. George
+            </p>
+          </div>
+          <div id="select2020" class="selectyear">
+            <h3><span>2020</span></h3>
+            <p>
+              <span class="selectother">5th</span>Pushing Limits Race Ratingen
+            </p>
+          </div>
+          <div id="select2019" class="selectyear">
+            <h3><span>2019</span></h3>
+            <p>
+              <span class="select2nd">2nd</span>Ironman 70.3 Les Sables d'Olonne
+            </p>
+            <p><span class="selectother">4th</span>Ironman 70.3 Rapperswil</p>
+            <p><span class="selectother">4th</span>Ironman 70.3 Pays d'Aix</p>
+            <p>
+              <span class="selectother">20th</span>Ironman 70.3 World
+              Championship Nice
+            </p>
+          </div>
+        </section>
+        <!--SOCIAL MEDIA ENGAGEMENT-->
+        <section id="someengagement">
+          <div class="somebox">
+            <div class="somebox1">
+              <h3>Social Media Engagement</h3>
+              <p>
+                HER <span class="somehighlight">mangler</span> der lidt
+                <span class="somemeunderline">endnu</span>
+              </p>
+            </div>
+            <div class="somebox2">
+              <div class="athletefollowers">
+                <img
+                  class="instagramlogo"
+                  src="images/some-icons/instagram.png"
+                  alt="Instagram Logo"
+                />
+                14.4k Followers
+              </div>
+              <div class="athleteengagementrate">
+                <img
+                  class="engagementrate"
+                  src="images/engagementrate.png"
+                  alt="Engagement Rate"
+                />12.89% ENGAGEMENT RATE
+              </div>
+
+              <div class="somemobile">
+                <img
+                  src="images/somemobildaniel.png"
+                  alt="Daniel Bækkegårds Instagram"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="someengagementicons">
+            <a href="https://www.instagram.com/anne_reischmann"
+              ><img
+                src="images/some-icons/instagram.png"
+                alt="Follow Anne on Instagram"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/facebook.png"
+                alt="Follow Anne on Facebook"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/youtube.png"
+                alt="Follow Anne on Youtube"
+            /></a>
+            <a href=""
+              ><img
+                src="images/some-icons/linkedin.png"
+                alt="Follow Anne on LinkedIn"
+            /></a>
+          </div>
+        </section>
+        <!-- PARTNERS -->
+        <section id="partners">
+          <h2>Partners</h2>
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="images/partners/brandit.png"
+                  height="100"
+                  width="250"
+                  alt="Brandit"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/canyon.png"
+                  height="100"
+                  width="250"
+                  alt="Canyon"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/ceramicspeed.jpg"
+                  height="100"
+                  width="250"
+                  alt="Ceramicspeed"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/dtswiss.jpg"
+                  height="100"
+                  width="250"
+                  alt="Dt Swiss"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/fusion.png"
+                  height="100"
+                  width="250"
+                  alt="Fusion"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/hep.png"
+                  height="100"
+                  width="250"
+                  alt="hep. "
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/pto.png"
+                  height="100"
+                  width="250"
+                  alt="PTO"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/redbull.png"
+                  height="100"
+                  width="250"
+                  alt="Red Bull"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/sport24.png"
+                  height="100"
+                  width="250"
+                  alt="Sport 24"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="images/partners/tima.png"
+                  height="100"
+                  width="250"
+                  alt="tima"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery">
+          <h2>Gallery</h2>
+          <!-- Lightbox -->
+          <div class="row">
+            <div class="column">
+              <img
+                src="images/galleryplaceholder.jpeg"
+                onclick="openModal();currentLightboxSlide(1)"
+                class="hover-shadow"
+                alt="Daniel Bækkegård"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="images/biopicdanielbaekkegaard.png"
+                onclick="openModal();currentLightboxSlide(2)"
+                class="hover-shadow"
+                alt="Daniel Bækkegård"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="images/galleryplaceholder.jpeg"
+                onclick="openModal();currentLightboxSlide(3)"
+                class="hover-shadow"
+                alt="Daniel Bækkegård"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="images/galleryplaceholder.jpeg"
+                onclick="openModal();currentLightboxSlide(4)"
+                class="hover-shadow"
+                alt="Daniel Bækkegård"
+              />
+            </div>
+          </div>
+          <!-- MODAL TIL LIGHTBOXES -->
+          <div id="modal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="lightboxSlides">
+                <div class="numbertext">1 / 4</div>
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  style="width: 100%"
+                  alt="Daniel Bækkegård"
+                />
+              </div>
+
+              <div class="lightboxSlides">
+                <div class="numbertext">2 / 4</div>
+                <img
+                  src="images/biopicdanielbaekkegaard.png"
+                  style="width: 100%"
+                  alt="Daniel Bækkegård"
+                />
+              </div>
+
+              <div class="lightboxSlides">
+                <div class="numbertext">3 / 4</div>
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  style="width: 100%"
+                  alt="Daniel Bækkegård"
+                />
+              </div>
+
+              <div class="lightboxSlides">
+                <div class="numbertext">4 / 4</div>
+                <img
+                  src="images/galleryplaceholder.jpeg"
+                  style="width: 100%"
+                  alt="Daniel Bækkegård"
+                />
+              </div>
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusLightboxSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusLightboxSlides(1)">&#10095;</a>
+
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <!-- Thumbnails til Lightbox -->
+              <div class="thumbnails">
+                <div class="column">
+                  <img
+                    class="lightboxdot"
+                    src="images/galleryplaceholder.jpeg"
+                    onclick="currentLightboxSlide(1)"
+                    alt="Billede 1"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="lightboxdot"
+                    src="images/biopicdanielbaekkegaard.png"
+                    onclick="currentLightboxSlide(2)"
+                    alt="Billede 2"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="lightboxdot"
+                    src="images/galleryplaceholder.jpeg"
+                    onclick="currentLightboxSlide(3)"
+                    alt="Billede 3"
+                  />
+                </div>
+
+                <div class="column">
+                  <img
+                    class="lightboxdot"
+                    src="images/galleryplaceholder.jpeg"
+                    onclick="currentLightboxSlide(4)"
+                    alt="Billede 4"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
     <script src="javascript/navbar.js"></script>
+    <script src="javascript/atlet.js"></script>
   </body>
 </html>

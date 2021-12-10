@@ -20,19 +20,23 @@
         <img src="images/gblogo.png" alt="GB Management" class="gblogo" />
       </a>
       <nav>
-        <div onclick="openNav()" class="burgermenu">
-          <span class="burgerikon">&#9776;</span>
+        <div onclick="openNav()" class="burgermenu" id="burgermenu">
+          <span class="burgerikon" onclick="openNav()" id="burgerikon"
+            >&#9776;</span
+          >
         </div>
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
             >&times;</a
           >
-          <button class="dropdown-btn">ATHLETES</button>
+          <button class="dropdown-btn">
+            <span id="navarrow">▼</span>ATHLETES
+          </button>
           <div class="dropdown-container">
-            <a href="#">Anne Reischmann</a>
+            <a href="annereischmann.html">Anne Reischmann</a>
             <a href="danielbaekkegard.html">Daniel Bækkegård</a>
-            <a href="#">Florian Angert</a>
-            <a href="#">Kristian Høgenhaug</a>
+            <a href="florianangert.html">Florian Angert</a>
+            <a href="kristianhoegenhaug.html">Kristian Høgenhaug</a>
           </div>
           <a href="aboutgb.html">ABOUT GB</a>
           <a href="brandactivation.html">BRAND ACTIVATION</a>

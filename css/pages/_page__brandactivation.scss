@@ -1,0 +1,193 @@
+#page__brandactivation {
+    background: rgb(26, 105, 136);
+    background: linear-gradient(77deg,
+            rgba(26, 105, 136, 1) 0%,
+            rgba(20, 72, 111, 1) 35%,
+            rgba(15, 39, 83, 1) 100%);
+
+
+
+    .container {
+        img {
+            margin: 0 15% 0 15%;
+            width: 70%;
+        }
+    }
+
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+
+    }
+
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 55%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 1em;
+        padding: 2% 5%;
+        position: absolute;
+        top: 0;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    /* Container for image text */
+    .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+    }
+
+
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+    .opnaet {
+        font-size: 2em;
+        font-family: 'Bebas Neue', cursive;
+        color: #fff;
+        padding-top: 23%;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .opnaet_tekst {
+        color: #fff;
+        font-size: 1.2em;
+        width: 92%;
+        margin: 0 auto;
+        margin-top: 2%;
+        font-family: 'Rajdhani', sans-serif;
+        border-bottom: 1px solid;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    .tekst {
+        color: #fff;
+        font-size: 1.2em;
+        width: 92%;
+        margin: 0 auto;
+        font-family: 'Rajdhani', sans-serif;
+        text-align: center;
+        border-bottom: 1px solid;
+        padding-bottom: 5%;
+
+    }
+
+    h2 {
+        font-size: 2em;
+        font-family: 'Bebas Neue', cursive;
+        color: #fff;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    h3 {
+        font-family: "Bebas Neue", cursive;
+        font-size: 1.6em;
+        color: #fff;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+  
+
+    #contact {
+        font-size: 1.2em;
+        border-radius: 12px;
+        color: white;
+        padding-left: 14%;
+        padding-right: 14%;
+        text-decoration: none;
+        transition: transform .2s;
+        font-family: "Oswald", sans-serif;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        background-image: linear-gradient(to bottom,
+                rgba(252, 2, 17, 1),
+                rgba(253, 0, 54, 1));
+
+        &:hover {
+            background-image: linear-gradient(to top,
+                    rgba(252, 2, 17, 1),
+                    rgba(253, 0, 54, 1));
+            transform: scale(1.02);
+            transition: transform 0.5s;
+        }
+    }
+
+    #some {
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 2%;
+        justify-content: space-between;
+        padding-bottom: 7%;
+
+        img {
+            width: 100%;
+        }
+
+       
+    }
+
+    .tekst_virksomhed {
+        color: #fff;
+        font-size: 1.2em;
+        width: 92%;
+        margin: 0 auto;
+        font-family: 'Rajdhani', sans-serif;
+        text-align: center;
+        padding-bottom: 9%;
+    }
+
+    #virksomhed {
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 8%;
+        text-align: center;
+    }
+
+}
