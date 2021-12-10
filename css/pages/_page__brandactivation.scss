@@ -93,7 +93,7 @@
     .opnaet_tekst {
         color: #fff;
         font-size: 1.2em;
-        width: 92%;
+        width: 70%;
         margin: 0 auto;
         margin-top: 2%;
         font-family: 'Rajdhani', sans-serif;
@@ -105,7 +105,7 @@
     .tekst {
         color: #fff;
         font-size: 1.2em;
-        width: 92%;
+        width: 70%;
         margin: 0 auto;
         font-family: 'Rajdhani', sans-serif;
         text-align: center;
@@ -117,7 +117,7 @@
     .tekst_virksomhed {
         color: #fff;
         font-size: 1.2em;
-        width: 92%;
+        width: 70%;
         margin: 0 auto;
         font-family: 'Rajdhani', sans-serif;
         text-align: center;
@@ -140,6 +140,8 @@
         text-align: center;
         padding-top: 10%;
     }
+
+    
 
 
 
@@ -182,8 +184,6 @@
 
     }
 
-
-
     #virksomhed {
         width: 90%;
         margin: 0 auto;
@@ -191,6 +191,8 @@
         padding-bottom: 8%;
         text-align: center;
     }
+
+
 
     @media only screen and (min-width: 510px) {
         h1 {
@@ -258,6 +260,7 @@
             width: 60%;
         }
 
+
     }
 
     @media only screen and (min-width: 625px) {
@@ -294,6 +297,7 @@
         .tekst_virksomhed {
             font-size: 1.6em;
             width: 75%;
+            padding-bottom: 6%;
         }
 
         .numbertext {
@@ -303,8 +307,10 @@
 
         #contact {
             font-size: 1.6em;
-            padding-left: 10%;
-            padding-right: 10%;
+            padding-left: 6%;
+            padding-right: 6%;
+            padding-top: 1%;
+            padding-bottom: 1%;
         }
 
 
@@ -329,6 +335,15 @@
             padding-top: 10%;
         }
 
+        h2 {
+            padding-bottom: 2%;
+            padding-top: 6%;
+        }
+
+        h3 {
+            padding-top: 1%;
+
+        }
 
 
         .container {
@@ -356,32 +371,44 @@
         .tekst_virksomhed {
             font-size: 1.7em;
             line-height: 1.2em;
+            padding-bottom: 5%;
         }
 
         .numbertext {
             font-size: 1.5em;
-            padding: 2% 16%;
+            padding: 2% 25%;
         }
 
         #contact {
             font-size: 1.6em;
-            padding-left: 10%;
-            padding-right: 10%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 1%;
+            padding-bottom: 1%;
         }
 
         #some {
             width: 30%;
         }
 
-
     }
 
-    @media only screen and (min-width: 1380px) {
+    @media only screen and (min-width: 1280px) {
+        #contact {
+            margin: 0 0 0;
+        }
+
+        .numbertext {
+            font-size: 1.5em;
+            padding: 2% 16%;
+        }
+    }
+
+    @media only screen and (min-width: 1350px) {
         h1 {
             padding-top: 9%;
             padding-bottom: 1%;
             margin-bottom: 0%;
-
         }
 
         h2 {
@@ -389,8 +416,8 @@
         }
 
         h3 {
-            padding-top: 3%;
-        
+            padding-top: 0%;
+
         }
 
 
@@ -416,7 +443,7 @@
 
         .numbertext {
             font-size: 1.5em;
-            padding: 2% 17%;
+            padding: 2% 27%;
         }
 
         .opnaet_tekst {
@@ -445,5 +472,8 @@
             width: 30%;
         }
 
+
+
     }
 }
+
