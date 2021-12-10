@@ -5,7 +5,7 @@ header {
     position: fixed;
     right: 0%;
     top: 20%;
-    padding: 10% 5% 10% 2%;
+    padding: 10% 2% 10% 2%;
     -webkit-border-bottom-left-radius: 12px; /* Webkit så det kan understøttes på andre browsere */
     -moz-border-bottom-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -140,6 +140,7 @@ header {
   //Tablet
   @media screen and (min-width: 720px) {
     .burgermenu {
+      padding: 10% 5% 10% 2%;
       right: 92%;
       -webkit-border-bottom-left-radius: 0px;
       -moz-border-bottom-left-radius: 0px;
