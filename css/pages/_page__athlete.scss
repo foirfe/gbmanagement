@@ -349,7 +349,6 @@
       }
     }
 
-    /* The Modal (background) */
     .modal {
       display: none;
       position: fixed;
@@ -362,7 +361,6 @@
       background-color: #0f2753;
     }
 
-    /* Modal Content */
     .modal-content {
       position: relative;
       margin: 2% auto;
@@ -397,9 +395,11 @@
 
     .lightboxSlides {
       display: none;
+      img {
+        width: 100%;
+      }
     }
 
-    /* Next & previous buttons */
     .prev,
     .next {
       cursor: pointer;
@@ -415,6 +415,7 @@
       border-radius: 0 3px 3px 0;
       user-select: none;
       -webkit-user-select: none;
+      background: rgba(0, 0, 0, 0.56);
     }
 
     .next {
@@ -429,6 +430,7 @@
 
     .numbertext {
       font-family: "Oswald", sans-serif;
+      background: rgba(0, 0, 0, 0.56);
       color: #f2f2f2;
       font-size: 1.15em;
       padding: 4%;
@@ -458,6 +460,7 @@
     }
 
     img.hover-shadow {
+      cursor: pointer;
       transition: 0.3s;
     }
 
@@ -516,10 +519,6 @@
     }
   }
 
-  //Viewports Athlete
-  @media screen and (min-width: 320px) {
-  }
-
   //Tablet
   @media screen and (min-width: 720px) {
     #contactgb {
@@ -527,6 +526,10 @@
     }
     #athleteheader {
       padding: 20%;
+      h1 {
+        font-size: 3em;
+        border-radius: 12px;
+      }
       #someathlete {
         z-index: 3;
         position: absolute;
@@ -540,8 +543,246 @@
         }
       }
     }
+    .dot {
+      height: 9px;
+      width: 9px;
+    }
+    #bio {
+      margin-top: 6%;
+      .bio1 {
+        width: 25%;
+        h2 {
+          font-size: 2.5em;
+        }
+        p {
+          font-size: 1.25em;
+          margin-top: 3%;
+        }
+      }
+      .bio2 {
+        width: 34%;
+      }
+    }
+    #selectedresults {
+      margin-top: 6%;
+      h2 {
+        font-size: 2.5em;
+      }
+      .selectyear {
+        margin-left: 8%;
+        h3 {
+          font-size: 1.5em;
+        }
+        p {
+          font-size: 1.25em;
+          margin-right: 15%;
+        }
+      }
+    }
+    #someengagement {
+      margin-top: 6%;
+      .somebox1 {
+        width: 30%;
+        h3 {
+          font-size: 2.5em;
+        }
+        p {
+          margin-top: 3%;
+        }
+      }
+      .somebox2 {
+        width: 30%;
+        .athletefollowers {
+          padding-top: 5%;
+        }
+      }
+      .someengagementicons {
+        a {
+          width: 10%;
+        }
+      }
+    }
+    #partners {
+      margin-top: 7%;
+      h2 {
+        padding: 1% 0 3% 0;
+        font-size: 2.5em;
+      }
+    }
+    #gallery {
+      margin-top: 6%;
+      margin-bottom: 2%;
+      h2 {
+        font-size: 2.5em;
+      }
+      .gallery-container {
+        display: flex;
+        justify-content: center;
+        .row {
+          width: 50%;
+        }
+      }
+      .lightboxSlides {
+        text-align: center;
+        img {
+          width: 50%;
+        }
+      }
+      .numbertext {
+        background: none;
+        font-size: 2.5em;
+      }
+      .prev,
+      .next {
+        background: none;
+        font-size: 3em;
+        margin-top: 0;
+        top: 25%;
+      }
+      .caption-container {
+        margin: 2% 0 2% 0;
+        font-size: 1.5em;
+      }
+    }
   }
   //PC
   @media screen and (min-width: 1080px) {
+    #athleteheader {
+      h1 {
+        font-size: 3.5em;
+      }
+      #someathlete {
+        right: 2%;
+        top: 91%;
+        a {
+          width: 3%;
+        }
+      }
+      #contactgb {
+        font-size: 2em;
+        padding: 1.5%;
+        left: 82%;
+        font-weight: bold;
+      }
+    }
+    #bio {
+      margin-top: 3%;
+      .bio1 {
+        width: 19%;
+        h2 {
+          font-size: 4.25em;
+        }
+        p {
+          font-size: 1.8em;
+          line-height: 1.2em;
+          margin-top: 5%;
+        }
+      }
+      .bio2 {
+        width: 28%;
+      }
+      .dot-container {
+        margin-top: 0;
+      }
+      .dot {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    #selectedresults {
+      h2 {
+        font-size: 4.25em;
+      }
+      .selectyear {
+        margin-left: 0;
+        width: 26%;
+        h3 {
+          font-size: 3em;
+          text-align: center;
+          span {
+            margin-right: 0;
+            &::after {
+              content: none;
+            }
+          }
+        }
+        span {
+          margin-right: 5%;
+        }
+        p {
+          font-size: 2em;
+          margin-right: 0;
+          text-align: left;
+        }
+        .select1st {
+          font-size: 1.25em;
+        }
+        .selectedresultline {
+          display: block;
+          height: 3px;
+          background: white;
+          margin-bottom: 7%;
+        }
+      }
+      .selectedresultsflex {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+    #someengagement {
+      .somebox1 {
+        width: 20%;
+        h3 {
+          font-size: 4.25em;
+        }
+        p {
+          font-size: 1.8em;
+          line-height: 1.2em;
+          margin-top: 5%;
+        }
+      }
+      .somebox2 {
+        width: 20%;
+      }
+      .someengagementicons {
+        margin-top: 2%;
+        justify-content: center;
+        a {
+          width: 3%;
+          margin: 0 2% 0 2%;
+        }
+      }
+    }
+    #partners {
+      margin-top: 3%;
+      h2 {
+        font-size: 4.25em;
+        margin-bottom: 1%;
+      }
+    }
+    #gallery {
+      margin-top: 3%;
+      h2 {
+        font-size: 4.25em;
+      }
+      .gallery-container {
+        .row {
+          width: 25%;
+        }
+      }
+      .lightboxSlides {
+        img {
+          width: 25%;
+        }
+      }
+      img.lightboxdot {
+        width: 50%;
+      }
+      .modal-content {
+        .column {
+          text-align: center;
+        }
+      }
+    }
   }
 }
