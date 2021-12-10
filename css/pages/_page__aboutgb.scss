@@ -113,6 +113,12 @@
       font-family: "Oswald", sans-serif;
       font-size: 1.15em;
     }
+    a {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.15em;
+      text-decoration: underline;
+      color: #fff;
+    }
     #phone {
       margin-bottom: 6%;
     }
@@ -156,10 +162,10 @@
 
 @media only screen and (min-width: 400px) {
   #aboutme {
-      padding-bottom: 8%;
-      p {
-        margin-top: 0%;
-      }
+    padding-bottom: 8%;
+    p {
+      margin-top: 0%;
+    }
     #aboutme-section {
       margin-bottom: 8%;
     }
@@ -210,10 +216,10 @@
 
 @media only screen and (min-width: 600px) {
   #aboutme {
-      padding-bottom: 6%;
-      p {
-        margin-top: 0%;
-      }
+    padding-bottom: 6%;
+    p {
+      margin-top: 0%;
+    }
     #aboutme-section {
       margin-bottom: 6%;
     }
@@ -254,10 +260,10 @@
 @media only screen and (min-width: 960px) {
   #page__aboutgb {
     p {
-    line-height: 1.2em;
+      line-height: 1.2em;
     }
   }
-    
+
   #aboutme {
     padding-bottom: 4%;
     #aboutme-section {
@@ -345,9 +351,6 @@
     margin: 3% 0 0 10%;
     width: 42.5%;
     padding-bottom: 2%;
-    p {
-      text-align: center;
-    }
   }
 
   h3 {
@@ -402,7 +405,7 @@
 
   #contact {
     #phone {
-      margin-bottom: 1.75%;
+      margin-bottom: 3%;
     }
     h3 {
       margin-top: 4%;
