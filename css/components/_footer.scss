@@ -7,13 +7,17 @@ h4 {
     font-family: 'Bebas Neue', cursive;
 }
 
-#footer_indhold {
+  #footer_indhold {
     background: rgb(65, 74, 80);
-    background: linear-gradient(4deg, rgba(65, 74, 80, 1) 0%, rgba(0, 1, 13, 1) 100%);
+    background: linear-gradient(
+      4deg,
+      rgba(65, 74, 80, 1) 0%,
+      rgba(0, 1, 13, 1) 100%
+    );
     box-shadow: rgba(0, 0, 0, 0.56) 10px 22px 10px 30px;
-}
+  }
 
-#footer_kontakt {
+  #footer_kontakt {
     color: #fff;
     text-align: center;
     padding-top: 5%;
@@ -22,24 +26,23 @@ h4 {
     font-size: 1.3em;
 
     a {
-        color: #fff;
+      color: #fff;
     }
 
     li {
-        margin-bottom: 5%;
+      margin-bottom: 5%;
     }
-}
+  }
 
-#some_overskrift{
+  #some_overskrift {
     display: none;
-}
+  }
 
 #footer_some {
     padding-bottom: 2.5%;
 }
 
-
-#some_iconer{
+  #some_iconer {
     display: flex;
     img {
     width: 37.5%;
@@ -158,5 +161,4 @@ h4 {
             justify-content: center;
         }
     }
-}
 }

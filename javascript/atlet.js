@@ -40,12 +40,12 @@ function closeModal() {
 var slideLightboxIndex = 1;
 showLightboxSlides(slideLightboxIndex);
 
-// Next/previous controls
+// Næste og tilbage knapperne
 function plusLightboxSlides(n) {
   showLightboxSlides(slideLightboxIndex += n);
 }
 
-// Thumbnail image controls
+// Thumbnail image knapperne
 function currentLightboxSlide(n) {
   showLightboxSlides(slideLightboxIndex = n);
 }
