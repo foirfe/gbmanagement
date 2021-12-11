@@ -260,7 +260,7 @@ header .dropdown-container {
 }
 
 header .gblogo {
-  width: 20%;
+  width: 15%;
   position: absolute;
   left: 2%;
   top: 1%;
@@ -292,7 +292,7 @@ header .gblogo {
     margin-left: 60%;
   }
   header .gblogo {
-    width: 15%;
+    width: 10%;
   }
 }
 
@@ -310,7 +310,8 @@ header .gblogo {
     right: 3%;
   }
   header .gblogo {
-    width: 10%;
+    width: 5%;
+    left: 0.5%;
   }
 }
 
@@ -320,7 +321,7 @@ footer h4 {
   color: #fff;
   text-align: center;
   font-size: 1.7em;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 footer #footer_indhold {
@@ -333,9 +334,9 @@ footer #footer_indhold {
 footer #footer_kontakt {
   color: #fff;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-bottom: 2%;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.3em;
 }
 
@@ -436,13 +437,17 @@ footer #some_iconer {
 }
 
 #page__index #get_in_touch {
-  font-size: 1.4rem;
-  margin-left: 69%;
+  font-size: 1.4em;
+  position: absolute;
   padding-top: 4%;
   margin-bottom: 7.5%;
+  left: 70%;
+  top: 1%;
 }
 
 #page__index #indexheader {
+  display: none;
+  position: absolute;
   text-align: center;
   font-size: 3em;
   color: #fff;
@@ -476,10 +481,19 @@ footer #some_iconer {
 }
 
 #page__index .athleteheader {
-  display: none;
+  color: white;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
   position: absolute;
   font-family: "Oswald", sans-serif;
-  font-size: 2em;
+  font-size: 2.5em;
+  display: none;
 }
 
 #page__index #athlete3 {
@@ -487,14 +501,12 @@ footer #some_iconer {
 }
 
 #page__index .atlet1 {
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
   border-bottom: 1px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2.5%;
-  padding-bottom: 4%;
   padding-left: 0;
   padding-right: 0;
   -webkit-box-pack: space-evenly;
@@ -510,23 +522,19 @@ footer #some_iconer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 35%;
-}
-
-#page__index .tekst_atlet1 {
-  width: 40%;
+  width: 50%;
 }
 
 #page__index h3 {
-  font-size: 1.3rem;
+  font-size: 1.3em;
   color: white;
   font-family: "Bebas Neue", cursive;
   text-align: center;
-  margin-top: 5%;
+  position: absolute;
 }
 
 #page__index .atlet2 {
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,7 +556,7 @@ footer #some_iconer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 35%;
+  width: 50%;
   padding-right: 2%;
 }
 
@@ -556,40 +564,22 @@ footer #some_iconer {
   width: 40%;
 }
 
-#page__index .brodtekst1 {
-  font-size: 1.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  color: white;
-  font-family: "Rajdhani", sans-serif;
-}
-
-#page__index .brodtekst2 {
-  font-size: 1.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  color: white;
-  font-family: "Rajdhani", sans-serif;
+#page__index .athleteoverlay {
+  display: none;
 }
 
 @media only screen and (min-width: 455px) {
   #page__index #get_in_touch {
     margin-bottom: 3%;
     padding: 1%;
-    padding-top: 60%;
   }
   #page__index h3 {
-    font-size: 2rem;
+    font-size: 2em;
   }
   #page__index .atlet1 {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding-right: 6%;
   }
   #page__index .atlet2 {
     -webkit-box-pack: space-evenly;
@@ -618,7 +608,6 @@ footer #some_iconer {
   #page__index #get_in_touch {
     margin-bottom: 3%;
     padding: 1%;
-    padding-top: 55%;
   }
   #page__index #tekst_touch {
     margin-bottom: 5%;
@@ -632,6 +621,7 @@ footer #some_iconer {
     font-size: 2.1rem;
   }
   #page__index .billede_atlet1 {
+    position: relative;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -642,7 +632,6 @@ footer #some_iconer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding-left: 0%;
-    padding-right: 7%;
   }
   #page__index .brodtekst1 {
     font-size: 2rem;
@@ -677,7 +666,6 @@ footer #some_iconer {
 
 @media only screen and (min-width: 930px) {
   #page__index #get_in_touch {
-    padding-top: 45em;
     position: absolute;
     width: 23%;
     margin-right: 55%;
@@ -697,6 +685,8 @@ footer #some_iconer {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
   #page__index .billede_atlet2 {
     display: -webkit-box;
@@ -704,6 +694,14 @@ footer #some_iconer {
     display: flex;
     width: 100%;
     padding: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #page__index .billede_atlet2:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transform-origin: 30% 30%;
+            transform-origin: 30% 30%;
   }
   #page__index .brodtekst2 {
     font-size: 2.5rem;
@@ -711,23 +709,60 @@ footer #some_iconer {
     display: none;
   }
   #page__index .atlet1 {
+    width: 90%;
     border-top: none;
     border-bottom: none;
-    display: block;
+    display: inline-block;
+    overflow: hidden;
     padding: 0;
+    position: relative;
+  }
+  #page__index .atlet1 .athleteoverlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    background: rgba(86, 86, 87, 0);
+  }
+  #page__index .atlet1:hover .athleteoverlay {
+    background: rgba(18, 18, 19, 0.5);
   }
   #page__index .atlet2 {
+    width: 90%;
     border-top: none;
     border-bottom: none;
-    display: block;
     padding: 0;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+  }
+  #page__index .atlet2 .athleteoverlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    background: rgba(86, 86, 87, 0);
+  }
+  #page__index .atlet2:hover .athleteoverlay {
+    background: rgba(18, 18, 19, 0.5);
   }
   #page__index #atlet_flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding-top: 5%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -736,26 +771,8 @@ footer #some_iconer {
             align-items: flex-end;
     height: 100%;
   }
-  #page__index .tekst_atlet1 {
-    display: none;
-  }
-  #page__index .tekst_atlet2 {
-    display: none;
-  }
   #page__index .athleteheader {
     top: 47.5%;
-  }
-  #page__index #header1 {
-    left: 3%;
-  }
-  #page__index #header2 {
-    left: 28.2%;
-  }
-  #page__index #header3 {
-    left: 55%;
-  }
-  #page__index #header4 {
-    left: 77.5%;
   }
   #page__index #athlete1:hover .athleteheader {
     display: block;
@@ -768,7 +785,9 @@ footer #some_iconer {
   }
   #page__index .billede_atlet2 {
     width: 100%;
-    margin-top: -5.5%;
+  }
+  #page__index .athleteheader {
+    font-size: 4.25em;
   }
 }
 
@@ -778,7 +797,6 @@ footer #some_iconer {
   }
   #page__index .billede_atlet2 {
     width: 100%;
-    margin-top: -4.1%;
   }
 }
 
@@ -987,6 +1005,7 @@ footer #some_iconer {
 #page__athlete #bio .bio1 h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 2em;
+  color: #04142d;
 }
 
 #page__athlete #bio .bio1 p {
