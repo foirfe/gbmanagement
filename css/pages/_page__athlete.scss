@@ -270,7 +270,9 @@
       }
       p {
         font-family: "Rajdhani", sans-serif;
-        font-size: 1.25em;
+        @media screen and (min-width: 375px) {
+          font-size: 1.15em;
+        }
         .somehighlight {
           color: #04142d;
           font-weight: bold;
@@ -607,6 +609,7 @@
         }
         p {
           margin-top: 3%;
+          font-size: 1.7em;
         }
       }
       .somebox2 {

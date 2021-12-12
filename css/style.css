@@ -381,6 +381,15 @@ footer #some_iconer img {
   footer #footer_kontakt li {
     margin-bottom: 12%;
   }
+  footer #footer_kontakt {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 0%;
+  }
+  footer #footer_kontakt li {
+    margin-bottom: 12%;
+  }
   footer #footer_some {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -467,17 +476,20 @@ footer #some_iconer img {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 900px) and (min-width: 1280px) {
   footer #footer_kontakt {
     padding-top: 1.4%;
+  }
+  footer #footer_kontakt h4 {
+    margin-bottom: 2%;
   }
   footer #footer_kontakt li {
     margin-bottom: 4%;
   }
   footer #footer_some a {
-    width: 9%;
-    margin-left: 4%;
-    margin-right: 4%;
+    width: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   footer #footer_some #some_iconer {
     -webkit-box-pack: center;
@@ -501,13 +513,11 @@ footer #some_iconer img {
 }
 
 #page__index #indexheader {
-  display: none;
-  position: absolute;
   text-align: center;
   font-size: 3em;
   color: #fff;
   font-family: "Bebas Neue", cursive;
-  padding-top: 2.5%;
+  padding-top: 20%;
   padding-bottom: 0%;
 }
 
@@ -551,12 +561,12 @@ footer #some_iconer img {
   display: none;
 }
 
-#page__index #athlete3 {
+#page__index #athlete2 {
   border-bottom: 1px solid #fff;
 }
 
 #page__index .atlet1 {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid #fff;
   display: -webkit-box;
@@ -577,25 +587,29 @@ footer #some_iconer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 70%;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  border-radius: 6px;
 }
 
 #page__index h3 {
-  font-size: 1.3em;
+  font-size: 2.2em;
+  padding: 2%;
   color: white;
   font-family: "Bebas Neue", cursive;
   text-align: center;
   position: absolute;
+  background: rgba(0, 0, 0, 0.56);
+  border-radius: 6px;
 }
 
 #page__index .atlet2 {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2.5%;
-  padding-bottom: 4%;
   padding-left: 0;
   padding-right: 0;
   -webkit-box-pack: space-evenly;
@@ -611,12 +625,13 @@ footer #some_iconer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
-  padding-right: 2%;
+  width: 70%;
+  margin: 4% 0 4% 0;
+  border-radius: 6px;
 }
 
-#page__index .tekst_atlet2 {
-  width: 40%;
+#page__index #kristianhoegenhaugpicture {
+  margin-bottom: 8%;
 }
 
 #page__index .athleteoverlay {
@@ -629,7 +644,7 @@ footer #some_iconer img {
     padding: 1%;
   }
   #page__index h3 {
-    font-size: 2em;
+    font-size: 3em;
   }
   #page__index .atlet1 {
     -webkit-box-pack: space-evenly;
@@ -664,6 +679,9 @@ footer #some_iconer img {
     margin-bottom: 3%;
     padding: 1%;
   }
+  #page__index #indexheader {
+    padding-top: 10%;
+  }
   #page__index #tekst_touch {
     margin-bottom: 5%;
     margin-left: 8%;
@@ -673,7 +691,7 @@ footer #some_iconer img {
     padding-right: 15%;
   }
   #page__index h3 {
-    font-size: 2.1rem;
+    font-size: 3.5em;
   }
   #page__index .billede_atlet1 {
     position: relative;
@@ -681,27 +699,17 @@ footer #some_iconer img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 40%;
   }
   #page__index .atlet1 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding-left: 0%;
   }
-  #page__index .brodtekst1 {
-    font-size: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    margin-right: 10%;
-  }
   #page__index .billede_atlet2 {
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 40%;
   }
   #page__index .atlet2 {
     -ms-flex-pack: distribute;
@@ -727,12 +735,11 @@ footer #some_iconer img {
     margin-left: 45%;
     display: none;
   }
-  #page__index h3 {
-    font-size: 2.6rem;
+  #page__index #indexheader {
     display: none;
   }
-  #page__index .brodtekst1 {
-    font-size: 2.5rem;
+  #page__index h3 {
+    font-size: 2.6rem;
     display: none;
   }
   #page__index .billede_atlet1 {
@@ -742,6 +749,8 @@ footer #some_iconer img {
     width: 100%;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    margin: 0;
+    border-radius: 0%;
   }
   #page__index .billede_atlet2 {
     display: -webkit-box;
@@ -751,6 +760,8 @@ footer #some_iconer img {
     padding: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    margin: 0;
+    border-radius: 0%;
   }
   #page__index .billede_atlet2:hover {
     -webkit-transform: scale(1.1);
@@ -758,10 +769,11 @@ footer #some_iconer img {
     -webkit-transform-origin: 30% 30%;
             transform-origin: 30% 30%;
   }
-  #page__index .brodtekst2 {
-    font-size: 2.5rem;
-    margin-right: 10%;
-    display: none;
+  #page__index #kristianhoegenhaugpicture {
+    margin-bottom: 0;
+  }
+  #page__index #athlete2 {
+    border-bottom: hidden;
   }
   #page__index .atlet1 {
     width: 90%;
@@ -1186,7 +1198,12 @@ footer #some_iconer img {
 
 #page__athlete #someengagement .somebox1 p {
   font-family: "Rajdhani", sans-serif;
-  font-size: 1.25em;
+}
+
+@media screen and (min-width: 375px) {
+  #page__athlete #someengagement .somebox1 p {
+    font-size: 1.15em;
+  }
 }
 
 #page__athlete #someengagement .somebox1 p .somehighlight {
@@ -1583,6 +1600,7 @@ footer #some_iconer img {
   }
   #page__athlete #someengagement .somebox1 p {
     margin-top: 3%;
+    font-size: 1.7em;
   }
   #page__athlete #someengagement .somebox2 {
     width: 30%;
@@ -1964,7 +1982,7 @@ footer #some_iconer img {
     text-decoration: underline;
     color: #fff;
   }
-  #contact #phone {
+  #contact #email2 {
     margin-bottom: 6%;
   }
   #some {
@@ -2027,7 +2045,7 @@ footer #some_iconer img {
   #aboutme-section {
     margin-top: 2%;
   }
-  #contact #phone {
+  #contact #email2 {
     margin-bottom: 3%;
   }
   #contact h3 {
@@ -2090,6 +2108,9 @@ footer #some_iconer img {
 }
 
 @media only screen and (min-width: 850px) {
+  #contact {
+    padding-bottom: 5%;
+  }
   #some {
     width: 35%;
   }
@@ -2117,7 +2138,7 @@ footer #some_iconer img {
   #contact {
     padding-bottom: 3.5%;
   }
-  #contact #phone {
+  #contact #email2 {
     margin-bottom: 2%;
   }
   #contact h3 {
@@ -2240,7 +2261,7 @@ footer #some_iconer img {
     padding-left: 3%;
     padding-right: 3%;
   }
-  #contact #phone {
+  #contact #email2 {
     margin-bottom: 3%;
   }
   #contact h3 {
@@ -2257,13 +2278,6 @@ footer #some_iconer img {
 #page__brandactivation {
   background: #1a6988;
   background: linear-gradient(77deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
-  /* Position the image container (needed to position the left and right arrows) */
-  /* Add a pointer when hovering over the thumbnail images */
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
-  /* Number text (1/3 etc) */
-  /* Container for image text */
 }
 
 #page__brandactivation .container img {
@@ -2313,7 +2327,7 @@ footer #some_iconer img {
   padding: 2% 5%;
   position: absolute;
   top: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 #page__brandactivation .caption-container {
@@ -2330,7 +2344,7 @@ footer #some_iconer img {
 
 #page__brandactivation h1 {
   font-size: 2em;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   color: #fff;
   padding-top: 23%;
   text-align: center;
@@ -2343,7 +2357,7 @@ footer #some_iconer img {
   width: 70%;
   margin: 0 auto;
   margin-top: 2%;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   border-bottom: 1px solid;
   padding-bottom: 5%;
   text-align: center;
@@ -2354,7 +2368,7 @@ footer #some_iconer img {
   font-size: 1.2em;
   width: 70%;
   margin: 0 auto;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   text-align: center;
   border-bottom: 1px solid;
   padding-bottom: 5%;
@@ -2365,14 +2379,14 @@ footer #some_iconer img {
   font-size: 1.2em;
   width: 70%;
   margin: 0 auto;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   text-align: center;
   padding-bottom: 9%;
 }
 
 #page__brandactivation h2 {
   font-size: 2em;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   color: #fff;
   padding-top: 10%;
   padding-bottom: 5%;
@@ -2394,10 +2408,10 @@ footer #some_iconer img {
   padding-left: 14%;
   padding-right: 14%;
   text-decoration: none;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   font-family: "Oswald", sans-serif;
   padding-top: 3%;
   padding-bottom: 3%;
