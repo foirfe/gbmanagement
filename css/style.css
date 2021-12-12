@@ -316,11 +316,10 @@ header .gblogo {
 }
 
 footer h4 {
-  padding-top: 5%;
   padding-bottom: 4%;
   color: #fff;
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.75em;
   font-family: "Bebas Neue", cursive;
 }
 
@@ -334,8 +333,8 @@ footer #footer_indhold {
 footer #footer_kontakt {
   color: #fff;
   text-align: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 5%;
+  padding-bottom: 1%;
   font-family: "Oswald", sans-serif;
   font-size: 1.3em;
 }
@@ -353,28 +352,18 @@ footer #some_overskrift {
 }
 
 footer #footer_some {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-}
-
-footer .footer_some_iconer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 35%;
-  margin: 0 auto;
-  padding-top: 15%;
-  padding-bottom: 25%;
+  padding-bottom: 2.5%;
 }
 
 footer #some_iconer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+
+footer #some_iconer img {
+  width: 37.5%;
+  margin: 0 31.5%;
 }
 
 @media only screen and (min-width: 625px) {
@@ -384,50 +373,116 @@ footer #some_iconer {
     display: flex;
   }
   footer #footer_kontakt {
+    width: 50%;
     margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 0%;
   }
   footer #footer_kontakt li {
-    margin-bottom: 10%;
+    margin-bottom: 12%;
   }
   footer #footer_some {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 25%;
-    margin-top: 3%;
-  }
-  footer #footer_some h4 {
-    display: block;
-    margin-top: 10%;
-  }
-  footer .footer_some_iconer {
-    padding-bottom: 5%;
-    padding-top: 0%;
-  }
-  footer h4 {
-    padding-bottom: 2%;
-    font-size: 2em;
-  }
-  footer #some_iconer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media only screen and (min-width: 625px) and (min-width: 900px) {
-  footer #footer_some {
+    width: 50%;
+    padding-top: 3%;
+    padding-bottom: 0%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   footer #footer_some h4 {
-    margin-top: 7%;
+    display: block;
+    margin-top: 0%;
+  }
+  footer #footer_some a {
+    width: 18%;
+    margin-bottom: 6%;
+  }
+  footer #footer_some img {
+    padding-top: 0%;
+    margin: 0 auto;
+    width: 100%;
+  }
+  footer h4 {
+    margin-bottom: 4%;
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  footer #some_overskrift {
+    font-size: 2.6em;
+  }
+  footer #some_iconer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  footer #footer_some a {
+    width: 15%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  footer #footer_indhold {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer #footer_some {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0%;
+  }
+  footer #footer_some h4 {
+    margin-top: 0%;
+  }
+  footer #footer_some a {
+    width: 14%;
+    margin-bottom: 0%;
   }
   footer .footer_some_iconer {
     width: 80%;
   }
+  footer #footer_kontakt li {
+    margin-bottom: 6%;
+  }
   footer #some_iconer {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  footer #footer_kontakt {
+    padding-top: 1.4%;
+  }
+  footer #footer_kontakt li {
+    margin-bottom: 4%;
+  }
+  footer #footer_some a {
+    width: 9%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  footer #footer_some #some_iconer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1620,11 +1675,11 @@ footer #some_iconer {
     font-size: 3.5em;
   }
   #page__athlete #athleteheader #someathlete {
-    right: 2%;
-    top: 91%;
+    right: 1%;
   }
   #page__athlete #athleteheader #someathlete a {
-    width: 3%;
+    width: 4.5%;
+    margin: 1% 0.5% 1% 0.5%;
   }
   #page__athlete #athleteheader #contactgb {
     font-size: 2em;
@@ -1632,6 +1687,21 @@ footer #some_iconer {
     left: 82%;
     font-weight: bold;
   }
+}
+
+@media screen and (min-width: 1080px) and (min-width: 1400px) {
+  #page__athlete #athleteheader #contactgb {
+    left: 85%;
+  }
+}
+
+@media screen and (min-width: 1080px) and (min-width: 1500px) {
+  #page__athlete #athleteheader #contactgb {
+    left: 87%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
   #page__athlete #bio {
     margin-top: 3%;
   }

@@ -684,10 +684,10 @@
         font-size: 3.5em;
       }
       #someathlete {
-        right: 2%;
-        top: 91%;
+        right: 1%;
         a {
-          width: 3%;
+          width: 4.5%;
+          margin: 1% 0.5% 1% 0.5%;
         }
       }
       #contactgb {
@@ -695,6 +695,12 @@
         padding: 1.5%;
         left: 82%;
         font-weight: bold;
+        @media screen and (min-width: 1400px) {
+          left: 85%;
+        }
+        @media screen and (min-width: 1500px) {
+          left: 87%;
+        }
       }
     }
     #bio {
