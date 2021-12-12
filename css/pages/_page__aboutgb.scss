@@ -129,7 +129,7 @@
       color: #fff;
     }
 
-    #phone {
+    #email2 {
       margin-bottom: 6%;
     }
   }
@@ -205,7 +205,7 @@
   }
 
   #contact {
-    #phone {
+    #email2 {
       margin-bottom: 3%;
     }
 
@@ -289,6 +289,10 @@
 }
 
 @media only screen and (min-width: 850px) {
+  #contact {
+    padding-bottom: 5%;
+  }
+
   #some {
     width: 35%;
     a {
@@ -322,7 +326,7 @@
   #contact {
     padding-bottom: 3.5%;
 
-    #phone {
+    #email2 {
       margin-bottom: 2%;
     }
 
@@ -469,7 +473,7 @@
   }
 
   #contact {
-    #phone {
+    #email2 {
       margin-bottom: 3%;
     }
 
