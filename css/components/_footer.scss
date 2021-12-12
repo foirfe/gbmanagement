@@ -1,11 +1,11 @@
 footer {
-h4 {
+  h4 {
     padding-bottom: 4%;
     color: #fff;
     text-align: center;
     font-size: 1.75em;
-    font-family: 'Bebas Neue', cursive;
-}
+    font-family: "Bebas Neue", cursive;
+  }
 
   #footer_indhold {
     background: rgb(65, 74, 80);
@@ -22,7 +22,7 @@ h4 {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 1%;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 1.3em;
 
     a {
@@ -38,127 +38,128 @@ h4 {
     display: none;
   }
 
-#footer_some {
+  #footer_some {
     padding-bottom: 2.5%;
-}
+  }
 
   #some_iconer {
     display: flex;
     img {
-    width: 37.5%;
-    margin: 0 31.5%;
+      width: 37.5%;
+      margin: 0 31.5%;
     }
-}
+  }
 
-@media only screen and (min-width: 625px) {
-   #footer_indhold{
-       display: flex;
-   }
+  @media only screen and (min-width: 625px) {
+    #footer_indhold {
+      display: flex;
+    }
 
-   #footer_kontakt{
-        width: 50%;
-        margin: 0 auto;
-        padding-top: 3%;
-        padding-bottom: 0%;
-        li {
-            margin-bottom: 12%;
-       }
-   }
+    #footer_kontakt {
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 3%;
+      padding-bottom: 0%;
+      li {
+        margin-bottom: 12%;
+      }
+    }
 
-   #footer_some{
-        flex-wrap:wrap;
-        width: 50%;
-        padding-top: 3%;
-        padding-bottom: 0%;
-        justify-content: center;
-        h4 {
+    #footer_some {
+      flex-wrap: wrap;
+      width: 50%;
+      padding-top: 3%;
+      padding-bottom: 0%;
+      justify-content: center;
+      h4 {
         display: block;
         margin-top: 0%;
-       }
-       a {
+      }
+      a {
         width: 18%;
         margin-bottom: 6%;
-       }
-       img {
+      }
+      img {
         padding-top: 0%;
         margin: 0 auto;
         width: 100%;
-       }
+      }
     }
 
-    h4{
-        margin-bottom: 4%;
-        font-size: 2em;
-        margin-top: 0;
-        padding-top: 0;
-        padding-bottom: 0;
+    h4 {
+      margin-bottom: 4%;
+      font-size: 2em;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     #some_overskrift {
-        font-size: 2.6em;
+      font-size: 2.6em;
     }
 
-    #some_iconer{
-        flex-direction: column;
-        align-items: center;
+    #some_iconer {
+      flex-direction: column;
+      align-items: center;
     }
-}
+  }
 
-@media only screen and (min-width: 720px) {
+  @media only screen and (min-width: 720px) {
     #footer_some {
-        a {
-            width: 15%;
-        }
+      a {
+        width: 15%;
+      }
     }
-}
+  }
 
-@media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 900px) {
     #footer_indhold {
-        align-items: center;
-    }
-
-    #footer_some{
-        justify-content: center;
-        padding-top: 0%;
-        h4{
-         margin-top: 0%;
-        }
-        a {
-            width: 14%;
-            margin-bottom: 0%;
-        }
-    }
-    .footer_some_iconer{
-        width: 80%;
-    }
-
-    #footer_kontakt {
-        li {
-         margin-bottom: 6%;
-        }
-    }
-
-    #some_iconer{
-        flex-direction: row;
-        justify-content: space-evenly;
-        }
-    }
-@media only screen and (min-width: 1280px) {
-    #footer_kontakt {
-        padding-top: 1.4%;
-        li {
-            margin-bottom: 4%;
-        }
+      align-items: center;
     }
 
     #footer_some {
-        a {
-            width: 9%;
-            margin-left: 4%;
-            margin-right: 4%;
-        }
-        #some_iconer {
-            justify-content: center;
-        }
+      justify-content: center;
+      padding-top: 0%;
+      h4 {
+        margin-top: 0%;
+      }
+      a {
+        width: 14%;
+        margin-bottom: 0%;
+      }
     }
+    .footer_some_iconer {
+      width: 80%;
+    }
+
+    #footer_kontakt {
+      li {
+        margin-bottom: 6%;
+      }
+    }
+
+    #some_iconer {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    #footer_kontakt {
+      padding-top: 1.4%;
+      li {
+        margin-bottom: 4%;
+      }
+    }
+
+    #footer_some {
+      a {
+        width: 9%;
+        margin-left: 4%;
+        margin-right: 4%;
+      }
+      #some_iconer {
+        justify-content: center;
+      }
+    }
+  }
 }
