@@ -1,3 +1,10 @@
+const gallery = document.getElementById("gallery")
+
+if (window.innerWidth <  1080){
+gallery.remove();
+
+}
+
 
 //Med hjælp fra W3Schools.com, har vi så lavet slideshow om til at skifte til forskellige info på biosiden hos Atlet.
 var slideIndex = 1;
