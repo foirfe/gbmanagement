@@ -582,11 +582,16 @@ footer #some_iconer img {
           align-items: center;
 }
 
+#page__index .atlet1 a {
+  width: 75%;
+}
+
 #page__index .billede_atlet1 {
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
   width: 70%;
   margin-bottom: 4%;
   margin-top: 4%;
@@ -620,13 +625,18 @@ footer #some_iconer img {
           align-items: center;
 }
 
+#page__index .atlet2 a {
+  width: 75%;
+}
+
 #page__index .billede_atlet2 {
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
   width: 70%;
-  margin: 4% 0 4% 0;
+  margin: 4% auto 4% auto;
   border-radius: 6px;
 }
 
@@ -2569,11 +2579,42 @@ footer #some_iconer img {
     padding-top: 6%;
   }
   #page__brandactivation h3 {
-    padding-top: 1%;
+    padding-top: 6%;
   }
   #page__brandactivation .container img {
-    margin: 0 30% 0 35%;
+    margin: 0 32.5% 0 32.5%;
     width: 35%;
+  }
+  #page__brandactivation .prev,
+  #page__brandactivation .next {
+    font-size: 270%;
+  }
+  #page__brandactivation .opnaet_tekst {
+    font-size: 1.7em;
+    line-height: 1.2em;
+  }
+  #page__brandactivation .tekst {
+    font-size: 1.7em;
+    line-height: 1.2em;
+  }
+  #page__brandactivation .tekst_virksomhed {
+    font-size: 1.7em;
+    line-height: 1.2em;
+    padding-bottom: 5%;
+  }
+  #page__brandactivation .numbertext {
+    font-size: 1.5em;
+    padding: 2% 25%;
+  }
+  #page__brandactivation #contact {
+    font-size: 1.6em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  #page__brandactivation #some {
+    width: 30%;
   }
   #page__brandactivation .prev,
   #page__brandactivation .next {

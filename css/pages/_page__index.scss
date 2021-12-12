@@ -72,11 +72,15 @@
     padding-right: 0;
     justify-content: space-evenly;
     align-items: center;
+    a {
+      width: 75%;
+    }
   }
 
   .billede_atlet1 {
     height: auto;
     display: flex;
+    margin: auto;
     width: 70%;
     margin-bottom: 4%;
     margin-top: 4%;
@@ -102,13 +106,17 @@
     padding-right: 0;
     justify-content: space-evenly;
     align-items: center;
+    a {
+      width: 75%;
+    }
   }
 
   .billede_atlet2 {
     height: auto;
     display: flex;
+    margin: auto;
     width: 70%;
-    margin: 4% 0 4% 0;
+    margin: 4% auto 4% auto;
     border-radius: 6px;
   }
 
