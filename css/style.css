@@ -1882,48 +1882,55 @@ footer #some_iconer img {
     background: #1a6988;
     background: -webkit-gradient(linear, left top, left bottom, from(#1a6988), color-stop(35%, #14486f), to(#0f2753));
     background: linear-gradient(180deg, #1a6988 0%, #14486f 35%, #0f2753 100%);
-  }
-  #page__aboutgb h1,
-  #page__aboutgb h2,
-  #page__aboutgb h3,
-  #page__aboutgb p {
-    color: #fff;
+    padding-bottom: 4%;
   }
   #page__aboutgb h1 {
     font-family: "Bebas Neue", cursive;
     font-size: 2em;
-  }
-  #page__aboutgb h3 {
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.6em;
-    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 5%;
   }
   #page__aboutgb p {
     font-family: "Rajdhani", sans-serif;
     font-size: 1.25em;
   }
-  #aboutme {
+  #page__aboutgb #about-flex {
+    padding-top: 15%;
+  }
+  #page__aboutgb #aboutme {
     margin: 0 auto;
-    width: 94%;
+    width: 82.5%;
     text-align: center;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 6%;
+    background: #fff;
+    border-radius: 12px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
-  #aboutme h1 {
-    padding-top: 20%;
-    margin-bottom: 5%;
+  #page__aboutgb #aboutme h1 {
+    color: #04142d;
   }
-  #aboutme img {
-    width: 33%;
-    -o-object-fit: contain;
-       object-fit: contain;
+  #page__aboutgb #aboutme img {
+    border-radius: 12px;
+    width: 22%;
   }
-  #aboutme p {
-    width: 53%;
-    margin-top: 4%;
+  #page__aboutgb #aboutme .aboutme-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #page__aboutgb #aboutme p {
+    width: 85%;
     text-align: left;
+    margin: 4% auto;
+    margin-bottom: 2%;
   }
-  #aboutme #email {
+  #page__aboutgb #aboutme #email {
     font-family: "Oswald", sans-serif;
     font-size: 1.2em;
     padding-top: 3%;
@@ -1936,7 +1943,7 @@ footer #some_iconer img {
     color: #fff;
     border-radius: 12px;
   }
-  #aboutme #email:hover {
+  #page__aboutgb #aboutme #email:hover {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#fc0211), to(#fd0036));
     background-image: linear-gradient(to top, #fc0211, #fd0036);
     -webkit-transform: scale(1.02);
@@ -1946,13 +1953,10 @@ footer #some_iconer img {
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
   }
-  #about-flex #nikolaj2 {
+  #page__aboutgb #about-flex #nikolaj2 {
     display: none;
   }
-  #aboutme-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  #page__aboutgb #aboutme-section {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-bottom: 8%;
@@ -1960,283 +1964,149 @@ footer #some_iconer img {
         -ms-flex-align: center;
             align-items: center;
   }
-  #values {
+  #page__aboutgb #values {
     margin: 0 auto;
-    width: 94%;
+    width: 82.5%;
     text-align: center;
-    border-bottom: 1px solid #fff;
     padding-bottom: 6%;
+    background: #fff;
+    border-radius: 12px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
-  #values h1 {
+  #page__aboutgb #values h1 {
     margin-top: 5%;
     margin-bottom: 2.5%;
+    color: #04142d;
   }
-  #contact {
+  #page__aboutgb #values p {
+    text-align: left;
+    max-width: 85%;
     margin: 0 auto;
-    width: 94%;
-    text-align: center;
-    padding-bottom: 8%;
-  }
-  #contact h1 {
-    padding-top: 5%;
-    padding-bottom: 2.5%;
-  }
-  #contact h2 {
-    line-height: 1.15em;
-    font-family: "Oswald", sans-serif;
-    font-size: 1.15em;
-  }
-  #contact a {
-    font-family: "Oswald", sans-serif;
-    font-size: 1.15em;
-    text-decoration: underline;
-    color: #fff;
-  }
-  #contact #email2 {
-    margin-bottom: 6%;
-  }
-  #some {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 66%;
-    margin: 0 auto;
-    margin-top: 1.6%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-bottom: 6%;
-  }
-  #some img {
-    width: 100%;
-  }
-  #some a {
-    width: 22%;
   }
 }
 
-@media only screen and (min-width: 260px) {
-  #aboutme {
-    padding-bottom: 9%;
-  }
-  #aboutme p {
+@media only screen and (min-width: 200px) and (min-width: 260px) {
+  #page__aboutgb #aboutme p {
     margin-top: 0%;
   }
-  #aboutme-section {
+  #page__aboutgb #aboutme-section {
     margin-bottom: 10%;
   }
 }
 
-@media only screen and (min-width: 360px) {
-  #aboutme img {
-    width: 30%;
-  }
-}
-
-@media only screen and (min-width: 400px) {
-  #aboutme {
-    padding-bottom: 8%;
-  }
-  #aboutme p {
+@media only screen and (min-width: 200px) and (min-width: 400px) {
+  #page__aboutgb #aboutme p {
     margin-top: 0%;
   }
-  #aboutme #aboutme-section {
+  #page__aboutgb #aboutme #aboutme-section {
     margin-bottom: 8%;
   }
-  #aboutme img {
+  #page__aboutgb #aboutme img {
     width: 22%;
   }
-  #aboutme #email {
+  #page__aboutgb #aboutme #email {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     padding-left: 8%;
     padding-right: 8%;
   }
-  #aboutme-section {
+  #page__aboutgb #aboutme-section {
     margin-top: 2%;
   }
-  #contact #email2 {
-    margin-bottom: 3%;
-  }
-  #contact h3 {
-    margin-top: 6%;
-  }
-  #some {
-    width: 66%;
-  }
-  #some a {
-    width: 24%;
-  }
 }
 
-@media only screen and (min-width: 500px) {
-  #contact {
-    padding-bottom: 7%;
-  }
-  #some {
-    width: 60%;
-  }
-  #some a {
-    width: 24%;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  #aboutme {
-    padding-bottom: 6%;
-  }
-  #aboutme p {
+@media only screen and (min-width: 200px) and (min-width: 600px) {
+  #page__aboutgb #aboutme p {
     margin-top: 0%;
   }
-  #aboutme #aboutme-section {
+  #page__aboutgb #aboutme #aboutme-section {
     margin-bottom: 6%;
   }
-  #aboutme #email {
+  #page__aboutgb #aboutme #email {
     padding-top: 1.8%;
     padding-bottom: 1.8%;
     padding-left: 5.5%;
     padding-right: 5.5%;
   }
-  #some {
-    width: 55%;
+}
+
+@media only screen and (min-width: 200px) and (min-width: 720px) {
+  #page__aboutgb #about-flex {
+    padding-top: 2%;
   }
-  #some a {
-    width: 24%;
+  #page__aboutgb #aboutme {
+    margin-top: 12%;
   }
 }
 
-@media only screen and (min-width: 700px) {
-  #aboutme h1 {
-    padding-top: 16%;
-  }
-  #some {
-    width: 40%;
-  }
-  #some a {
-    width: 24%;
-  }
-}
-
-@media only screen and (min-width: 850px) {
-  #contact {
-    padding-bottom: 5%;
-  }
-  #some {
-    width: 35%;
-  }
-  #some a {
-    width: 22%;
-  }
-}
-
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 200px) and (min-width: 960px) {
   #page__aboutgb p {
     line-height: 1.2em;
   }
-  #aboutme {
-    padding-bottom: 4%;
-  }
-  #aboutme #aboutme-section {
+  #page__aboutgb #aboutme #aboutme-section {
     margin-bottom: 5%;
   }
-  #aboutme #email {
+  #page__aboutgb #aboutme #email {
     padding-top: 1.4%;
     padding-bottom: 1.4%;
     padding-left: 4.5%;
     padding-right: 4.5%;
   }
-  #contact {
-    padding-bottom: 3.5%;
-  }
-  #contact #email2 {
-    margin-bottom: 2%;
-  }
-  #contact h3 {
-    margin-top: 4.5%;
-  }
-  #some {
-    width: 30%;
-  }
-  #some a {
-    width: 22%;
+}
+
+@media only screen and (min-width: 200px) and (min-width: 1080px) {
+  #page__aboutgb #aboutme {
+    margin-top: 7.5%;
   }
 }
 
-@media only screen and (min-width: 1100px) {
-  #some {
-    width: 20%;
+@media only screen and (min-width: 200px) and (min-width: 1280px) {
+  #page__aboutgb {
+    padding-bottom: 4%;
   }
-  #some a {
-    width: 20%;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
   #page__aboutgb h1 {
-    font-size: 4.25em;
+    text-align: left;
+    font-size: 4em;
   }
   #page__aboutgb h2 {
-    font-size: 2em;
-  }
-  #page__aboutgb h3 {
-    font-size: 3em;
+    font-size: 1.5em;
   }
   #page__aboutgb p {
     font-size: 1.8em;
     line-height: 1.2em;
   }
-  #email {
+  #page__aboutgb #email {
     font-size: 1.25em;
   }
-  #aboutme,
-  #values,
-  #contact {
+  #page__aboutgb .emptydiv {
+    display: none;
+  }
+  #page__aboutgb #aboutme,
+  #page__aboutgb #values {
     margin: 0;
     width: 100%;
   }
-  #aboutme h1 {
+  #page__aboutgb #aboutme {
+    width: 42.5%;
+    margin-right: 30%;
+    padding-bottom: 2.8%;
+    padding-left: 15%;
+    padding-right: 4%;
+    border-radius: 0px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 100%;
+  }
+  #page__aboutgb #aboutme p {
+    width: 100%;
+    text-align: left;
+    background: none;
+  }
+  #page__aboutgb #aboutme h1 {
     padding: 5% 0 0 0;
   }
-  #aboutme-section {
-    margin-bottom: 5%;
-  }
-  #values {
-    margin: 5% 0 0 47.5%;
-    width: 42.5%;
-    padding-bottom: 2%;
-  }
-  #values p {
-    width: 95%;
-    text-align: center;
-    margin: 0 auto;
-  }
-  #contact {
-    margin: 3% 0 0 10%;
-    width: 42.5%;
-    padding-bottom: 2%;
-  }
-  #contact p {
-    text-align: center;
-  }
-  h3 {
-    margin-top: 5%;
-  }
-  #some {
-    width: 20%;
-    padding-bottom: 5%;
-  }
-  #some a {
-    width: 20%;
-  }
-  #aboutme {
-    width: 42.5%;
-    padding-bottom: 2.8%;
-  }
-  #aboutme p {
-    width: 95%;
-    text-align: center;
-  }
-  #about-flex {
+  #page__aboutgb #about-flex {
     padding-top: 8%;
     margin: 0 auto;
     width: 100%;
@@ -2246,42 +2116,155 @@ footer #some_iconer img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
-  #about-flex #nikolaj1 {
+  #page__aboutgb #about-flex #nikolaj1 {
     display: none;
   }
-  #about-flex #nikolaj2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 18%;
-  }
-  .sections {
-    border-bottom: 1px solid #fff;
+  #page__aboutgb #about-flex #nikolaj2 {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 19%;
+    max-width: 25%;
+    border-radius: 6px;
   }
 }
 
-@media only screen and (min-width: 1600px) {
-  #aboutme #email {
+@media only screen and (min-width: 200px) and (min-width: 1280px) and (min-width: 1350px) {
+  #page__aboutgb #about-flex #nikolaj2 {
+    top: 13%;
+  }
+}
+
+@media only screen and (min-width: 200px) and (min-width: 1280px) and (min-width: 1560px) {
+  #page__aboutgb #about-flex #nikolaj2 {
+    top: 4%;
+  }
+}
+
+@media only screen and (min-width: 200px) and (min-width: 1280px) and (min-width: 1840px) {
+  #page__aboutgb #about-flex #nikolaj2 {
+    top: -7%;
+  }
+}
+
+@media only screen and (min-width: 200px) and (min-width: 1280px) {
+  #page__aboutgb #aboutme-section {
+    margin-bottom: 5%;
+  }
+  #page__aboutgb #values {
+    margin: 5% 0 0 38.5%;
+    width: 42.5%;
+    position: relative;
+    background: fff;
+    padding-right: 15%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    border-radius: 0px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  #page__aboutgb #values h1 {
+    margin-top: 0%;
+    padding-top: 5%;
+  }
+  #page__aboutgb #values p {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 100%;
+    background: none;
+  }
+  #page__aboutgb #contact {
+    background-color: green;
+    padding-bottom: 2%;
+    width: 100%;
+    margin: 5% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  #page__aboutgb #contact h1 {
+    font-size: 2.5em;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  #page__aboutgb #contact h2 {
+    margin: 0;
+  }
+  #page__aboutgb .slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  #page__aboutgb .slide-in-right {
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: 200px) and (min-width: 1600px) {
+  #page__aboutgb #email {
     font-size: 1.6em;
     padding-top: 0.8%;
     padding-bottom: 0.8%;
     padding-left: 3%;
     padding-right: 3%;
-  }
-  #contact #email2 {
-    margin-bottom: 3%;
-  }
-  #contact h3 {
-    margin-top: 4%;
-  }
-  #some {
-    width: 25%;
-  }
-  #some a {
-    width: 18%;
   }
 }
 
@@ -2460,7 +2443,6 @@ footer #some_iconer img {
 #page__brandactivation #virksomhed {
   width: 90%;
   margin: 0 auto;
-  border-bottom: 1px solid #fff;
   padding-bottom: 8%;
   text-align: center;
 }
@@ -2669,7 +2651,7 @@ footer #some_iconer img {
     font-size: 3em;
   }
   #page__brandactivation h3 {
-    padding-top: 0%;
+    padding-top: 6%;
   }
   #page__brandactivation .container img {
     margin: 0 35% 0 35%;
