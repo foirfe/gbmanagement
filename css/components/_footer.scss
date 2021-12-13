@@ -53,6 +53,7 @@ footer {
   @media only screen and (min-width: 625px) {
     #footer_indhold {
       display: flex;
+      align-items: center;
     }
 
     #footer_kontakt {
@@ -61,22 +62,11 @@ footer {
       padding-top: 3%;
       padding-bottom: 0%;
       li {
-        margin-bottom: 12%;
-      }
-    }
-
-    #footer_kontakt {
-      width: 50%;
-      margin: 0 auto;
-      padding-top: 3%;
-      padding-bottom: 0%;
-      li {
-        margin-bottom: 12%;
+        margin-bottom: 6%;
       }
     }
 
     #footer_some {
-      flex-wrap: wrap;
       width: 50%;
       padding-top: 3%;
       padding-bottom: 0%;
@@ -109,8 +99,8 @@ footer {
     }
 
     #some_iconer {
-      flex-direction: column;
       align-items: center;
+      justify-content: space-evenly;
     }
   }
 
@@ -154,6 +144,10 @@ footer {
     }
 
     @media only screen and (min-width: 1280px) {
+      #footer_indhold {
+        padding: 0.6% 0;
+      }
+
       #footer_kontakt {
         padding-top: 1.4%;
         h4 {
