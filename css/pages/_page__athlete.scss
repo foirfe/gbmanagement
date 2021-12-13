@@ -653,9 +653,6 @@
       .gallery-container {
         display: flex;
         justify-content: center;
-        .row {
-          width: 50%;
-        }
       }
       .lightboxSlides {
         text-align: center;
@@ -830,11 +827,6 @@
       margin-top: 3%;
       h2 {
         font-size: 4.25em;
-      }
-      .gallery-container {
-        .row {
-          width: 25%;
-        }
       }
       img.lightboxdot {
         width: 50%;
