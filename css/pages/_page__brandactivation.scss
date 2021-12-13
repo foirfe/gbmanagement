@@ -7,6 +7,26 @@
     rgba(15, 39, 83, 1) 100%
   );
 
+  h1 {
+    font-size: 2em;
+    font-family: "Bebas Neue", cursive;
+    color: #fff;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  p {
+    color: #fff;
+    font-size: 1.2em;
+    width: 82.5%;
+    margin: 0 auto;
+    margin-top: 2%;
+    font-family: "Rajdhani", sans-serif;
+    padding-bottom: 5%;
+    text-align: left;
+    }
+
   .container {
     img {
       margin: 0 15% 0 15%;
@@ -48,10 +68,16 @@
     background-color: rgba(0, 0, 0, 0.8);
   }
 
+  #achieved {
+    h1 {
+      padding-top: 20%;
+    }
+  }
+
   .numbertext {
     color: #f2f2f2;
     font-size: 1em;
-    padding: 2% 5%;
+    padding: 2% 0%;
     position: absolute;
     top: 0;
     font-family: "Oswald", sans-serif;
@@ -69,76 +95,28 @@
     opacity: 1;
   }
 
-  h1 {
-    font-size: 2em;
-    font-family: "Bebas Neue", cursive;
-    color: #fff;
-    padding-top: 23%;
-    text-align: center;
-    padding-bottom: 5%;
-  }
-
-  .opnaet_tekst {
-    color: #fff;
-    font-size: 1.2em;
-    width: 70%;
+  .sections {
+    width: 90%;
     margin: 0 auto;
-    margin-top: 2%;
-    font-family: "Rajdhani", sans-serif;
-    border-bottom: 1px solid;
-    padding-bottom: 5%;
-    text-align: center;
+    border-bottom: 1px solid #fff;
   }
-
-  .tekst {
-    color: #fff;
-    font-size: 1.2em;
-    width: 70%;
-    margin: 0 auto;
-    font-family: "Rajdhani", sans-serif;
-    text-align: center;
-    border-bottom: 1px solid;
-    padding-bottom: 5%;
-  }
-
-  .tekst_virksomhed {
-    color: #fff;
-    font-size: 1.2em;
-    width: 70%;
-    margin: 0 auto;
-    font-family: "Rajdhani", sans-serif;
-    text-align: center;
-    padding-bottom: 9%;
-  }
-
-  h2 {
-    font-size: 2em;
-    font-family: "Bebas Neue", cursive;
-    color: #fff;
-    padding-top: 10%;
-    padding-bottom: 5%;
-    text-align: center;
-  }
-
-  h3 {
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.6em;
-    color: #fff;
-    text-align: center;
-    padding-top: 10%;
+  
+  #contact-button {
+    margin-top: 5%;
   }
 
   #contact {
     font-size: 1.2em;
     border-radius: 12px;
     color: white;
+    margin-top: 30%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     padding-left: 14%;
     padding-right: 14%;
     text-decoration: none;
     transition: transform 0.2s;
     font-family: "Oswald", sans-serif;
-    padding-top: 3%;
-    padding-bottom: 3%;
     background-image: linear-gradient(
       to bottom,
       rgba(252, 2, 17, 1),
@@ -153,19 +131,6 @@
       );
       transform: scale(1.02);
       transition: transform 0.5s;
-    }
-  }
-
-  #some {
-    display: flex;
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 2%;
-    justify-content: space-between;
-    padding-bottom: 7%;
-
-    img {
-      width: 100%;
     }
   }
 
@@ -219,7 +184,7 @@
 
         .numbertext {
             font-size: 1.2em;
-            padding: 2% 12%;
+            padding: 2% 4%;
         }
 
         #contact {
@@ -248,13 +213,6 @@
     @media only screen and (min-width: 625px) {
         h1 {
             font-size: 3.5em;
-            width: 85%;
-            margin: 0 auto;
-        }
-
-        h2 {
-            font-size: 3.5em;
-            width: 85%;
             margin: 0 auto;
         }
 
@@ -284,7 +242,7 @@
 
         .numbertext {
             font-size: 1.5em;
-            padding: 2% 14%;
+            padding: 2% 8%;
         }
 
         #contact {
@@ -312,6 +270,20 @@
 
     }
 
+    @media only screen and (min-width: 720px) {
+      #achieved {
+        h1 {
+          padding-top: 14%;
+        }
+      }
+      #contact-button {
+        margin-top: 2%;
+      }
+      .tekst_virksomhed {
+        padding-bottom: 4%;
+      }
+    }
+
     @media only screen and (min-width: 1060px) {
         h1 {
             padding-top: 10%;
@@ -337,80 +309,44 @@
 
         .prev,
         .next {
-            font-size: 270%;
+          font-size: 270%;
+        }
+
+        #achieved {
+          h1 {
+            padding-top: 12%;
+          }
         }
 
         .opnaet_tekst {
-            font-size: 1.7em;
-            line-height: 1.2em;
+         font-size: 1.7em;
+         line-height: 1.2em;
         }
 
-        .tekst {
-            font-size: 1.7em;
-            line-height: 1.2em;
+       .tekst {
+         font-size: 1.7em;
+         line-height: 1.2em;
         }
 
         .tekst_virksomhed {
-            font-size: 1.7em;
-            line-height: 1.2em;
-            padding-bottom: 5%;
-        }
+          font-size: 1.7em;
+          line-height: 1.2em;
+          padding-bottom: 5%;
+       }
 
         .numbertext {
-            font-size: 1.5em;
-            padding: 2% 25%;
+          font-size: 1.5em;
+          padding: 2% 15%;
         }
 
         #contact {
-            font-size: 1.6em;
-            padding-left: 5%;
-            padding-right: 5%;
-            padding-top: 1%;
-            padding-bottom: 1%;
+          font-size: 1.6em;
+          padding-left: 5%;
+          padding-right: 5%;
+          padding-top: 1%;
+          padding-bottom: 1%;
         }
-
-        #some {
-            width: 30%;
-        }
-
-    .prev,
-    .next {
-      font-size: 270%;
-    }
-
-    .opnaet_tekst {
-      font-size: 1.7em;
-      line-height: 1.2em;
-    }
-
-    .tekst {
-      font-size: 1.7em;
-      line-height: 1.2em;
-    }
-
-    .tekst_virksomhed {
-      font-size: 1.7em;
-      line-height: 1.2em;
-      padding-bottom: 5%;
-    }
-
-    .numbertext {
-      font-size: 1.5em;
-      padding: 2% 25%;
-    }
-
-    #contact {
-      font-size: 1.6em;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 1%;
-      padding-bottom: 1%;
-    }
-
-    #some {
-      width: 30%;
-    }
-  }
+      }
 
   @media only screen and (min-width: 1280px) {
     #contact {
@@ -425,7 +361,7 @@
 
   @media only screen and (min-width: 1350px) {
     h1 {
-      padding-top: 9%;
+      padding-top: 5%;
       padding-bottom: 1%;
       margin-bottom: 0%;
     }
@@ -461,6 +397,13 @@
     .numbertext {
       font-size: 1.5em;
       padding: 2% 27%;
+    }
+
+    #achieved {
+      h1 {
+        padding-top: 10%;
+        padding-bottom: 3%;
+      }
     }
 
     .opnaet_tekst {
