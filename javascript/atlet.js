@@ -1,4 +1,5 @@
-const gallery = document.getElementById("gallery")
+const gallery = document.getElementById("gallery");
+
 
 if (window.innerWidth <  1080){
 gallery.remove();
@@ -74,3 +75,4 @@ function showLightboxSlides(n) {
   lightboxdots[slideLightboxIndex-1].className += " active";
   captionText.innerHTML = lightboxdots[slideLightboxIndex-1].alt;
 }
+

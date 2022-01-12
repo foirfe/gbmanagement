@@ -1,27 +1,21 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-   
-    if (n > slides.length) {
-        slideIndex = 1
+const dtswissvideo = document.getElementById("dtswissvideo");
+let erPaaPause = true;
+//Intersection observer
+let observer = new IntersectionObserver((entries,observer) => {
+for (const brandactivationvideo of entries){
+    if (brandactivationvideo.isIntersecting && erPaaPause===true){
+        dtswissvideo.play();
+        erPaaPause = false;
+    } else {
+dtswissvideo.pause();
+erPaaPause = true;
     }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-   
-    slides[slideIndex - 1].style.display = "block";
-}
+        
+};
+
+}, {threshold: 1}); // 1 = brandactivationvideo skal være 100% i viewport for at tælle med
+
+//Hovedprogram
+
+const brandactivationvideo = document.getElementById("brandactivationvideo");
+observer.observe(brandactivationvideo);

@@ -28,11 +28,11 @@
     font-family: "Rajdhani", sans-serif;
     padding: 4% 0;
     text-align: center;
-    }
+  }
 
-    img {
-      border-radius: 6px;
-    }
+  img {
+    border-radius: 6px;
+  }
 
   .brand-activation-sections {
     width: 90%;
@@ -82,7 +82,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    
   }
   #some-section2-img3 {
     width: 100%;
@@ -149,91 +148,98 @@
       transition: transform 0.5s;
     }
   }
+  #brandactivationvideo {
+    margin: 0 auto;
+    text-align: center;
+    video {
+      width: 50%;
+    }
+  }
 
-    @media only screen and (min-width: 510px) {
-        h1 {
-            font-size: 2.5em;
-        }
-
-        p {
-            font-size: 1.4em;
-            width: 75%;
-        }
-
-        #contact-button {
-            font-size: 1.4em;
-            padding-left: 12%;
-            padding-right: 12%;
-        }
+  @media only screen and (min-width: 510px) {
+    h1 {
+      font-size: 2.5em;
     }
 
-    @media only screen and (min-width: 625px) {
-        h1 {
-            font-size: 3.5em;
-            margin: 0 auto;
-        }
-
-        p {
-            font-size: 1.6em;
-            width: 85%;
-            padding: 6% 0;
-        }
-
-        #contact-button {
-            font-size: 1.6em;
-            padding: 1% 6%;
-        }
+    p {
+      font-size: 1.4em;
+      width: 75%;
     }
 
-    @media only screen and (min-width: 720px) {
-      h1 {
-          padding-top: 14%;
-        }
-      p {
-          padding: 4% 0;
-      }
-      .brand-activation-sections {
-        img {
-          width: 90%;
-          display: flex;
-          margin: 0 auto;
-        }
-      }
-      #contact {
-        margin-top: 2%;
-      }
+    #contact-button {
+      font-size: 1.4em;
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+  }
+
+  @media only screen and (min-width: 625px) {
+    h1 {
+      font-size: 3.5em;
+      margin: 0 auto;
     }
 
-    @media only screen and (min-width: 1060px) {
-        h1 {
-          padding-top: 12%;
-          padding-bottom: 4%;
-        }
+    p {
+      font-size: 1.6em;
+      width: 85%;
+      padding: 6% 0;
+    }
 
-        .mobile-text {
-          display: none;
-        }
+    #contact-button {
+      font-size: 1.6em;
+      padding: 1% 6%;
+    }
+  }
 
-        .desktop-text {
-          display: flex;
-          padding: 0;
-          margin: 0 auto;
-        }
-
-       p {
-         font-size: 1.7em;
-         line-height: 1.2em;
-        }
-
-        #some-content-section1 {
-          margin-bottom: 4%;
-        }
-
-        #contact-button {
-          font-size: 1.6em;
-          padding: 1% 5%;
-        }
+  @media only screen and (min-width: 720px) {
+    h1 {
+      padding-top: 14%;
+    }
+    p {
+      padding: 4% 0;
+    }
+    .brand-activation-sections {
+      img {
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
       }
+    }
+    #contact {
+      margin-top: 2%;
+    }
+  }
+
+  @media only screen and (min-width: 1060px) {
+    h1 {
+      padding-top: 12%;
+      padding-bottom: 4%;
+    }
+
+    .mobile-text {
+      display: none;
+    }
+
+    .desktop-text {
+      display: flex;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 1.7em;
+      line-height: 1.2em;
+    }
+
+    #some-content-section1 {
+      margin-bottom: 4%;
+    }
+
+    #contact-button {
+      font-size: 1.6em;
+      padding: 1% 5%;
+    }
+  }
 
   @media only screen and (min-width: 1280px) {
     #contact-button {

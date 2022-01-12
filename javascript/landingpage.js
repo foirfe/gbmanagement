@@ -16,6 +16,7 @@ annereischmann.addEventListener("mouseover", function(){
     if (window.matchMedia("(min-width: 930px)").matches){
         annereischmann.style.cursor = "pointer";
         header1.style.display = "block";
+        annereischmannimg.src = "images/annelandingpageactive.jpg";
         annereischmannimg.style.transform = "scale(1.1)"; //Zoomer ind på billedet på hover
         annereischmannimg.style.transformOrigin = "50% 50%";
     }
@@ -25,6 +26,7 @@ annereischmann.addEventListener("mouseover", function(){
 annereischmann.addEventListener("mouseout", function(){
     if (window.matchMedia("(min-width: 930px)").matches){
         annereischmann.style.cursor = "default";
+        annereischmannimg.src = "images/annelandingpage.jpg";
         header1.style.display = "none";
         annereischmannimg.style.transform = "scale(1)"; //Zoomer den tilbage
 
@@ -42,6 +44,7 @@ danielbaekkegard.addEventListener("mouseover", function(){
         if (window.matchMedia("(min-width: 930px)").matches){
             danielbaekkegard.style.cursor = "pointer";
             header2.style.display = "block";
+            danielbaekkegardimg.src = "images/daniellandingpageactive.jpg"
             danielbaekkegardimg.style.transform = "scale(1.1)";
         danielbaekkegardimg.style.transformOrigin = "50% 50%";
         }
@@ -51,6 +54,7 @@ danielbaekkegard.addEventListener("mouseover", function(){
 danielbaekkegard.addEventListener("mouseout", function(){
         if (window.matchMedia("(min-width: 930px)").matches){
             danielbaekkegard.style.cursor = "default";
+            danielbaekkegardimg.src = "images/daniellandingpage.jpg"
             header2.style.display = "none";
             danielbaekkegardimg.style.transform = "scale(1)";
         }
@@ -67,6 +71,7 @@ danielbaekkegard.addEventListener("mouseout", function(){
             if (window.matchMedia("(min-width: 930px)").matches){
                 florianangert.style.cursor = "pointer";
                 header3.style.display = "block";
+                florianangertimg.src = "images/florianlandingpageactive.jpg"
                 florianangertimg.style.transform = "scale(1.1)";
                 florianangertimg.style.transformOrigin = "50% 50%";
             }
@@ -77,6 +82,7 @@ danielbaekkegard.addEventListener("mouseout", function(){
             if (window.matchMedia("(min-width: 930px)").matches){
                 florianangert.style.cursor = "default";
                 header3.style.display = "none";
+                florianangertimg.src = "images/florianlandingpage.jpg"
                 florianangertimg.style.transform = "scale(1)";
             }
         }
@@ -92,6 +98,7 @@ danielbaekkegard.addEventListener("mouseout", function(){
                 if (window.matchMedia("(min-width: 930px)").matches){
                     kristianhoegenhaug.style.cursor = "pointer";
                     header4.style.display = "block";
+                    kristianhoegenhaugimg.src = "images/kristianlandingpageactive.jpg";
                     kristianhoegenhaugimg.style.transform = "scale(1.1)";
                     kristianhoegenhaugimg.style.transformOrigin = "50% 50%";
                 }
@@ -102,6 +109,7 @@ danielbaekkegard.addEventListener("mouseout", function(){
                 if (window.matchMedia("(min-width: 930px)").matches){
                     kristianhoegenhaug.style.cursor = "default";
                     header4.style.display = "none";
+                    kristianhoegenhaugimg.src = "images/kristianlandingpage.jpg";
                     kristianhoegenhaugimg.style.transform = "scale(1)";
                 }
             }
